@@ -13,8 +13,16 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      fontFamily: {
+        imperfect: ['ImPerfect23', 'sans-serif'],
+        dragonHunter: ['DragonHunter', 'sans-serif'],
+        speedBeast: ['SpeedBeast', 'sans-serif'],
+        bruce: ['BruceForeverRegular', 'serif'],
+        aloe:['Aloevera', 'serif'],
+      },
     },
   },
   plugins: [],
 };
+
 export default config;

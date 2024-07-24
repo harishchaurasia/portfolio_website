@@ -2,11 +2,43 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Importing fonts */
+@font-face {
+  font-family: 'ImPerfect23';
+  src: url('/fonts/ImPerfect23.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
 
-/* globals.css */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@font-face {
+  font-family: 'DragonHunter';
+  src: url('/fonts/DragonHunter.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SpeedBeast';
+  src: url('/fonts/SpeedBeast.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'BruceForeverRegular';
+  src: url('/fonts/BruceForeverRegular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Aloevera';
+  src: url('/fonts/Aloevera.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
 /* Custom global styles */
 body {
