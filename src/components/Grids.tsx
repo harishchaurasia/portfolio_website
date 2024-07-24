@@ -1,5 +1,6 @@
 // src/components/Grids.tsx
 import React from 'react';
+import Scene from '../components/Scene';
 
 const Grids: React.FC = () => {
   return (
@@ -18,7 +19,8 @@ const Grids: React.FC = () => {
         left="223px"
       />  */}
      
-      <div className='relative h-screen mt-36'>
+      <div className='relative h-screen mt-12'>
+      <Scene/>
       </div>
     </div>
   );

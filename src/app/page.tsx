@@ -1,9 +1,10 @@
 // src/app/page.tsx
-"use client";
-import React, { useState, useEffect } from 'react';
+'use client';
+import React, { useState , useEffect} from 'react';
 import Intro from '../components/Intro';
 import Grids from '../components/Grids';
 import Navs from '../components/Nav';
+
 
 
 export default function Home() {
@@ -11,14 +12,12 @@ export default function Home() {
   const [showNav, setShowNav] = useState(false);
   const [showGrid, setShowGrid] = useState(false);
 
-  // Timeline for showing the nav bar
   useEffect(() => {
     setTimeout(() => {
       setShowNav(true);
     }, 4200);
   }, []);
 
-  // Timeline for showing the grids
   useEffect(() => {
     setTimeout(() => {
       setShowGrid(true);
@@ -32,6 +31,7 @@ export default function Home() {
 
       <section id="home" className="content">
       {showGrid && <Grids />}
+
       </section>
       <section id="about" className="content">
       </section>
