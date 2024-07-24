@@ -2,32 +2,61 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
+/* globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
+/* Custom global styles */
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: #1a1a1a;
+  position: relative;
+  overflow-x: hidden; /* Prevent horizontal scrollbars from appearing */
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.grid-background {
+  background-image: linear-gradient(#363636 1px, transparent 0), 
+                    linear-gradient(90deg, #363636 1px, transparent 0);
+  background-size: 25px 25px;
+  position: absolute;
+  top: 53.5%;
+  left: 50%;
+  width: 100%;
+  height: 850px;
+  z-index: 0;
+  opacity: 0.9;
+  box-shadow: 0 0 150px #2a2a2a;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fade-enter {
+  opacity: 0;
+  transition: opacity 1000ms ease-in-out 500ms;
+}
+.fade-enter-active {
+  opacity: 1;
+}
+.fade-exit {
+  opacity: 1;
+  transition: opacity 1000ms ease-in-out;
+}
+.fade-exit-active {
+  opacity: 0;
+}
+
+.block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.block img {
+  margin-bottom: 20px;
 }
