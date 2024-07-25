@@ -19,6 +19,7 @@ const config: Config = {
         speedBeast: ['SpeedBeast', 'sans-serif'],
         bruce: ['BruceForeverRegular', 'serif'],
         aloe:['Aloevera', 'serif'],
+        xirod:['Xirod', 'serif'],
       },
     },
   },

@@ -4,12 +4,13 @@ import { useFrame, useThree } from '@react-three/fiber';
 import { useControls } from 'leva';
 
 export default function Model() {
-  const { nodes } = useGLTF("/squareInfinity2_0.glb");
+  const { nodes } = useGLTF("/squareInfinity1_75.glb");
   const { viewport } = useThree();
   const torus = useRef(null);
   
   useFrame(() => {
     torus.current.rotation.x += 0.001;
+    // torus.current.rotation.y += 0.001;
   });
 
   const materialProps = useControls({
@@ -17,24 +18,16 @@ export default function Model() {
     roughness: { value: 0, min: 0, max: 1, step: 0.1 },
     transmission: { value: 1, min: 0, max: 1, step: 0.1 },
     ior: { value: 1.3, min: 0, max: 3, step: 0.1 },
-    chromaticAberration: { value: 0.09, min: 0, max: 1 },
+    chromaticAberration: { value: 0.04, min: 0, max: 1 },
     backside: { value: false },
   });
 
   return (
-    <group scale={viewport.width / 3.75}>
-      <Text font={'/fonts/Aloevera.ttf'} position={[0, 5, -3]} fontSize={2.5} color="white" anchorX="center" anchorY="middle">
-        Hi. I'm Harish.
+    <group scale={viewport.width / 3.25}>
+      <Text font={'/fonts/recharge_bd.otf'} position={[0, 0, 0]} fontSize={0.18} color="white" anchorX="center" anchorY="middle">
+      {/* <Text font={'/fonts/Xirod.otf'} position={[0, 0, 0]} fontSize={0.14} color="white" anchorX="center" anchorY="middle"> */}
+      Hello World.
       </Text>
-      {/* <Text font={'/fonts/Aloevera.ttf'} position={[0, 2, -3]} fontSize={2.5} color="white" anchorX="center" anchorY="middle">
-        A Developer
-      </Text>
-      <Text font={'/fonts/BruceForeverRegular.ttf'} position={[0, -2, -3]} fontSize={1.5} color="gray" anchorX="center" anchorY="middle">
-        I love building shit. 🛠️⚙️
-      </Text>
-      <Text font={'/fonts/BruceForeverRegular.ttf'} position={[0, -4, -3]} fontSize={1.5} color="gray" anchorX="center" anchorY="middle">
-        Eat. Sleep. Build & Repeat.♾️
-      </Text> */}
       <mesh ref={torus} {...nodes.Infinity_loop}>
         <MeshTransmissionMaterial {...materialProps} />
       </mesh>
