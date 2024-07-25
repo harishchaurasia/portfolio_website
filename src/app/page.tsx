@@ -1,16 +1,16 @@
 // src/app/page.tsx
-'use client';
-import React, { useState , useEffect} from 'react';
+"use client";
+import React, { useState, useEffect } from 'react';
 import Intro from '../components/Intro';
 import Grids from '../components/Grids';
 import Navs from '../components/Nav';
-
+import Scene from '../components/index';
 
 
 export default function Home() {
-  const [showBugs, setShowBugs] = useState(false);
   const [showNav, setShowNav] = useState(false);
   const [showGrid, setShowGrid] = useState(false);
+  const [showScene, setShowScene] = useState(false);
 
   useEffect(() => {
     setTimeout(() => {
@@ -24,14 +24,19 @@ export default function Home() {
     }, 4200); 
   }, []);
 
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     setShowScene(true);
+  //   }, 4200); 
+  // }, []);
+
   return (
     <div className="relative">
       <Intro />
       {showNav && <Navs />}
-
+      {showScene && <Scene />}
       <section id="home" className="content">
-      {showGrid && <Grids />}
-
+        {showGrid && <Grids />}
       </section>
       <section id="about" className="content">
       </section>
