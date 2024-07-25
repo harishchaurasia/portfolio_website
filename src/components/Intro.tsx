@@ -18,8 +18,8 @@ const Intro: React.FC<IntroProps> = ({ onComplete }) => {
 
       // Customizable values
       const duration = 1  ; // Duration for each text to appear and disappear
-      const stayDuration = 0.75; // Duration for each text to stay visible
-      const gap = 0.9; // Additional gap time between each text
+      const stayDuration = 0.50; // Duration for each text to stay visible
+      const gap = 0.95; // Additional gap time between each text
 
       timeline
         .to(".intro-text h1:nth-child(1)", { autoAlpha: 1, duration: duration })
