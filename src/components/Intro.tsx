@@ -12,9 +12,11 @@ const Intro: React.FC<IntroProps> = ({ onComplete }) => {
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
       const timeline = gsap.timeline({
-        onComplete: onComplete, // Call the onComplete function when the animation finishes
+        onComplete: onComplete, // Calling the onComplete function when the animation finishes
       });
 
+
+      // Customizable values
       const duration = 1; // Duration for each text to appear and disappear
       const stayDuration = 1; // Duration for each text to stay visible
       const gap = 1; // Additional gap time between each text
