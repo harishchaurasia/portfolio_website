@@ -48,6 +48,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Recharge_bd';
+  src: url('/fonts/Recharge_bd.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* globals.css */
 body {
   margin: 0;

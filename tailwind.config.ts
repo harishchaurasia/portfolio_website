@@ -20,6 +20,7 @@ const config: Config = {
         bruce: ['BruceForeverRegular', 'serif'],
         aloe:['Aloevera', 'serif'],
         xirod:['Xirod', 'serif'],
+        recharge:['Recharge_bd', 'serif'],
       },
     },
   },

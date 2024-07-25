@@ -33,13 +33,19 @@ export default function Home() {
         {!showIntro && showGrid && <Grids />}
       </section>
       <section id="about" className="content">
-        {/* Add about content here */}
+      <div className="text-white max-w-2xl p-8">
+          <h1 className="text-white text-4xl font-bold mb-4">Section 1</h1>
+        </div>
       </section>
       <section id="projects" className="content">
-        {/* Add projects content here */}
+      <div className=" text-white max-w-2xl p-8">
+          <h1 className="text-4xl font-bold mb-4">Section 2</h1>
+        </div>
       </section>
       <section id="contact" className="content">
-        {/* Add contact content here */}
+      <div className="text-white max-w-2xl p-8">
+          <h1 className="text-4xl font-bold mb-4">Section 3</h1>
+        </div>
       </section>
     </div>
   );
