@@ -50,6 +50,39 @@ body {
   overflow-x: hidden;
 }
 
+/* Intro container styling */
+
+.intro-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8); /* Optional background color */
+  z-index: 9999; /* Ensure it is above other content */
+  opacity: 1;
+  transition: opacity 1s ease-out;
+}
+
+/* Intro text styling */
+.intro-text {
+  position: relative;
+}
+
+/* Hidden text for animation */
+.hidden-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 1s ease-out;
+}
+
+
 /* 
 .grid-background {
   background-image: linear-gradient(#363636 1px, transparent 0), 

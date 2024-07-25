@@ -1,22 +1,49 @@
 // src/components/Intro.tsx
-import React, { useEffect } from 'react';
+import React, { useLayoutEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 
-const Intro: React.FC = () => {
-  useEffect(() => {
-    const tl = gsap.timeline();
-    tl.to("#welcome-text", { opacity: 1, duration: 1.5, delay: 0.5 })
-      .to("#welcome-text", { opacity: 0, duration: 1.5, delay: 1 });
-  }, []);
+interface IntroProps {
+  onComplete: () => void;
+}
+
+const Intro: React.FC<IntroProps> = ({ onComplete }) => {
+  const introRef = useRef<HTMLDivElement>(null);
+
+  useLayoutEffect(() => {
+    const ctx = gsap.context(() => {
+      const timeline = gsap.timeline({
+        onComplete: onComplete, // Call the onComplete function when the animation finishes
+      });
+
+      const duration = 1; // Duration for each text to appear and disappear
+      const stayDuration = 1; // Duration for each text to stay visible
+      const gap = 1; // Additional gap time between each text
+
+      timeline
+        .to(".intro-text h1:nth-child(1)", { autoAlpha: 1, duration: duration })
+        .to(".intro-text h1:nth-child(1)", { autoAlpha: 0, duration: duration }, `+=${stayDuration}`)
+        .to(".intro-text h1:nth-child(2)", { autoAlpha: 1, duration: duration }, `-=${duration - gap}`)
+        .to(".intro-text h1:nth-child(2)", { autoAlpha: 0, duration: duration }, `+=${stayDuration}`)
+        .to(".intro-text h1:nth-child(3)", { autoAlpha: 1, duration: duration }, `-=${duration - gap}`)
+        .to(".intro-text h1:nth-child(3)", { autoAlpha: 0, duration: duration }, `+=${stayDuration}`)
+        .to(".intro-text h1:nth-child(4)", { autoAlpha: 1, duration: duration }, `-=${duration - gap}`)
+        .to(".intro-text h1:nth-child(4)", { autoAlpha: 0, duration: duration }, `+=${stayDuration}`)
+        .to(".intro-container", { autoAlpha: 0, duration: 1 }, `-=${duration}`); // Fade out the entire intro container immediately after the last text disappears
+    }, introRef);
+
+    return () => ctx.revert();
+  }, [onComplete]);
 
   return (
-    <div className="flex items-center justify-center h-screen bg-black">
-      <h1 id="welcome-text" className="text-8xl text-transparent bg-clip-text bg-gradient-to-t from-yellow-700 to-orange-600 opacity-0 font-imperfect">
-        Welcome...
-      </h1>
+    <div ref={introRef} className="intro-container flex items-center justify-center h-screen text-center">
+      <div className="intro-text font-imperfect text-white text-7xl font-bold text-gradient">
+        <h1 className="hidden-text">Eat.</h1>
+        <h1 className="hidden-text">Sleep.</h1>
+        <h1 className="hidden-text">Build.</h1>
+        <h1 className="hidden-text">Repeat.</h1>
+      </div>
     </div>
   );
-  
 };
 
 export default Intro;
