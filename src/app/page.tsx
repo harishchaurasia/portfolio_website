@@ -6,6 +6,7 @@ import Intro from '../components/Intro';
 import Grids from '../components/Grids';
 import Navs from '../components/Nav';
 import Scene from '../components/Index';
+import About from '../components/About';
 
 export default function Home() {
   const [showIntro, setShowIntro] = useState(true);
@@ -21,7 +22,7 @@ export default function Home() {
         setShowScene(true);
       }, 200); // Short delay after intro to show main content
 
-      return () => clearTimeout(timer); // Cleanup the timer on component unmount
+      return () => clearTimeout(timer);
     }
   }, [showIntro]);
 
@@ -35,6 +36,7 @@ export default function Home() {
       <section id="about" className="content">
       <div className="text-white max-w-2xl p-8">
           <h1 className="text-white text-4xl font-bold mb-4">Section 1</h1>
+          <About/>
         </div>
       </section>
       <section id="projects" className="content">

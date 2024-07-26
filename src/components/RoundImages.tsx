@@ -1,4 +1,3 @@
-// src/components/ImageWithRoundedCorners.tsx
 import React from 'react';
 
 interface ImageWithRoundedCornersProps {
@@ -6,10 +5,8 @@ interface ImageWithRoundedCornersProps {
   alt: string;
   width?: string;
   height?: string;
-  top?: string;
-  left?: string;
-  right?: string;
-  bottom?: string;
+  position?: string;
+  margin?: string;
 }
 
 const ImageWithRoundedCorners: React.FC<ImageWithRoundedCornersProps> = ({ 
@@ -17,10 +14,8 @@ const ImageWithRoundedCorners: React.FC<ImageWithRoundedCornersProps> = ({
   alt, 
   width = '300px', 
   height = '300px', 
-  top, 
-  left, 
-  right, 
-  bottom 
+  position = 'relative',
+  margin = '0'
 }) => {
   return (
     <img 
@@ -31,11 +26,7 @@ const ImageWithRoundedCorners: React.FC<ImageWithRoundedCornersProps> = ({
         height, 
         borderRadius: '15px', // Adjust border-radius as needed for rounded corners
         objectFit: 'cover', // Ensure the image covers the entire area
-        position: 'absolute', // Use absolute positioning
-        top,
-        left,
-        right,
-        bottom,
+        margin,
         boxShadow:  "10px 10px 25px #3a3a3a"
       }} 
     />

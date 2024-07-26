@@ -15,7 +15,7 @@ const config: Config = {
       },
       fontFamily: {
         imperfect: ['ImPerfect23', 'sans-serif'],
-        dragonHunter: ['DragonHunter', 'sans-serif'],
+        cravend: ['Cravend', 'serif'],
         speedBeast: ['SpeedBeast', 'sans-serif'],
         bruce: ['BruceForeverRegular', 'serif'],
         aloe:['Aloevera', 'serif'],
