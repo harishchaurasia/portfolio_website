@@ -8,10 +8,10 @@ const About = () => {
         <ImageWithRoundedCorners 
           src="/harish_headshot_black.png" 
           alt="Your Name" 
-          width="300px" 
-          height="300px" 
+          width="350px" 
+          height="350px" 
         />
-              <div className="mt- flex-1">
+        <div className="ml-24 mr-20 flex-1">
         <p>
           I’m [Your Name], a [Your Profession] who thrives in the intersection of innovation and artistry. My journey in [Your Field] has been a thrilling ride, marked by a relentless pursuit of excellence and a deep passion for [Key Skills/Technologies].
         </p>
