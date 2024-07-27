@@ -13,6 +13,9 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      boxShadow: {
+        'bs': '0 4px 130px rgba(150, 163, 181, .13)',
+      },
       fontFamily: {
         imperfect: ['ImPerfect23', 'sans-serif'],
         cravend: ['Cravend', 'serif'],
