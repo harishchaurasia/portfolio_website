@@ -21,6 +21,7 @@ const config: Config = {
         aloe:['Aloevera', 'serif'],
         xirod:['Xirod', 'serif'],
         recharge:['Recharge_bd', 'serif'],
+        acorn:['Acorn', 'serif'],
       },
     },
   },

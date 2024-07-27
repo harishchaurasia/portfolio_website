@@ -27,7 +27,7 @@ const ImageWithRoundedCorners: React.FC<ImageWithRoundedCornersProps> = ({
         borderRadius: '15px', // Adjust border-radius as needed for rounded corners
         objectFit: 'cover', // Ensure the image covers the entire area
         margin,
-        boxShadow:  "10px 10px 25px #3a3a3a"
+        boxShadow:  "0 4px 130px rgba(150, 163, 181, .19)" // Updated shadow as per your requirement
       }} 
     />
   );

@@ -42,6 +42,13 @@
 
 
 @font-face {
+  font-family: 'Acorn';
+  src: url('/fonts/Acorn.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'Aloevera';
   src: url('/fonts/Aloevera.ttf') format('truetype');
   font-weight: normal;

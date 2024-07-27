@@ -4,7 +4,7 @@
 import React, { useState, useEffect } from 'react';
 import Intro from '../components/Intro';
 import Grids from '../components/Grids';
-import Navs from '../components/Nav';
+import Navs from '../components/Navs';
 import Scene from '../components/Index';
 import About from '../components/About';
 
@@ -28,17 +28,18 @@ export default function Home() {
 
   return (
     <div className="relative">
-      {showIntro && <Intro onComplete={() => setShowIntro(false)} />}
+      {/* {showIntro && <Intro onComplete={() => setShowIntro(false)} />} */}
       {!showIntro && showNav && <Navs />}
       <section id="home" className="content">
         {!showIntro && showGrid && <Grids />}
       </section>
-      <section id="about" className="content">
-      <div className="text-white max-w-2xl p-8">
-          <h1 className="text-white text-4xl font-bold mb-4">Section 1</h1>
-          <About/>
+      <section id="about" className="content h-screen flex items-center justify-center bg-black text-white">
+        <div className="max-w-max p-8 w-full">
+        <h1 className="text-green-500 text-6xl justify-items-start font-bold mx-36 mb-8">.About Me</h1>
+          <About />
         </div>
-      </section>
+    </section>
+
       <section id="projects" className="content">
       <div className=" text-white max-w-2xl p-8">
           <h1 className="text-4xl font-bold mb-4">Section 2</h1>
