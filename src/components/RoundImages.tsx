@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 interface ImageWithRoundedCornersProps {
   src: string;
@@ -9,26 +9,26 @@ interface ImageWithRoundedCornersProps {
   margin?: string;
 }
 
-const ImageWithRoundedCorners: React.FC<ImageWithRoundedCornersProps> = ({ 
-  src, 
-  alt, 
-  width = '300px', 
-  height = '300px', 
-  position = 'relative',
-  margin = '0'
+const ImageWithRoundedCorners: React.FC<ImageWithRoundedCornersProps> = ({
+  src,
+  alt,
+  width = "300px",
+  height = "300px",
+  position = "relative",
+  margin = "0",
 }) => {
   return (
-    <img 
-      src={src} 
-      alt={alt} 
-      style={{ 
-        width, 
-        height, 
-        borderRadius: '15px', // Adjust border-radius as needed for rounded corners
-        objectFit: 'cover', // Ensure the image covers the entire area
+    <img
+      src={src}
+      alt={alt}
+      style={{
+        width,
+        height,
+        borderRadius: "15px", // Adjust border-radius as needed for rounded corners
+        objectFit: "cover", // Ensure the image covers the entire area
         margin,
-        boxShadow:  "0 4px 130px rgba(150, 163, 181, .19)" // Updated shadow as per your requirement
-      }} 
+        boxShadow: "0 4px 130px rgba(150, 163, 181, .15)", // Updated shadow as per your requirement
+      }}
     />
   );
 };
