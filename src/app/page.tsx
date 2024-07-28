@@ -7,6 +7,8 @@ import Hom from "../components/Home";
 import Navs from "../components/Navs";
 import Scene from "../components/Index";
 import About from "../components/About";
+import Prjs from "../components/Projects";
+import Contact from "../components/ContactMe";
 
 export default function Home() {
   const [showIntro, setShowIntro] = useState(true);
@@ -31,7 +33,7 @@ export default function Home() {
       {showIntro && <Intro onComplete={() => setShowIntro(false)} />}
       {!showIntro && showNav && <Navs />}
       
-      <section id="home" className="content border border-gray-700 rounded-3xl mt-0 md:mt-20 mx-4 md:mx-16 lg:mx-44 my-10 md:my-20 space-y-10 shadow-bs p-8">
+      <section id="home" className="content mt-0 md:mt-20 mx-4 md:mx-16 lg:mx-44 my-10 md:my-20 space-y-10 p-8">
         {!showIntro && showGrid && <Hom/>}
       </section>
 
@@ -40,17 +42,11 @@ export default function Home() {
       </section>
 
       <section id="projects" className="content mx-4 md:mx-16 lg:mx-44 my-10 md:my-20 space-y-10">
-        <div className="text-white max-w-2xl p-8">
-          <h1 className="text-4xl font-bold mb-4">Projects</h1>
-          {/* Add project content here */}
-        </div>
+        <Prjs/>
       </section>
 
-      <section id="contact" className="content mx-4 md:mx-16 lg:mx-44 my-10 md:my-20 space-y-10">
-        <div className="text-white max-w-2xl p-8">
-          <h1 className="text-4xl font-bold mb-4">Contact</h1>
-          {/* Add contact content here */}
-        </div>
+      <section id="contact" className="content mx-4 md:mx-16 lg:mx-44 my-10 md:my-28 space-y-10">
+        <Contact/>
       </section>
     </div>
   );

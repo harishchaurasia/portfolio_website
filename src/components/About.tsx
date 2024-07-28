@@ -34,7 +34,7 @@ const About: React.FC = () => {
       </div>
 
       <div className="grid grid-cols-1 mt-8 md:grid-cols-2 gap-4">
-        <div className="space-y-">
+        <div className="space-y-8">
           <h1 className="text-4xl font-bold text-[#cfb73b] my-8">.education</h1>
           <EducationCard 
             degreeType="Major" 
