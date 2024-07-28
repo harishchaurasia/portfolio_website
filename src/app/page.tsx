@@ -27,11 +27,13 @@ export default function Home() {
   }, [showIntro]);
 
   return (
-    <div className="relative">
+    <div className="relative my-2 py-4">
       {showIntro && <Intro onComplete={() => setShowIntro(false)} />}
       {!showIntro && showNav && <Navs />}
       <section id="home"
-        className="content border border-gray-700 rounded-3xl mt-36 md:mt-20 mx-36 md:mx-16 shadow-bs p-8">
+        // className="content border border-gray-700 rounded-3xl mt-0 md:mt-20 mx-36 md:mx-16 shadow-bs p-8">
+        className="content mt-0 md:mt-20 mx-36 md:mx-16 p-8">
+
         {!showIntro && showGrid && <Grids />}
       </section>
 
