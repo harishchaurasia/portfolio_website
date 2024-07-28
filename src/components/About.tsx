@@ -10,7 +10,7 @@ const About: React.FC = () => {
         .About Me
       </h1>
       <div className="flex flex-col md:flex-row border border-gray-800 rounded-3xl shadow-bs p-4 md:p-8 bg-transparent mb-16">
-        <div className="flex justify-center md:justify-start items-center mb-4 md:mb-0">
+        <div className="flex justify-center items-center mb-4 md:mb-0 md:w-1/3">
           <ImageWithRoundedCorners
             src="/harish_headshot_black.png"
             alt="Your Name"

@@ -1,3 +1,4 @@
+// src/components/Model.tsx
 import React, { useRef } from 'react';
 import { MeshTransmissionMaterial, useGLTF, Text } from "@react-three/drei";
 import { useFrame, useThree } from '@react-three/fiber';
@@ -7,10 +8,12 @@ export default function Model() {
   const { nodes } = useGLTF("/squareInfinity1_75.glb");
   const { viewport } = useThree();
   const torus = useRef(null);
-  
+
   useFrame(() => {
-    torus.current.rotation.x += 0.001;
-    // torus.current.rotation.y += 0.001;
+    if (torus.current) {
+      torus.current.rotation.x += 0.001;
+      // torus.current.rotation.y += 0.001;
+    }
   });
 
   const materialProps = useControls({
@@ -19,16 +22,15 @@ export default function Model() {
     transmission: { value: 1, min: 0, max: 1, step: 0.1 },
     ior: { value: 1.3, min: 0, max: 3, step: 0.1 },
     chromaticAberration: { value: 0.04, min: 0, max: 1 },
-    backside: { value: true },
+    backside: { value: false },
   });
 
   return (
     <group scale={viewport.width / 2.50}>
       <Text font={'/fonts/Recharge_bd.otf'} position={[0, 0, 0]} fontSize={0.18} color="white" anchorX="center" anchorY="middle">
-      {/* <Text font={'/fonts/Xirod.otf'} position={[0, 0, 0]} fontSize={0.14} color="white" anchorX="center" anchorY="middle"> */}
-      Hello World.
+        Hello World.
       </Text>
-      <mesh ref={torus} {...nodes.Infinity_loop}>
+      <mesh ref={torus} geometry={nodes.Infinity_loop.geometry}>
         <MeshTransmissionMaterial {...materialProps} />
       </mesh>
     </group>
