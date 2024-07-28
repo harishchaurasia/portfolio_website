@@ -9,6 +9,7 @@ import Scene from "../components/Index";
 import About from "../components/About";
 import Prjs from "../components/Projects";
 import Contact from "../components/ContactMe";
+import Footer from '../components/Footer';
 
 export default function Home() {
   const [showIntro, setShowIntro] = useState(true);
@@ -29,7 +30,7 @@ export default function Home() {
   }, [showIntro]);
 
   return (
-    <div className="relative my-2 py-4">
+    <div className="relative mt-2 py-4">
       {showIntro && <Intro onComplete={() => setShowIntro(false)} />}
       {!showIntro && showNav && <Navs />}
       
@@ -45,9 +46,10 @@ export default function Home() {
         <Prjs/>
       </section>
 
-      <section id="contact" className="content mx-4 md:mx-16 lg:mx-44 my-10 md:my-28 space-y-10">
+      <section id="contact" className="content mx-4 md:mx-16 lg:mx-44 mt-10 md:my-32 space-y-10">
         <Contact/>
       </section>
+      <Footer />
     </div>
   );
 }
