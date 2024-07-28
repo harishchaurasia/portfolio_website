@@ -14,11 +14,12 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       boxShadow: {
-        'bs': '0 4px 130px rgba(150, 163, 181, .13)',
+        'bs': '0 4px 130px rgba(150, 163, 181, .10)',
+        'ts': 'rgba(20, 21, 22, 0.592)',
       },
       fontFamily: {
         imperfect: ['ImPerfect23', 'sans-serif'],
-        cravend: ['Cravend', 'serif'],
+        acornB: ['AcornB', 'serif'],
         speedBeast: ['SpeedBeast', 'sans-serif'],
         bruce: ['BruceForeverRegular', 'serif'],
         aloe:['Aloevera', 'serif'],

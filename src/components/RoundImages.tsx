@@ -27,7 +27,7 @@ const ImageWithRoundedCorners: React.FC<ImageWithRoundedCornersProps> = ({
         borderRadius: "15px",
         objectFit: "cover", 
         margin,
-        boxShadow: "0 4px 130px rgba(150, 163, 181, .16)",
+        boxShadow: "0 4px 130px rgba(150, 163, 181, .05)",
       }}
     />
   );
