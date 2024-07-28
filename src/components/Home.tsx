@@ -8,7 +8,7 @@ const Scene = dynamic(() => import('./Index'), {
 
 const Grids: React.FC = () => {
   return (
-    <div className="grid-background flex flex-col items-center justify-center h-screen text-center bg-transparent p-12">
+    <div className="grid-background flex flex-col items-center justify-center h-screen text-center bg-transparent p-4">
       <h1 className="font-xirod font-black text-white text-center text-7xl text-gradient mb-4">
         Hi. I'm Harish.
       </h1>

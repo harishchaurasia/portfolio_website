@@ -19,11 +19,11 @@ export default function Model() {
     transmission: { value: 1, min: 0, max: 1, step: 0.1 },
     ior: { value: 1.3, min: 0, max: 3, step: 0.1 },
     chromaticAberration: { value: 0.04, min: 0, max: 1 },
-    backside: { value: false },
+    backside: { value: true },
   });
 
   return (
-    <group scale={viewport.width / 2.25}>
+    <group scale={viewport.width / 2.50}>
       <Text font={'/fonts/Recharge_bd.otf'} position={[0, 0, 0]} fontSize={0.18} color="white" anchorX="center" anchorY="middle">
       {/* <Text font={'/fonts/Xirod.otf'} position={[0, 0, 0]} fontSize={0.14} color="white" anchorX="center" anchorY="middle"> */}
       Hello World.

@@ -91,6 +91,13 @@ const About: React.FC = () => {
             description="Worked on multiple freelance projects involving web development and software solutions."
             logo="/asu_logo.png"
           />
+          <ExperienceCard 
+            title="Freelance Developer" 
+            companyName="Self-Employed" 
+            dateRange="2019 - 2021"
+            description="Worked on multiple freelance projects involving web development and software solutions."
+            logo="/asu_logo.png"
+          />
         </div>
       </div>
     </div>

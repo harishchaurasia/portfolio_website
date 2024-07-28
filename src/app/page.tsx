@@ -16,6 +16,7 @@ export default function Home() {
   const [showNav, setShowNav] = useState(false);
   const [showGrid, setShowGrid] = useState(false);
   const [showScene, setShowScene] = useState(false);
+  const [showSections, setShowSections] = useState(false);
 
   useEffect(() => {
     if (!showIntro) {
@@ -23,7 +24,8 @@ export default function Home() {
         setShowNav(true);
         setShowGrid(true);
         setShowScene(true);
-      }, 200); // Short delay after intro to show main content
+        setShowSections(true);
+      }, 200); 
 
       return () => clearTimeout(timer);
     }
@@ -39,17 +41,18 @@ export default function Home() {
       </section>
 
       <section id="about" className="content mx-4 md:mx-16 lg:mx-44 my-10 md:my-20 space-y-10">
-        <About />
+        {!showIntro && showSections && <About />}
       </section>
 
       <section id="projects" className="content mx-4 md:mx-16 lg:mx-44 my-10 md:my-20 space-y-10">
-        <Prjs/>
+        {!showIntro && showSections && <Prjs />}
       </section>
 
       <section id="contact" className="content mx-4 md:mx-16 lg:mx-44 mt-10 md:my-32 space-y-10">
-        <Contact/>
+        {!showIntro && showSections && <Contact />}
       </section>
-      <Footer />
+      
+      {!showIntro && showSections && <Footer />}
     </div>
   );
 }
