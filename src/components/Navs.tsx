@@ -8,26 +8,28 @@ const Nav: React.FC = () => {
     setActiveSection(section);
   };
 
+  const navbarHeight = 105;
+
   return (
     <nav className="fixed top-3 left-1/2 transform -translate-x-1/2 mt-1 p-4 border border-gray-800 rounded-full bg-[#1a1a1a] bg-opacity-85 text-slate-50 z-10">
       <ul className="flex items-center h-5 mx-0 space-x-8">
         <li className={`font-bruce font-regular text-xl py-1 px-4 rounded-full ${activeSection === 'home' ? 'bg-[#333333] bg-opacity-70' : 'bg-opacity-0'} hover:bg-opacity-70`}>
-          <Link to="home" smooth={true} duration={500} className="cursor-pointer" onSetActive={() => handleSetActive('home')}>
+          <Link to="home" smooth={true} duration={500} offset={-navbarHeight} className="cursor-pointer" onSetActive={() => handleSetActive('home')}>
             Home
           </Link>
         </li>
         <li className={`font-bruce font-regular text-xl py-2 px-4 rounded-full ${activeSection === 'about' ? 'bg-green-400 bg-opacity-70' : 'bg-opacity-0'} hover:bg-opacity-70`}>
-          <Link to="about" smooth={true} duration={500} className="cursor-pointer" onSetActive={() => handleSetActive('about')}>
+          <Link to="about" smooth={true} duration={500} offset={-navbarHeight} className="cursor-pointer" onSetActive={() => handleSetActive('about')}>
             About
           </Link>
         </li>
         <li className={`font-bruce font-regular text-xl py-2 px-4 rounded-full ${activeSection === 'projects' ? 'bg-green-400 bg-opacity-70' : 'bg-opacity-0'} hover:bg-opacity-70`}>
-          <Link to="projects" smooth={true} duration={500} className="cursor-pointer" onSetActive={() => handleSetActive('projects')}>
+          <Link to="projects" smooth={true} duration={500} offset={-navbarHeight} className="cursor-pointer" onSetActive={() => handleSetActive('projects')}>
             Projects
           </Link>
         </li>
         <li className={`font-bruce font-regular text-xl py-2 px-4 rounded-full ${activeSection === 'contact' ? 'bg-green-400 bg-opacity-70' : 'bg-opacity-0'} hover:bg-opacity-70`}>
-          <Link to="contact" smooth={true} duration={500} className="cursor-pointer" onSetActive={() => handleSetActive('contact')}>
+          <Link to="contact" smooth={true} duration={500} offset={-navbarHeight} className="cursor-pointer" onSetActive={() => handleSetActive('contact')}>
             Contact
           </Link>
         </li>

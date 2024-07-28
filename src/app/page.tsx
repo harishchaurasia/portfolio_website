@@ -3,7 +3,7 @@
 
 import React, { useState, useEffect } from "react";
 import Intro from "../components/Intro";
-import Grids from "../components/Grids";
+import Hom from "../components/Home";
 import Navs from "../components/Navs";
 import Scene from "../components/Index";
 import About from "../components/About";
@@ -30,33 +30,26 @@ export default function Home() {
     <div className="relative my-2 py-4">
       {showIntro && <Intro onComplete={() => setShowIntro(false)} />}
       {!showIntro && showNav && <Navs />}
-      <section id="home"
-        // className="content border border-gray-700 rounded-3xl mt-0 md:mt-20 mx-36 md:mx-16 shadow-bs p-8">
-        className="content mt-0 md:mt-20 mx-36 md:mx-16 p-8">
-
-        {!showIntro && showGrid && <Grids />}
+      
+      <section id="home" className="content border border-gray-700 rounded-3xl mt-0 md:mt-20 mx-4 md:mx-16 lg:mx-44 my-10 md:my-20 space-y-10 shadow-bs p-8">
+        {!showIntro && showGrid && <Hom/>}
       </section>
 
-      <section
-        id="about"
-        className="content h-screen flex items-center justify-center bg-black text-white"
-      >
-        <div className="max-w-max p-8 w-full rounded-lg">
-          <h1 className="text-green-500 text-6xl font-bold text-center md:text-left mx-0 md:mx-36 mb-8">
-            .About Me
-          </h1>
-          <About />
-        </div>
+      <section id="about" className="content mx-4 md:mx-16 lg:mx-44 my-10 md:my-20 space-y-10">
+        <About />
       </section>
 
-      <section id="projects" className="content">
-        <div className=" text-white max-w-2xl p-8">
-          <h1 className="text-4xl font-bold mb-4"></h1>
-        </div>
-      </section>
-      <section id="contact" className="content">
+      <section id="projects" className="content mx-4 md:mx-16 lg:mx-44 my-10 md:my-20 space-y-10">
         <div className="text-white max-w-2xl p-8">
-          <h1 className="text-4xl font-bold mb-4"></h1>
+          <h1 className="text-4xl font-bold mb-4">Projects</h1>
+          {/* Add project content here */}
+        </div>
+      </section>
+
+      <section id="contact" className="content mx-4 md:mx-16 lg:mx-44 my-10 md:my-20 space-y-10">
+        <div className="text-white max-w-2xl p-8">
+          <h1 className="text-4xl font-bold mb-4">Contact</h1>
+          {/* Add contact content here */}
         </div>
       </section>
     </div>

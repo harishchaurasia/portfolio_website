@@ -2,7 +2,7 @@
 import React from 'react';
 import dynamic from 'next/dynamic';
 
-const Scene = dynamic(() => import('../components/Index'), {
+const Scene = dynamic(() => import('./Index'), {
   ssr: false,
 });
 
@@ -13,11 +13,6 @@ const Grids: React.FC = () => {
         Hi. I'm Harish.
       </h1>
       <h1 className="font-recharge text-white text-6xl text-gradient">A Developer.</h1>  
-      <div className="flex">
-        {/* <p className="font-bruce mt-3 text-2xl text-white">And,</p> */}
-        {/* <p className="font-bruce mt-3 text-2xl text-black">..</p> */}
-        {/* <p className="font-bruce mt-3 text-2xl text-red-900">'I love building shit.'</p> */}
-      </div>
       <Scene />
     </div>
   );

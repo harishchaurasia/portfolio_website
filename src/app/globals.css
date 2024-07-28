@@ -72,6 +72,16 @@ body {
 }
 
 
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-margin-top: 80px; /* Adjust this value to the height of your navbar */
+}
+
+
+
 /* .grid-background {
   background-image: linear-gradient(#363636 1px, transparent 0), 
                     linear-gradient(90deg, #363636 1px, transparent 0);
