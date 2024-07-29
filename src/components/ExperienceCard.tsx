@@ -17,7 +17,7 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({
 }) => {
   return (
     <div className="border border-gray-800 rounded-3xl shadow-bs p-4 flex flex-col md:flex-row items-start bg-transparent text-white mb-4">
-      <img src={logo} alt={`${companyName} logo`} className="w-20 h-20 mr-4" />
+      <img src={logo} alt={`${companyName} logo`} className="w-20 h-20 mr-4 rounded-full" />
       <div className="flex-1">
         <h2 className="text-lg font-bold">{title}</h2>
         <p className="text-sm text-gray-400">{companyName}</p>

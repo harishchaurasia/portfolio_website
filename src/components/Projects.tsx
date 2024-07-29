@@ -5,7 +5,7 @@ import ProjectCard from './ProjectsCard';
 const Projects: React.FC = () => {
   return (
     <div className="mx-4 md:mx-16 lg:mx-44 my-10 md:my-20 space-y-10">
-      <h1 className="text-[#30c555] text-6xl font-bold text-center md:text-left mx-0 md:mx-0 mt-56 mb-16">
+      <h1 className="text-[#30c555] text-6xl font-acorn font-bold text-center md:text-left mx-0 md:mx-0 mt-56 mb-16">
         .Projects
       </h1>
         <ProjectCard 

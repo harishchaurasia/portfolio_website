@@ -9,7 +9,7 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 const ContactMe: React.FC = () => {
   return (
     <div className=" py-4 mx-4 md:mx-16 lg:mx-44 my-56 md:my-20 space-y-10">
-      <h1 className="text-[#30c555] text-6xl font-bold text-left mb-16">
+      <h1 className="text-[#30c555] text-6xl font-acorn font-bold text-left mb-16">
         .Contact Me
       </h1>
       <div className="flex flex-col px-10 md:flex-row items-center justify-center">
@@ -36,7 +36,7 @@ const ContactMe: React.FC = () => {
             </a>
           </div>
         </div>
-        <div className="flex-shrink-0 mt-10 md:mt-0">
+        <div className="border border-gray-800 rounded-3xl flex-shrink-0 mt-10 md:mt-0 shadow-ts">
         <ImageWithRoundedCorners
             src="/harish02.png"
             alt="Your Name"

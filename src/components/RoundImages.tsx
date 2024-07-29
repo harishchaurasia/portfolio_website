@@ -15,7 +15,7 @@ const ImageWithRoundedCorners: React.FC<ImageWithRoundedCornersProps> = ({
   width = "300px",
   height = "300px",
   position = "relative",
-  margin = "0",
+  margin = "1px",
 }) => {
   return (
     <img
@@ -24,7 +24,7 @@ const ImageWithRoundedCorners: React.FC<ImageWithRoundedCornersProps> = ({
       style={{
         width,
         height,
-        borderRadius: "15px",
+        borderRadius: "24px",
         objectFit: "cover", 
         margin,
         boxShadow: "0 4px 130px rgba(150, 163, 181, .05)",

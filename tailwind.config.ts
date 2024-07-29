@@ -9,7 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       screens: {
-        '2xl': '1515px', // custom breakpoint at 1450px
+        'xl': '1515px', // custom breakpoint at 1450px
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
@@ -18,7 +18,7 @@ const config: Config = {
       },
       boxShadow: {
         'bs': '0 4px 130px rgba(150, 163, 181, .10)',
-        'ts': 'rgba(20, 21, 22, 0.592)',
+        'ts': '0 4px 130px rgba(150, 163, 181, .18)',
       },
       fontFamily: {
         imperfect: ['ImPerfect23', 'sans-serif'],
