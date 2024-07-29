@@ -30,7 +30,7 @@ const EducationCard: React.FC<EducationCardProps> = ({
         <p className="text-sm text-gray-400">{collegeName}</p>
         <p className="text-sm text-gray-400">{universityName}</p>
         <p className="text-sm text-gray-400">{degreeDateRange}</p>
-        <p className="mt-2">{description}</p>
+        <p className="mt-2 text-justify">{description}</p>
       </div>
     </div>
   );

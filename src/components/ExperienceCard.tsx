@@ -22,7 +22,7 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({
         <h2 className="text-lg font-bold">{title}</h2>
         <p className="text-sm text-gray-400">{companyName}</p>
         <p className="text-sm text-gray-400">{dateRange}</p>
-        <p className="mt-2">{description}</p>
+        <p className="mt-2 text-justify">{description}</p>
       </div>
     </div>
   );

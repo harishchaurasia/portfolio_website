@@ -2,7 +2,7 @@
 import React from 'react';
 import ImageWithRoundedCorners from "./RoundImages";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faInstagram, faLinkedin, faGithub, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faInstagram, faLinkedin, faGithub, faXTwitter } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 
@@ -61,7 +61,7 @@ const ContactMe: React.FC = () => {
               <FontAwesomeIcon icon={faInstagram} className="w-10 h-10 rounded-lg" style={{ color: '#999999' }} />
             </a>
             <a href="https://twitter.com/harishchaurasia" target="_blank" rel="noopener noreferrer">
-              <FontAwesomeIcon icon={faTwitter} className="w-10 h-10 rounded-lg" style={{ color: '#999999' }} />
+              <FontAwesomeIcon icon={faXTwitter} className="w-10 h-10 rounded-lg" style={{ color: '#999999' }} />
             </a>
         </div>
       </div>
