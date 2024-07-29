@@ -7,6 +7,7 @@ interface ImageWithRoundedCornersProps {
   height?: string;
   position?: string;
   margin?: string;
+  className?: string;
 }
 
 const ImageWithRoundedCorners: React.FC<ImageWithRoundedCornersProps> = ({

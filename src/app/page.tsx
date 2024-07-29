@@ -48,7 +48,7 @@ export default function Home() {
         {!showIntro && showSections && <Prjs />}
       </section>
 
-      <section id="contact" className="content mx-4 md:mx-16 lg:mx-44 mt-10 md:my-32 space-y-10">
+      <section id="contact" className="content mx-4 md:mx-16 lg:mx-44 mt-16 md:my-32 space-y-10">
         {!showIntro && showSections && <Contact />}
       </section>
       

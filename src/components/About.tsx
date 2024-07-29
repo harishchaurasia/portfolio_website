@@ -6,28 +6,32 @@ import ExperienceCard from "./ExperienceCard";
 const About: React.FC = () => {
   return (
     <div className="mx-4 md:mx-16 lg:mx-44 my-10 md:my-20 space-y-10">
-      <h1 className="text-[#30c555] text-6xl font-acorn font-bold text-center md:text-left mx-0 md:mx-0 mb-16">
+      <h1 className="text-[#30c555] text-6xl font-acorn font-bold text-left mb-16">
         .About Me
       </h1>
-      <div className="flex flex-col xl:flex-row border border-gray-800 rounded-3xl shadow-bs p-4 md:p-8 bg-transparent mb-16">
-        <div className="flex justify-center items-center mb-4 xl:mb-0 xl:w-1/3">
-          <img
-            src="/harish_headshot_black.png"
-            alt="Harish Chaurasia"
-            className="rounded-lg w-full max-w-xs md:max-w-sm xl:max-w-none xl:w-80 h-auto"
-          />
-        </div>
-        <div className="flex-1 xl:ml-6 p-4 md:p-8 text-white">
-          <p>
-            Hi there 👋, I'm Harish Chaurasia, a Computer Science major with a passion for Development, Artificial Intelligence, and Machine Learning. 
-            I am pursuing minors in Music and Entrepreneurship and a Certification in Game Development. 
-            Currently, I am a Software and Games Developer at the School of Manufacturing Systems and Networks, working on a project with Los Alamos National Laboratory. 
-            As President of Devil's DJing Club, I organize and manage music events at ASU. 
-            Additionally, I have held roles such as Outreach Officer at Google Developer Student Club and Researcher at ASU's Laboratory for Energy And Power Solutions. 
-            Let's collaborate to turn challenges into innovative solutions.
-          </p>
-        </div>
-      </div>
+      <div className="flex flex-col xl:flex-row p-4 md:p-8 bg-transparent mb-16">
+  <div className="border border-gray-800 rounded-3xl flex-shrink-0 mt-10 md:mt-0 shadow-ts flex justify-center items-center overflow-hidden" style={{ width: '350px', height: '350px' }}>
+    <ImageWithRoundedCorners
+      src="/harish_headshot_black.png"
+      alt="Harish Chaurasia"
+      width="350px"
+      height="350px"
+      className="object-cover w-full h-full"
+    />
+  </div>
+
+  <div className="flex-1 xl:ml-6 p-4 md:p-8 text-white text-center xl:text-left">
+    <p className="text-lg text-justify md:text-md xl:text-lg leading-relaxed">
+      Hi there 👋, I'm Harish Chaurasia, a Computer Science major with a passion for Development, Artificial Intelligence, and Machine Learning. 
+      I am pursuing minors in Music and Entrepreneurship and a Certification in Game Development. 
+      Currently, I am a Software and Games Developer at the School of Manufacturing Systems and Networks, working on a project with Los Alamos National Laboratory. 
+      As President of Devil's DJing Club, I organized and managed music events at ASU. 
+      Additionally, I have held roles such as Outreach Officer at Google Developer Student Club and Researcher at ASU's Laboratory for Energy And Power Solutions. 
+      Let's collaborate to turn challenges into innovative solutions.
+    </p>
+  </div>
+</div>
+
 
       <div className="md:grid-cols-2 gap-4">
         <div className="mt-40 space-y-8">
@@ -39,7 +43,7 @@ const About: React.FC = () => {
             collegeName="School of Computing and Augmented Intelligence"
             universityName="Arizona State University"
             degreeDateRange="2022 - 2025"
-            description="I have a concentration in Web and Software development with a strong foundation in Data Structures and Algorithms. Currently, I am learning iOS Development, React Native, and AI."
+            description="With my major in Computer-Science, I am concentrating on Web and Software development, building a strong foundation in Data Structures and Algorithms. Currently learning iOS Development, React Native, and AI."
             logo="/asu_logo.png"
           />
           <EducationCard 
@@ -49,7 +53,7 @@ const About: React.FC = () => {
             collegeName="School of Music, Dance and Theatre"
             universityName="Arizona State University"
             degreeDateRange="2023 - 2025"
-            description="I am studying advanced music production and stage technology, with a focus on sound design. I have over 4 years of experience in music production and 2 years in DJing."
+            description="Studying advanced music production and stage technology, with a focus on sound design. Over 4 years of experience in music production and 2 years in DJing."
             logo="/herberger.png"
           />
           <EducationCard 
@@ -59,7 +63,7 @@ const About: React.FC = () => {
             collegeName="School of Computing and Augmented Intelligence"
             universityName="Arizona State University"
             degreeDateRange="2022 - 2025"
-            description="I am learning game design and development, with experience in Unity and Unreal Engine. I am proficient in HLSL and the MonoGame framework by Microsoft, and currently learning 3D design and narrative."
+            description="Learning game design and development, proficient in Unity and Unreal Engine, experienced in HLSL and MonoGame framework by Microsoft, currently learning 3D design and narrative."
             logo="/ira.png"
           />
         </div>
@@ -70,35 +74,35 @@ const About: React.FC = () => {
             title="Software & Games Developer" 
             companyName="School of Manufacturing Systems and Networks" 
             dateRange="Dec 2023 - Present"
-            description="I develop optimized C++ code for game programming, focusing on enhancing performance and user experience. My work includes innovating in sound design and creating engaging game levels, contributing to immersive gaming experiences."
+            description="Developed and optimized Blueprints & C++ code for game programming, focusing on performance and user experience. Innovated in sound design and created engaging game levels, contributing to immersive gaming experiences."
             logo="/msn.png"
           />
           <ExperienceCard 
-            title="Researcher & Workforce Development Specialist" 
+            title="AR/VR Developer & Workforce Development Researcher" 
             companyName="ASU Laboratory for Energy And Power Solutions" 
             dateRange="Jan 2023 - Oct 2023"
-            description="I developed AR/VR training modules for Microgrid and Electrical subsystems, assisted in content development and hardware integration, and analyzed data for sponsored projects to improve workforce training."
+            description="Developed AR/VR training modules for Microgrid and Electrical subsystems, assisted in content development and hardware integration, and analyzed data for sponsored projects to improve workforce training."
             logo="/leaps.png"
           />
           <ExperienceCard 
             title="Tech & Design Lead" 
             companyName="EPICS at ASU" 
             dateRange="Aug 2022 - Dec 2022"
-            description="Led the Team Shonto Solar project using Scrum Project Management. Designed the electronic interface and backend, creating efficient products to maximize utility with minimal resource use."
+            description="Led the Team Shonto Solar project using Project Management. Designed the electronic interface and backend, creating efficient products to maximize utility with minimal resource use."
             logo="/epics.png"
           />
           <ExperienceCard 
             title="Core Officer" 
             companyName="Google Developer Student Club at Arizona State University" 
             dateRange="Oct 2022 - Present"
-            description="I facilitate events and outreach activities, engaging students in tech initiatives and promoting the Google Developer Student Club."
+            description="Planned & Facilitated events and outreach activities, engaged students in tech initiatives, and promoted the Google Developer Student Club with a mission to teach basic tech skills."
             logo="/asu_dsc.png"
           />
           <ExperienceCard 
             title="President" 
             companyName="Devil's DJing Club" 
             dateRange="Apr 2023 - Present"
-            description="I organize and manage music events, collaborate with DJs and musicians, manage social media, and train members to enhance their technical skills and creativity."
+            description="Organized and managed music workshops & events, collaborated with DJs and musicians, managed social media, and trained members to enhance their technical skills and creativity in music."
             logo="/djing.png"
           />
         </div>
