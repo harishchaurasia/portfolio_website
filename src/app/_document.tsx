@@ -6,7 +6,8 @@ export default function Document() {
     <Html>
       <Head>
       <link rel="icon" href="/harish02.png" type="image/png" />
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r122/three.min.js"></script>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r122/three.min.js"></script>
       </Head>
       <body>
         <Main />

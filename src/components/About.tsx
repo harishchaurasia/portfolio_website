@@ -6,7 +6,7 @@ import ExperienceCard from "./ExperienceCard";
 const About: React.FC = () => {
   return (
     <div className="mx-4 md:mx-16 lg:mx-44 my-10 md:my-20 space-y-10">
-      <h1 className="text-[#30c555] text-6xl font-acorn font-bold text-left mb-16">
+      <h1 className="text-[#30c555] text-6xl font-acorn font-bold text-left md:text-center mb-16">
         .About Me
       </h1>
       <div className="flex flex-col xl:flex-row p-4 md:p-8 bg-transparent mb-16">
