@@ -8,24 +8,42 @@ const Projects: React.FC = () => {
       <h1 className="text-[#30c555] text-6xl font-acorn font-bold text-center md:text-left mx-0 md:mx-0 mt-56 mb-16">
         .Projects
       </h1>
-        <ProjectCard 
-          title="Mini Links"
-          description="Leveraged Flask and Google Maps to create an innovative full-stack application that shortens URLs by 98% and integrated SQLite3 Database to manage over 1.6 million links, enabling easier link sharing for end users."
-          logo="/path/to/mini-links-logo.png"
-          skills={['flask', 'googlemaps', 'sqlite']}
-        />
-        <ProjectCard 
-          title="Health Bridge"
-          description="Designed and developed a dynamic, interactive COVID-19 Symptom Survey app using 20-point diagnosis. Integrated Google Maps API to redirect users to nearby health care centers based on geo-location and suggest precautions for staying safe from virus."
-          logo="/path/to/health-bridge-logo.png"
-          skills={['flask', 'googlemaps', 'health']}
-        />
-        <ProjectCard 
-          title="Zendesk Ticket Viewer"
-          description="Designed and developed a static Zendesk Ticket Viewer web application as part of Zendesk's Online Assessment (OA), using Python and Flask. The application fetches and displays company tickets through the Zendesk API, offering additional details upon request."
-          logo="/path/to/zendesk-ticket-viewer-logo.png"
-          skills={['python', 'flask', 'zendesk']}
-        />
+      <ProjectCard 
+        title="Interactive 3D Portfolio"
+        description="Created an interactive 3D portfolio using Three.js and @react-three/fiber, showcasing various projects with immersive 3D visualizations and animations."
+        skills={['Three.js', '@react-three/fiber', 'React', 'TailwindCSS', 'Vercel']}
+        mainSkill="react"
+        skillIcons={['threejs', 'nextjs', 'tailwind', 'vercel']}
+      />
+      <ProjectCard 
+        title="VNC Public School Website"
+        description="Developed a responsive and user-friendly website for VNC Public School using Next.js. Implemented a modern and clean design with TailwindCSS, ensuring a seamless user experience across devices."
+        skills={['Nextjs', 'React', 'TailwindCSS', 'Vercel']}
+        mainSkill="react"
+        skillIcons={['nextjs', 'figma', 'tailwind', 'vercel']}
+      />
+      <ProjectCard 
+        title="SkyWand"
+        description="Designed the app in Figma, focusing on user experience and visual appeal in line with Apple’s Design Policies. Implemented advanced features using SwiftUI and Swift, integrating WeatherAPI for real-time weather data."
+        skills={['Figma', 'SwiftUI', 'Swift', 'WeatherAPI', 'Vercel']}
+        mainSkill="Swift"
+        skillIcons={['figma']}
+      />
+      <ProjectCard 
+        title="Susinator"
+        description="Co-developed a user-friendly frontend with Nextjs and ChakraUI for a contract document analysis web app. Utilized Amazon AWS, DynamoDB, and RapidAPI for backend file handling and contract simplification."
+        skills={['Nextjs', 'ChakraUI', 'AWS', 'DynamoDB', 'RapidAPI']}
+        mainSkill="Nextjs"
+        skillIcons={['nextjs', 'aws', 'dynamodb']}
+      />
+      <ProjectCard 
+        title="Dodge Apocalypto"
+        description="Collaborated with the team to design game levels and implement functionalities using C# Scripts. Developed a 3D Open-World Game with Unity and NavMesh, winning the best game award in a class of 50 teams."
+        skills={['C#', 'Unity', 'NavMesh']}
+        mainSkill="Unity"
+        skillIcons={['cs', 'unity']}
+      />
+
     </div>
   );
 };
