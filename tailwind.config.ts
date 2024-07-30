@@ -9,7 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       screens: {
-        'xl': '1515px', // custom breakpoint at 1450px
+        'xl': '1515px', // custom breakpoint at 1515px
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
@@ -29,6 +29,21 @@ const config: Config = {
         xirod:['Xirod', 'serif'],
         recharge:['Recharge_bd', 'serif'],
         acorn:['Acorn', 'serif'],
+      },
+      backdropBlur: {
+        'none': '0',
+        'sm': '4px',
+        'DEFAULT': '8px',
+        'md': '12px',
+        'lg': '16px',
+        'xl': '24px',
+        '2xl': '40px',
+        '3xl': '64px',
+      },
+      opacity: {
+        '10': '0.1',
+        '20': '0.2',
+        '95': '0.95',
       },
     },
   },

@@ -10,28 +10,27 @@ const About: React.FC = () => {
         .About Me
       </h1>
       <div className="flex flex-col xl:flex-row p-4 md:p-8 bg-transparent mb-16">
-  <div className="border border-gray-800 rounded-3xl flex-shrink-0 mt-10 md:mt-0 shadow-ts flex justify-center items-center overflow-hidden" style={{ width: '350px', height: '350px' }}>
-    <ImageWithRoundedCorners
-      src="/harish_headshot_black.png"
-      alt="Harish Chaurasia"
-      width="350px"
-      height="350px"
-      className="object-cover w-full h-full"
-    />
-  </div>
+        <div className="border border-gray-800 rounded-3xl flex-shrink-0 mt-10 md:mt-0 shadow-ts flex justify-center items-center overflow-hidden" style={{ width: '350px', height: '350px' }}>
+          <ImageWithRoundedCorners
+            src="/harish_headshot_black.png"
+            alt="Harish Chaurasia"
+            width="350px"
+            height="350px"
+            className="object-cover w-full h-full"
+          />
+        </div>
 
-  <div className="flex-1 xl:ml-6 p-4 md:p-8 text-white text-center xl:text-left">
-    <p className="text-lg text-justify md:text-md xl:text-lg leading-relaxed">
-      Hi there 👋, I'm Harish Chaurasia, a Computer Science major with a passion for Development, Artificial Intelligence, and Machine Learning. 
-      I am pursuing minors in Music and Entrepreneurship and a Certification in Game Development. 
-      Currently, I am a Software and Games Developer at the School of Manufacturing Systems and Networks, working on a project with Los Alamos National Laboratory. 
-      As President of Devil's DJing Club, I organized and managed music events at ASU. 
-      Additionally, I have held roles such as Outreach Officer at Google Developer Student Club and Researcher at ASU's Laboratory for Energy And Power Solutions. 
-      Let's collaborate to turn challenges into innovative solutions.
-    </p>
-  </div>
-</div>
-
+        <div className="flex-1 xl:ml-6 p-4 md:p-8 text-white text-center xl:text-left border border-gray-900 bg-black-800 bg-opacity-50 backdrop-blur-sm rounded-3xl">
+          <p className="text-lg text-justify md:text-md xl:text-lg leading-relaxed">
+            Hi there 👋, I'm Harish Chaurasia, a Computer Science major with a passion for Development, Artificial Intelligence, and Machine Learning. 
+            I am pursuing minors in Music and Entrepreneurship and a Certification in Game Development. 
+            Currently, I am a Software and Games Developer at the School of Manufacturing Systems and Networks, working on a project with Los Alamos National Laboratory. 
+            As President of Devil's DJing Club, I organized and managed music events at ASU. 
+            Additionally, I have held roles such as Outreach Officer at Google Developer Student Club and Researcher at ASU's Laboratory for Energy And Power Solutions. 
+            Let's collaborate to turn challenges into innovative solutions.
+          </p>
+        </div>
+      </div>
 
       <div className="md:grid-cols-2 gap-4">
         <div className="mt-40 space-y-8">
@@ -45,6 +44,7 @@ const About: React.FC = () => {
             degreeDateRange="2022 - 2025"
             description="With my major in Computer-Science, I am concentrating on Web and Software development, building a strong foundation in Data Structures and Algorithms. Currently learning iOS Development, React Native, and AI."
             logo="/asu_logo.png"
+            className="bg-gray-800 bg-opacity-50 backdrop-blur-lg rounded-3xl"
           />
           <EducationCard 
             degreeType="Minor" 
@@ -55,6 +55,7 @@ const About: React.FC = () => {
             degreeDateRange="2023 - 2025"
             description="Studying advanced music production and stage technology, with a focus on sound design. Over 4 years of experience in music production and 2 years in DJing."
             logo="/herberger.png"
+            className="bg-gray-800 bg-opacity-50 backdrop-blur-lg rounded-3xl"
           />
           <EducationCard 
             degreeType="Certification" 
@@ -65,6 +66,7 @@ const About: React.FC = () => {
             degreeDateRange="2022 - 2025"
             description="Learning game design and development, proficient in Unity and Unreal Engine, experienced in HLSL and MonoGame framework by Microsoft, currently learning 3D design and narrative."
             logo="/ira.png"
+            className="bg-gray-800 bg-opacity-50 backdrop-blur-lg rounded-3xl"
           />
         </div>
         
@@ -76,6 +78,7 @@ const About: React.FC = () => {
             dateRange="Dec 2023 - Present"
             description="Developed and optimized Blueprints & C++ code for game programming, focusing on performance and user experience. Innovated in sound design and created engaging game levels, contributing to immersive gaming experiences."
             logo="/msn.png"
+            className="bg-gray-800 bg-opacity-50 backdrop-blur-lg rounded-3xl"
           />
           <ExperienceCard 
             title="AR/VR Developer & Workforce Development Researcher" 
@@ -83,6 +86,7 @@ const About: React.FC = () => {
             dateRange="Jan 2023 - Oct 2023"
             description="Developed AR/VR training modules for Microgrid and Electrical subsystems, assisted in content development and hardware integration, and analyzed data for sponsored projects to improve workforce training."
             logo="/leaps.png"
+            className="bg-gray-800 bg-opacity-50 backdrop-blur-lg rounded-3xl"
           />
           <ExperienceCard 
             title="Tech & Design Lead" 
@@ -90,6 +94,7 @@ const About: React.FC = () => {
             dateRange="Aug 2022 - Dec 2022"
             description="Led the Team Shonto Solar project using Project Management. Designed the electronic interface and backend, creating efficient products to maximize utility with minimal resource use."
             logo="/epics.png"
+            className="bg-gray-800 bg-opacity-50 backdrop-blur-lg rounded-3xl"
           />
           <ExperienceCard 
             title="Core Officer" 
@@ -97,6 +102,7 @@ const About: React.FC = () => {
             dateRange="Oct 2022 - Present"
             description="Planned & Facilitated events and outreach activities, engaged students in tech initiatives, and promoted the Google Developer Student Club with a mission to teach basic tech skills."
             logo="/asu_dsc.png"
+            className="bg-gray-800 bg-opacity-50 backdrop-blur-lg rounded-3xl"
           />
           <ExperienceCard 
             title="President" 
@@ -104,6 +110,7 @@ const About: React.FC = () => {
             dateRange="Apr 2023 - Present"
             description="Organized and managed music workshops & events, collaborated with DJs and musicians, managed social media, and trained members to enhance their technical skills and creativity in music."
             logo="/djing.png"
+            className="bg-gray-800 bg-opacity-50 backdrop-blur-lg rounded-3xl"
           />
         </div>
       </div>
