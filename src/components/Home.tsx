@@ -9,7 +9,7 @@ const Scene = dynamic(() => import('../components/Index'), {
 const Grids: React.FC = () => {
   return (
     <div className="grid-background flex flex-col items-center justify-center h-screen text-center bg-transparent p-4">
-      <div className='border border-gray-900 rounded-3xl shadow-bs bg-opacity-90 bg-black-800 bg-opacity-50 backdrop-blur-sm'>
+      <div className='border border-gray-900 rounded-3xl shadow-bs bg-opacity-90 bg-black-800 bg-opacity-50 backdrop-blur-lg'>
         <h1 className= "font-xirod mt-4 mx-8 font-black text-white text-center text-7xl text-gradient mb-4">
           Hi. I'm Harish.
         </h1>

@@ -23,7 +23,7 @@ const EducationCard: React.FC<EducationCardProps> = ({
   logo
 }) => {
   return (
-    <div className="border border-gray-800 rounded-3xl shadow-bs p-4 flex flex-col md:flex-row items-start bg-black-800 bg-opacity-50 backdrop-blur-sm text-white mb-4">
+    <div className="border border-gray-800 rounded-3xl shadow-bs p-4 flex flex-col md:flex-row items-start bg-black-800 bg-opacity-50 backdrop-blur-lg text-white mb-4">
       <img src={logo} alt={`${degreeType} logo`} className="w-20 h-20 mr-4" />
       <div className="flex-1">
         <h2 className="text-lg font-bold">{degreeName}</h2>
