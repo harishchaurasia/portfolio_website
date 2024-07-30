@@ -71,7 +71,7 @@ const About: React.FC = () => {
         </div>
         
         <div className="mt-40 space-y-8">
-          <h1 className="text-4xl font-acorn font-bold text-[#cfb73b] my-8">.experience</h1>
+          <h1 className="text-4xl font-acorn font-bold text-[#cfb73b] my-8">.experiences</h1>
           <ExperienceCard 
             title="Software & Games Developer" 
             companyName="School of Manufacturing Systems and Networks" 

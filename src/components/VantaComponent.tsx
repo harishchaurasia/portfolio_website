@@ -27,7 +27,7 @@ const VantaComponent = () => {
               gyroControls: true,
               minHeight: 200.0,
               minWidth: 200.0,
-              quantity: 4,
+              quantity: 5,
               scale: 0.5,
               scaleMobile: 0.5,
               backgroundColor: 0x0, // Change to desired background color
