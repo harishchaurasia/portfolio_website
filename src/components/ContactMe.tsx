@@ -49,7 +49,7 @@ const ContactMe: React.FC = () => {
         </div>
       </div>
       <div className="mt-8 justify-center text-center">
-        <div className="mt-24 flex justify-center space-x-6 border border-gray-900 bg-black-800 bg-opacity-50 backdrop-blur-lg rounded-full p-3 mx-auto max-w-fit">
+        <div className="mt-24 flex justify-center  space-x-6 border border-gray-900 bg-black-800 bg-opacity-50 backdrop-blur-lg rounded-full p-3 mx-auto max-w-fit">
           <a href="mailto:harishchaurasia143@gmail.com" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faEnvelope} className="w-10 h-10 rounded-lg" style={{ color: '#999999' }} />
           </a>

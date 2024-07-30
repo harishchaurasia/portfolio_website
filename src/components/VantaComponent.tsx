@@ -34,10 +34,10 @@ const VantaComponent = () => {
               color1: 0xff0000, // Change to desired primary bird color
               color2: 0x30B99D, // Change to desired secondary bird color
               birdSize: 0.5, // Change to desired bird size
-              speedLimit: 1.5, // Change to desired speed
-              separation: 75.0, // Change to desired separation
+              speedLimit: 0.5, // Change to desired speed
+              separation: 50.0, // Change to desired separation
               alignment: 50.0, // Change to desired alignment
-              cohesion: 100.0, // Change to desired cohesion
+              cohesion: 50.0, // Change to desired cohesion
             });
           }
         };
