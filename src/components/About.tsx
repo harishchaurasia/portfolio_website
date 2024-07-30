@@ -22,12 +22,12 @@ const About: React.FC = () => {
 
         <div className="flex-1 xl:ml-6 p-4 md:p-8 text-white text-center xl:text-left border border-gray-900 bg-black-800 bg-opacity-50 backdrop-blur-lg rounded-3xl">
           <p className="text-lg font-sans text-left md:text-md xl:text-lg leading-relaxed">
-            Hi there 👋, I'm Harish Chaurasia, a Computer Science major with a passion for Development, Artificial Intelligence, and Machine Learning. 
-            I am pursuing minors in Music and Entrepreneurship and a Certification in Game Development. 
-            Currently, I am a Software and Games Developer at the School of Manufacturing Systems and Networks, working on a project with Los Alamos National Laboratory. 
-            As President of Devil's DJing Club, I organized and managed music events at ASU. 
-            Additionally, I have held roles such as Outreach Officer at Google Developer Student Club and Researcher at ASU's Laboratory for Energy And Power Solutions. 
-            Let's collaborate to turn challenges into innovative solutions.
+          Hi there 👋, I'm Harish Chaurasia, a Computer Science major passionate about Development, Artificial Intelligence, and Machine Learning.
+          I'm pursuing minors in Music and Entrepreneurship, and a Certification in Game Development. This blend of technical and creative skills 
+          enhances my problem-solving abilities. As a Software and Games Developer at the School of Manufacturing Systems and Networks, I work on 
+          a project with Los Alamos National Laboratory, honing my software development and project management skills. As President of Devil's 
+          DJing Club at ASU, I organize music events. I've also been the Outreach Officer at the Google Developer Student Club and conducted 
+          research at ASU's Laboratory for Energy and Power Solutions. Let's collaborate to turn challenges into innovative solutions!
           </p>
         </div>
       </div>
