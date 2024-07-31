@@ -29,7 +29,7 @@ const Nav: React.FC = () => {
   const scrollDuration = 250;
 
   return (
-    <nav className="fixed top-3 left-1/2 transform -translate-x-1/2 mt-1 p-4 border border-gray-800 rounded-full bg-[#1a1a1a] bg-opacity-85 text-slate-50 z-10">
+    <nav className="fixed top-3 left-1/2 transform -translate-x-1/2 mt-1 p-4 border border-gray-900 rounded-3xl bg-black-800 bg-opacity-50 backdrop-blur-lg bg-[#1a1a1a] text-slate-50 z-10">
       <ul className="flex items-center h-5 mx-0 space-x-8">
         <li className={`font-bruce text-xl py-1 px-4 rounded-full ${activeSection === 'home' ? 'bg-[#333333] bg-opacity-70' : 'bg-opacity-0'} hover:bg-opacity-70`}>
           <Link

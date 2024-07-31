@@ -9,29 +9,30 @@ const About: React.FC = () => {
       <h1 className="text-[#30c555] text-5xl md:text-6xl font-acorn font-bold text-center md:text-left mb-10 md:mb-16">
         .About Me
       </h1>
-      <div className="flex flex-col xl:flex-row p-4 md:p-8 bg-transparent mb-10 md:mb-16 items-center xl:items-start">
-        <div className="border border-gray-900 rounded-3xl bg-black-800 bg-opacity-50 backdrop-blur-lg flex-shrink-0 mt-10 md:mt-0 shadow-ts flex justify-center items-center overflow-hidden w-64 h-64 md:w-80 md:h-80">
-          <ImageWithRoundedCorners
-            src="/harish_headshot_black.png"
-            alt="Harish Chaurasia"
-            className="object-cover w-full h-full"
-          />
-        </div>
+      <div className="flex flex-col xl:flex-row p-4 md:p-8 bg-transparent mb-10 md:mb-16 items-center xl:items-center">
+  <div className=" border border-gray-900  bg-black-800 bg-opacity-50 backdrop-blur-xl rounded-3xl flex-shrink-0  flex justify-center items-center overflow-hidden w-64 h-64 md:w-80 md:h-80 shadow-ts">
+    <ImageWithRoundedCorners
+      src="/harish_headshot_black.png"
+      alt="Harish Chaurasia"
+      className="object-cover w-full h-full"
+    />
+  </div>
 
-        <div className="flex-1 xl:ml-6 p-4 md:p-8 text-white text-center xl:text-left border border-gray-900 bg-black-800 bg-opacity-50 backdrop-blur-lg rounded-3xl mt-5 xl:mt-0 mx-4 md:mx-8 xl:mx-0">
-          <p className="text-sm font-sf_pro md:text-base lg:text-lg leading-relaxed">
-            Hi there 👋, I'm Harish, a Tech and Music Geek. I love building
-            things and creating innovative solutions. Looking for an easy and
-            cost-efficient solution to your challenges? I can help. I specialize
-            in creating game-based solutions that are engaging, fun, and highly
-            immersive. My goal is to solve complex challenges with innovative
-            strategies, turning your business challenges into opportunities for
-            growth and efficiency. Let’s collaborate to turn your challenges
-            into effective, gamified strategies that drive success and
-            innovation.
-          </p>
-        </div>
-      </div>
+  <div className="flex-1 xl:ml-6 p-4 md:p-8 text-white text-center xl:text-left border border-gray-900 bg-black-800 bg-opacity-50 backdrop-blur-lg rounded-3xl mt-5 xl:mt-0 mx-4 md:mx-8 xl:mx-0 flex items-center">
+    <p className="text-sm font-sf_pro md:text-base lg:text-lg leading-relaxed">
+      Hi there 👋, I'm Harish, a Tech and Music Geek. I love building
+      things and creating innovative solutions. Looking for an easy and
+      cost-efficient solution to your challenges? I can help. I specialize
+      in creating game-based solutions that are engaging, fun, and highly
+      immersive. My goal is to solve complex challenges with innovative
+      strategies, turning your business challenges into opportunities for
+      growth and efficiency. Let’s collaborate to turn your challenges
+      into effective, gamified strategies that drive success and
+      innovation.
+    </p>
+  </div>
+</div>
+
 
       <div className="md:grid-cols-2 gap-4">
         <div className="mt-40 space-y-8">

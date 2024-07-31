@@ -11,7 +11,7 @@ export default function Model() {
 
   useFrame(() => {
     if (torus.current) {
-      torus.current.rotation.x += 0.002;
+      torus.current.rotation.x -= 0.001;
       // torus.current.rotation.y += 0.001;
     }
   });

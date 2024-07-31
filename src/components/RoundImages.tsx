@@ -16,7 +16,7 @@ const ImageWithRoundedCorners: React.FC<ImageWithRoundedCornersProps> = ({
   width = "300px",
   height = "300px",
   position = "relative",
-  margin = "1px",
+  margin = "0px",
 }) => {
   return (
     <img
