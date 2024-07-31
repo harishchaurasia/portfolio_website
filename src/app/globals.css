@@ -94,7 +94,6 @@ body, html, #__next {
   scroll-behavior: smooth;
 }
 
-
 /* Ensure the Vanta background is positioned correctly */
 .vanta-bg {
   position: fixed;

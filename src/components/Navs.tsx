@@ -9,11 +9,11 @@ const Nav: React.FC = () => {
   const isMobile = useMediaQuery({ maxWidth: 767 });
 
   useEffect(() => {
-    Events.scrollEvent.register('begin', function() {
+    Events.scrollEvent.register('begin', function () {
       // Scroll event begins
     });
 
-    Events.scrollEvent.register('end', function() {
+    Events.scrollEvent.register('end', function () {
       // Scroll event ends
     });
 
@@ -37,7 +37,7 @@ const Nav: React.FC = () => {
   };
 
   const navbarHeight = 105;
-  const mobileOffset = -navbarHeight - 90;
+  const mobileOffset = -navbarHeight - 10;
   const scrollDuration = 250;
 
   return (
@@ -45,15 +45,25 @@ const Nav: React.FC = () => {
       {isMobile && (
         <button
           onClick={toggleNavbar}
-          className="fixed top-3 left-3 text-xl p-2 text-white"
+          className="fixed top-3 left-3 text-xl p-2 text-white z-30"
           style={{ border: 'none', background: 'transparent' }}
         >
           {isNavbarVisible ? <FaTimes /> : <FaBars />}
         </button>
       )}
-      <nav className={`fixed top-3 left-1/2 transform -translate-x-1/2 mt-1 p-4 rounded-3xl z-10 ${isMobile && !isNavbarVisible ? 'bg-transparent border-none' : 'border border-gray-900 bg-black-800 bg-opacity-50 backdrop-blur-lg bg-[#1a1a1a]'}`}>
-        <ul className={`flex flex-col md:flex-row items-center text-white ${isMobile ? 'mt-4' : ''} ${isMobile && !isNavbarVisible ? 'hidden' : 'md:flex md:space-x-8'}`}>
-          <li className={`font-bruce  text-xl py-1 px-4 rounded-full ${activeSection === 'home' ? 'bg-[#333333] bg-opacity-70' : 'bg-opacity-0'} hover:bg-opacity-70`}>
+
+      <nav
+        className={`text-gray-300 fixed top-0 ${isMobile ? 'left-0 w-full p-8 bg-black-800 bg-opacity-50 backdrop-blur-lg' : 'left-1/2 transform -translate-x-1/2 mt-4 p-2 border border-gray-900 rounded-full bg-black-800 bg-opacity-50 backdrop-blur-lg bg-[#1a1a1a]'} z-20`}
+      >
+        <ul
+          className={`flex ${isMobile ? 'flex-col mt-4 items-center ' : 'flex-row items-center space-x-8 justify-center '
+          } ${isMobile && !isNavbarVisible ? 'hidden' : 'md:flex md:space-x-8'}`}
+        >
+          <li
+            className={`font-bruce text-xl py-1 px-4 rounded-full ${
+              activeSection === 'home' ? 'bg-[#333333] bg-opacity-70' : 'bg-opacity-0'
+            } hover:bg-opacity-70`}
+          >
             <Link
               to="home"
               smooth={true}
@@ -66,7 +76,11 @@ const Nav: React.FC = () => {
               Home
             </Link>
           </li>
-          <li className={`font-bruce text-xl py-1 px-4 rounded-full ${activeSection === 'about' ? 'bg-[#333333] bg-opacity-70' : 'bg-opacity-0'} hover:bg-opacity-70`}>
+          <li
+            className={`font-bruce text-xl py-1 px-4 rounded-full ${
+              activeSection === 'about' ? 'bg-[#333333] bg-opacity-70' : 'bg-opacity-0'
+            } hover:bg-opacity-70`}
+          >
             <Link
               to="about"
               smooth={true}
@@ -79,7 +93,11 @@ const Nav: React.FC = () => {
               About
             </Link>
           </li>
-          <li className={`font-bruce text-xl py-1 px-4 rounded-full ${activeSection === 'projects' ? 'bg-[#333333] bg-opacity-70' : 'bg-opacity-0'} hover:bg-opacity-70`}>
+          <li
+            className={`font-bruce text-xl py-1 px-4 rounded-full ${
+              activeSection === 'projects' ? 'bg-[#333333] bg-opacity-70' : 'bg-opacity-0'
+            } hover:bg-opacity-70`}
+          >
             <Link
               to="projects"
               smooth={true}
@@ -92,7 +110,11 @@ const Nav: React.FC = () => {
               Projects
             </Link>
           </li>
-          <li className={`font-bruce text-xl py-1 px-4 rounded-full ${activeSection === 'contact' ? 'bg-[#333333] bg-opacity-70' : 'bg-opacity-0'} hover:bg-opacity-70`}>
+          <li
+            className={`font-bruce text-xl py-1 px-4 rounded-full ${
+              activeSection === 'contact' ? 'bg-[#333333] bg-opacity-70' : 'bg-opacity-0'
+            } hover:bg-opacity-70`}
+          >
             <Link
               to="contact"
               smooth={true}
