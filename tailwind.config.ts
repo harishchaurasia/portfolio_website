@@ -22,13 +22,7 @@ const config: Config = {
       },
       fontFamily: {
         sf_pro:['SF-Pro-Display-Regular','sans-serif'],
-        imperfect: ['ImPerfect23', 'sans-serif'],
-        acornB: ['AcornB', 'serif'],
-        speedBeast: ['SpeedBeast', 'sans-serif'],
         bruce: ['BruceForeverRegular', 'serif'],
-        aloe:['Aloevera', 'serif'],
-        xirod:['Xirod', 'serif'],
-        recharge:['Recharge_bd', 'serif'],
         acorn:['Acorn', 'serif'],
       },
       backdropBlur: {
