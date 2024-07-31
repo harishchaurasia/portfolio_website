@@ -8,6 +8,14 @@
 
 /* Importing fonts */
 @font-face {
+  font-family: 'SF-Pro-Display-Regular';
+  src: url('/fonts/SF-Pro-Display-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
   font-family: 'ImPerfect23';
   src: url('/fonts/ImPerfect23.otf') format('opentype');
   font-weight: normal;

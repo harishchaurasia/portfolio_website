@@ -1,4 +1,3 @@
-// src/components/ContactMe.tsx
 import React from "react";
 import ImageWithRoundedCorners from "./RoundImages";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -12,20 +11,20 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 const ContactMe: React.FC = () => {
   return (
-    <div className=" py-4 mx-4 md:mx-16 lg:mx-44 my-56 md:my-20 space-y-10">
-      <h1 className="text-[#30c555] text-6xl font-acorn font-bold text-center md:text-left mb-16">
+    <div className="py-4 mx-4 md:mx-16 lg:mx-44 my-56 md:my-20 space-y-10">
+      <h1 className="text-[#30c555] text-4xl md:text-5xl lg:text-6xl font-bold text-center md:text-left mb-16 font-acorn">
         .Contact Me
       </h1>
       <div className="flex flex-col px-10 md:flex-row items-center justify-center">
         <div className="p-4 border border-gray-900 bg-black-800 bg-opacity-50 backdrop-blur-lg rounded-3xl">
           <div className="flex-1 text-center">
-            <p className="font-acornB text-white mt-4 mb-4 text-7xl font-bold">
+            <p className="text-white mt-4 mb-4 text-4xl md:text-5xl lg:text-6xl font-bold font-sf_pro">
               I'm Harish.
             </p>
-            <p className="font-xirod my-4 text-[#999999] mt-8 mb-4 text-3xl">
+            <p className="my-4 text-[#999999] mt-8 mb-4 text-xl md:text-2xl lg:text-3xl font-medium font-acorn">
               "I love building shit"
             </p>
-            <p className="font-acorn text-[#999999] mb-8 text-3xl font-bold">
+            <p className="text-[#999999] mb-8 text-xl md:text-2xl lg:text-3xl font-bold font-acorn">
               EAT. SLEEP. BUILD. REPEAT.
             </p>
             <div className="flex flex-col mb-4 md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-4">
@@ -33,15 +32,15 @@ const ContactMe: React.FC = () => {
                 href="https://linkedin.com/in/harishchaurasia"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-gray-200 hover:bg-gray-800 font-aloe text-black hover:text-green-500 py-3 px-8 rounded-full transition duration-300 text-xl  "
+                className="bg-gray-200 hover:bg-gray-800 text-black hover:text-green-500 py-3 px-8 rounded-full transition duration-300 text-sm md:text-lg lg:text-xl font-sf_pro"
               >
-                Linkedin
+                LinkedIn
               </a>
               <a
                 href="/Resume2024.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-gray-200 hover:bg-gray-800 text-black hover:text-green-500 font-aloe py-3 px-8 rounded-full transition duration-300 text-xl"
+                className="bg-gray-200 hover:bg-gray-800 text-black hover:text-green-500 py-3 px-8 rounded-full transition duration-300 text-sm md:text-lg lg:text-xl font-sf_pro"
               >
                 Resume
               </a>
@@ -58,7 +57,7 @@ const ContactMe: React.FC = () => {
         </div>
       </div>
       <div className="mt-8 justify-center text-center">
-        <div className="mt-24 flex justify-center  space-x-6 border border-gray-900 bg-black-800 bg-opacity-50 backdrop-blur-lg rounded-full p-3 mx-auto max-w-fit">
+        <div className="mt-24 flex justify-center space-x-6 border border-gray-900 bg-black-800 bg-opacity-50 backdrop-blur-lg rounded-full p-3 mx-auto max-w-fit">
           <a
             href="mailto:harishchaurasia143@gmail.com"
             target="_blank"
@@ -66,7 +65,7 @@ const ContactMe: React.FC = () => {
           >
             <FontAwesomeIcon
               icon={faEnvelope}
-              className="w-10 h-10 rounded-lg"
+              className="w-8 h-8 md:w-10 md:h-10 rounded-lg"
               style={{ color: "#999999" }}
             />
           </a>
@@ -77,7 +76,7 @@ const ContactMe: React.FC = () => {
           >
             <FontAwesomeIcon
               icon={faLinkedin}
-              className="w-10 h-10 rounded-lg"
+              className="w-8 h-8 md:w-10 md:h-10 rounded-lg"
               style={{ color: "#999999" }}
             />
           </a>
@@ -88,7 +87,7 @@ const ContactMe: React.FC = () => {
           >
             <FontAwesomeIcon
               icon={faGithub}
-              className="w-10 h-10 rounded-lg"
+              className="w-8 h-8 md:w-10 md:h-10 rounded-lg"
               style={{ color: "#999999" }}
             />
           </a>
@@ -99,7 +98,7 @@ const ContactMe: React.FC = () => {
           >
             <FontAwesomeIcon
               icon={faInstagram}
-              className="w-10 h-10 rounded-lg"
+              className="w-8 h-8 md:w-10 md:h-10 rounded-lg"
               style={{ color: "#999999" }}
             />
           </a>
@@ -110,7 +109,7 @@ const ContactMe: React.FC = () => {
           >
             <FontAwesomeIcon
               icon={faXTwitter}
-              className="w-10 h-10 rounded-lg"
+              className="w-8 h-8 md:w-10 md:h-10 rounded-lg"
               style={{ color: "#999999" }}
             />
           </a>

@@ -20,18 +20,36 @@ const EducationCard: React.FC<EducationCardProps> = ({
   universityName,
   degreeDateRange,
   description,
-  logo
+  logo,
 }) => {
   return (
-    <div className="border border-gray-800 rounded-3xl shadow-bs p-4 flex flex-col md:flex-row items-start bg-black-800 bg-opacity-50 backdrop-blur-lg text-white mb-4">
-      <img src={logo} alt={`${degreeType} logo`} className="w-20 h-20 mr-4" />
+    <div
+      className={`border border-gray-800 rounded-3xl shadow-bs p-4 flex flex-col md:flex-row items-start bg-black-800 bg-opacity-50 backdrop-blur-lg text-white mb-4`}
+    >
+      <img
+        src={logo}
+        alt={`${degreeType} logo`}
+        className="w-20 h-20 mr-4 rounded-full"
+      />
       <div className="flex-1">
-        <h2 className="text-3xl font-bold">{degreeName}</h2>
-        <p className="text-sm text-gray-400">{schoolName}</p>
-        <p className="text-sm text-gray-400">{collegeName}</p>
-        <p className="text-sm text-gray-400">{universityName}</p>
-        <p className="text-sm text-gray-400">{degreeDateRange}</p>
-        <p className="mt-2 text-justify">{description}</p>
+        <h2 className="text-xl md:text-2xl font-bold font-sf_pro">
+          {degreeName}
+        </h2>
+        <p className="text-sm md:text-base text-gray-400 font-medium font-acorn">
+          {schoolName}
+        </p>
+        <p className="text-sm md:text-base text-gray-400 font-medium font-acorn">
+          {collegeName}
+        </p>
+        <p className="text-sm md:text-base text-gray-400 font-medium font-acorn">
+          {universityName}
+        </p>
+        <p className="text-sm md:text-base text-gray-400 font-medium font-acorn">
+          {degreeDateRange}
+        </p>
+        <p className="mt-2 text-sm md:text-base text-justify font-regular font-sf_pro">
+          {description}
+        </p>
       </div>
     </div>
   );

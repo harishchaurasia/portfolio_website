@@ -21,6 +21,7 @@ const config: Config = {
         'ts': '0 4px 130px rgba(150, 163, 181, .18)',
       },
       fontFamily: {
+        sf_pro:['SF-Pro-Display-Regular','sans-serif'],
         imperfect: ['ImPerfect23', 'sans-serif'],
         acornB: ['AcornB', 'serif'],
         speedBeast: ['SpeedBeast', 'sans-serif'],

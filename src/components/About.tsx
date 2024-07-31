@@ -6,38 +6,29 @@ import ExperienceCard from "./ExperienceCard";
 const About: React.FC = () => {
   return (
     <div className="mx-4 md:mx-16 lg:mx-44 my-10 md:my-20 space-y-10">
-      <h1 className="text-[#30c555] text-6xl font-acorn font-bold text-center md:text-left mb-16">
+      <h1 className="text-[#30c555] text-5xl md:text-6xl font-acorn font-bold text-center md:text-left mb-10 md:mb-16">
         .About Me
       </h1>
-      <div className="flex flex-col xl:flex-row p-4 md:p-8 bg-transparent mb-16">
-        <div
-          className="border border-gray-800 rounded-3xl flex-shrink-0 mt-10 md:mt-0 shadow-ts flex justify-center items-center overflow-hidden mx-auto xl:mx-0"
-          style={{ width: "350px", height: "350px" }}
-        >
+      <div className="flex flex-col xl:flex-row p-4 md:p-8 bg-transparent mb-10 md:mb-16 items-center xl:items-start">
+        <div className="border border-gray-900 rounded-3xl bg-black-800 bg-opacity-50 backdrop-blur-lg flex-shrink-0 mt-10 md:mt-0 shadow-ts flex justify-center items-center overflow-hidden w-64 h-64 md:w-80 md:h-80">
           <ImageWithRoundedCorners
             src="/harish_headshot_black.png"
             alt="Harish Chaurasia"
-            width="350px"
-            height="350px"
             className="object-cover w-full h-full"
           />
         </div>
 
-        <div className="flex-1 xl:ml-6 p-4 md:p-8 text-white text-center xl:text-left border border-gray-900 bg-black-800 bg-opacity-50 backdrop-blur-lg rounded-3xl mt-10 xl:mt-0 mx-auto xl:mx-0">
-          <p className="text-lg font-sans text-left md:text-md xl:text-lg leading-relaxed">
-            Hi there 👋, I'm Harish Chaurasia, a Computer Science major
-            passionate about Development, Artificial Intelligence, and Machine
-            Learning. I'm pursuing minors in Music and Entrepreneurship, and a
-            Certification in Game Development. This blend of technical and
-            creative skills enhances my problem-solving abilities. As a Software
-            and Games Developer at the School of Manufacturing Systems and
-            Networks, I work on a project with Los Alamos National Laboratory,
-            honing my software development and project management skills. As
-            President of Devil's DJing Club at ASU, I organize music events.
-            I've also been the Outreach Officer at the Google Developer Student
-            Club and conducted research at ASU's Laboratory for Energy and Power
-            Solutions. Let's collaborate to turn challenges into innovative
-            solutions!
+        <div className="flex-1 xl:ml-6 p-4 md:p-8 text-white text-center xl:text-left border border-gray-900 bg-black-800 bg-opacity-50 backdrop-blur-lg rounded-3xl mt-5 xl:mt-0 mx-4 md:mx-8 xl:mx-0">
+          <p className="text-sm font-sf_pro md:text-base lg:text-lg leading-relaxed">
+            Hi there 👋, I'm Harish, a Tech and Music Geek. I love building
+            things and creating innovative solutions. Looking for an easy and
+            cost-efficient solution to your challenges? I can help. I specialize
+            in creating game-based solutions that are engaging, fun, and highly
+            immersive. My goal is to solve complex challenges with innovative
+            strategies, turning your business challenges into opportunities for
+            growth and efficiency. Let’s collaborate to turn your challenges
+            into effective, gamified strategies that drive success and
+            innovation.
           </p>
         </div>
       </div>
@@ -120,7 +111,7 @@ const About: React.FC = () => {
           />
           <ExperienceCard
             title="President"
-            companyName="Devil's DJing Club"
+            companyName="Devil's DJing Club at Arizona State University"
             dateRange="Apr 2023 - Present"
             description="Organized and managed music workshops & events, collaborated with DJs and musicians, managed social media, and trained members to enhance their technical skills and creativity in music."
             logo="/djing.png"
