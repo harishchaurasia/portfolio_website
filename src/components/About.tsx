@@ -6,11 +6,11 @@ import ExperienceCard from "./ExperienceCard";
 const About: React.FC = () => {
   return (
     <div className="mx-4 md:mx-16 lg:mx-44 my-32  md:my-20 space-y-10">
-      <h1 className="text-[#30c555] text-5xl md:text-6xl lg:text-6xl font-acorn font-bold text-center md:text-left mb-10 md:mb-16">
+      <h1 className="text-[#30c555] text-5xl md:text-6xl font-acorn font-bold text-center md:text-left mb-10 md:mb-16">
         .About Me
       </h1>
       <div className="flex flex-col xl:flex-row p-4 md:p-8 bg-transparent mb-10 md:mb-16 items-center xl:items-center">
-        <div className=" border border-gray-900  bg-black-800 bg-opacity-50 backdrop-blur-xl rounded-3xl flex-shrink-0  flex justify-center items-center overflow-hidden w-64 h-64 md:w-80 md:h-80 shadow-ts">
+        <div className=" backdrop-blur-lg  rounded-3xl flex-shrink-0  flex justify-center items-center overflow-hidden w-64 h-64 md:w-80 md:h-80">
           <ImageWithRoundedCorners
             src="/harish_headshot_black.png"
             alt="Harish Chaurasia"

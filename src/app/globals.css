@@ -22,46 +22,10 @@
   font-style: normal;
 }
 
-@font-face {
-  font-family: 'AcornB';
-  src: url('/fonts/AcornB.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'SpeedBeast';
-  src: url('/fonts/SpeedBeast.otf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-
-@font-face {
-  font-family: 'BruceForeverRegular';
-  src: url('/fonts/BruceForeverRegular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Xirod';
-  src: url('/fonts/Xirod.otf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
 
 @font-face {
   font-family: 'Acorn';
   src: url('/fonts/Acorn.otf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Aloevera';
-  src: url('/fonts/Aloevera.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -74,12 +38,6 @@
 }
 
 /* globals.css */
-
-
-/* src/app/globals.css */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 body, html, #__next {
   font-family: 'Inter', sans-serif;
