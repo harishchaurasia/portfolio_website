@@ -38,7 +38,7 @@ const Intro: React.FC<IntroProps> = ({ onComplete }) => {
 
   return (
     <div ref={introRef} className="intro-container flex items-center justify-center h-screen text-center">
-      <div className="intro-text font-imperfect text-white text-8xl font-bold text-gradient">
+      <div className="intro-text font-acorn text-white text-7xl md:text-8xl lg:text-9xl font-bold text-gradient">
         <h1 className="hidden-text">Eat.</h1>
         <h1 className="hidden-text">Sleep.</h1>
         <h1 className="hidden-text">Build.</h1>
