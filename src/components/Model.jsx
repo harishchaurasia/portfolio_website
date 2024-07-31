@@ -27,7 +27,7 @@ export default function Model() {
 
   return (
     <group scale={viewport.width / 2.50}>
-      <Text font={'/fonts/Recharge_bd.otf'} position={[0, 0, 0]} fontSize={0.18} color="white" anchorX="center" anchorY="middle">
+      <Text font={'/fonts/recharge_bd.otf'} position={[0, 0, 0]} fontSize={0.18} color="white" anchorX="center" anchorY="middle">
         Hello World.
       </Text>
       <mesh ref={torus} geometry={nodes.Infinity_loop.geometry}>
