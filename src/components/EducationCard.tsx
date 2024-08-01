@@ -29,7 +29,7 @@ const EducationCard: React.FC<EducationCardProps> = ({
       <img
         src={logo}
         alt={`${degreeType} logo`}
-        className="w-20 h-20 mr-4 rounded-full"
+        className="w-20 h-20 mr-4 mb-4 rounded-full"
       />
       <div className="flex-1">
         <h2 className="text-xl md:text-2xl font-bold font-sf_pro">
@@ -47,7 +47,7 @@ const EducationCard: React.FC<EducationCardProps> = ({
         <p className="text-sm md:text-base text-gray-400 font-medium font-acorn">
           {degreeDateRange}
         </p>
-        <p className="mt-2 text-sm md:text-base text-justify font-regular font-sf_pro">
+        <p className="mt-2 text-sm md:text-base font-regular font-sf_pro">
           {description}
         </p>
       </div>

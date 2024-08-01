@@ -1,4 +1,3 @@
-// src/components/Projects.tsx
 import React from 'react';
 import ProjectCard from './ProjectsCard';
 
@@ -14,6 +13,7 @@ const Projects: React.FC = () => {
         skills={['Three.js', '@react-three/fiber', 'React', 'TailwindCSS', 'Vercel']}
         mainSkill="react"
         skillIcons={['threejs', 'nextjs', 'tailwind', 'vercel']}
+        githubRepo="https://github.com/harishchaurasia/portfolio_website"
       />
       <ProjectCard 
         title="VNC Public School Website"
@@ -21,6 +21,7 @@ const Projects: React.FC = () => {
         skills={['Nextjs', 'React', 'TailwindCSS', 'Vercel']}
         mainSkill="react"
         skillIcons={['nextjs', 'figma', 'tailwind', 'vercel']}
+        githubRepo="https://github.com/harishchaurasia/vncpublicschool"
       />
       <ProjectCard 
         title="SkyWand"
@@ -28,6 +29,7 @@ const Projects: React.FC = () => {
         skills={['Figma', 'SwiftUI', 'Swift', 'WeatherAPI', 'Vercel']}
         mainSkill="Swift"
         skillIcons={['figma']}
+        githubRepo="https://github.com/harishchaurasia/weatherApp_iOS"
       />
       <ProjectCard 
         title="Susinator"
@@ -35,6 +37,7 @@ const Projects: React.FC = () => {
         skills={['Nextjs', 'ChakraUI', 'AWS', 'DynamoDB', 'RapidAPI']}
         mainSkill="Nextjs"
         skillIcons={['nextjs', 'aws', 'dynamodb']}
+        githubRepo="https://github.com/harishchaurasia/Susinator"
       />
       <ProjectCard 
         title="Dodge Apocalypto"
@@ -42,8 +45,8 @@ const Projects: React.FC = () => {
         skills={['C#', 'Unity', 'NavMesh']}
         mainSkill="Unity"
         skillIcons={['cs', 'unity']}
+        githubRepo="javascript:void(0)"
       />
-
     </div>
   );
 };
