@@ -45,7 +45,7 @@ const Nav: React.FC = () => {
       {isMobile && (
         <button
           onClick={toggleNavbar}
-          className="fixed top-3 left-3 text-xl p-2 text-white z-30"
+          className="fixed top-3 left-3 flex items-center justify-center text-xl p-2 text-gray-400 z-30"
           style={{ border: 'none', background: 'transparent' }}
         >
           {isNavbarVisible ? <FaTimes /> : <FaBars />}
@@ -53,8 +53,14 @@ const Nav: React.FC = () => {
       )}
 
       <nav
-        className={`text-gray-300 fixed top-0 ${isMobile ? 'left-0 w-full p-8 bg-black-800 bg-opacity-50 backdrop-blur-lg' : 'left-1/2 transform -translate-x-1/2 mt-4 p-2 border border-gray-900 rounded-full bg-black-800 bg-opacity-50 backdrop-blur-lg bg-[#1a1a1a]'} z-20`}
+        className={`text-gray-300 fixed top-0 ${isMobile ? 'left-0 w-full py-2 px-4 bg-black-800 bg-opacity-50 backdrop-blur-lg' : 'left-1/2 transform -translate-x-1/2 mt-4 p-2 border border-gray-900 rounded-full bg-black-800 bg-opacity-50 backdrop-blur-lg bg-[#1a1a1a]'} z-20`}
       >
+        {isMobile && (
+          <div className="flex justify-center">
+            <img src="/mtrxk2.png" alt="Logo" className="mt-2 mb-1 h-10 w-auto" />
+          </div>
+        )}
+
         <ul
           className={`flex ${isMobile ? 'flex-col mt-4 items-center ' : 'flex-row items-center space-x-8 justify-center '
           } ${isMobile && !isNavbarVisible ? 'hidden' : 'md:flex md:space-x-8'}`}
@@ -134,3 +140,4 @@ const Nav: React.FC = () => {
 };
 
 export default Nav;
+

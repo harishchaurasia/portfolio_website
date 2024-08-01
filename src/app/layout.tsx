@@ -18,6 +18,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="./mtrxk.png" />
+      </head>
       <body className={inter.className}>
         {children}
         <Analytics />

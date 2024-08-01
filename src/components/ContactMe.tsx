@@ -32,7 +32,7 @@ const ContactMe: React.FC = () => {
                 href="https://linkedin.com/in/harishchaurasia"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-gray-200 hover:bg-gray-800 text-black hover:text-green-500 py-3 px-8 rounded-full transition duration-300 text-sm md:text-lg lg:text-xl font-sf_pro"
+                className="bg-gray-200 hover:bg-gray-800 text-black hover:text-green-500 font-acorn py-3 px-8 rounded-full transition duration-300 text-sm md:text-lg lg:text-xl"
               >
                 LinkedIn
               </a>
@@ -40,7 +40,7 @@ const ContactMe: React.FC = () => {
                 href="/Resume2024.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-gray-200 hover:bg-gray-800 text-black hover:text-green-500 py-3 px-8 rounded-full transition duration-300 text-sm md:text-lg lg:text-xl font-sf_pro"
+                className="bg-gray-200 hover:bg-gray-800 text-black hover:text-green-500 font-acorn py-3 px-8 rounded-full transition duration-300 text-sm md:text-lg lg:text-xl"
               >
                 Resume
               </a>
