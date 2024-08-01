@@ -19,6 +19,7 @@ const config: Config = {
       boxShadow: {
         'bs': '0 4px 130px rgba(150, 163, 181, .10)',
         'ts': '0 4px 130px rgba(150, 163, 181, .18)',
+        'xs': '0 4px 130px rgba(150, 163, 181, .3)',
       },
       fontFamily: {
         sf_pro:['SF-Pro-Display-Regular','sans-serif'],
