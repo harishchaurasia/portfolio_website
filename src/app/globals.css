@@ -36,14 +36,10 @@
 
 body, html, #__next {
   font-family: 'Inter', sans-serif;
-  /* background: #000000; */
   margin: 0;
   padding: 0;
   width: 100%;
   height: 100%;
-  /* position: relative; */
-  /* overflow-x: hidden; */
-  /* overflow: hidden; */
   scroll-behavior: smooth;
 }
 
@@ -58,29 +54,10 @@ body, html, #__next {
 }
 
 
-
-
-
 section {
-  scroll-margin-top: 80px; /* Adjust this value to the height of your navbar */
+  scroll-margin-top: 80px;
 }
 
-
-
-/* .grid-background {
-  background-image: linear-gradient(#363636 1px, transparent 0), 
-                    linear-gradient(90deg, #363636 1px, transparent 0);
-  background-size: 40px 40px;
-  position: absolute;
-  top: 50%;
-  left: 49%;
-  width:100%;
-  height: 100%;
-  z-index: 0;
-  opacity: 0.9;
-  box-shadow: inset 0 0 50px #3a3a3a;
-  transform: translate(-50%, -50%);
-} */
 
 
 /* Intro container styling */
@@ -94,8 +71,8 @@ section {
   position: fixed;
   top: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.8); /* Optional background color */
-  z-index: 9999; /* Ensure it is above other content */
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 9999;
   opacity: 1;
   transition: opacity 1s ease-out;
 }
