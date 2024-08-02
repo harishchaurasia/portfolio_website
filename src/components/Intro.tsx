@@ -85,7 +85,7 @@ const Intro: React.FC<IntroProps> = ({ onComplete }) => {
       </div>
       <button
         onClick={skipIntro}
-        className="absolute bottom-4 right-4 md:bottom-10 md:right-10 p-2 md:p-4 border border-gray-900 bg-black-800 bg-opacity-50 backdrop-blur-lg rounded-2xl text-white transition transform hover:scale-105"
+        className="absolute bottom-4 right-4 md:bottom-10 md:right-10 p-2 md:p-4 border border-gray-800 bg-black-800 bg-opacity-50 backdrop-blur-lg rounded-2xl text-white transition transform hover:scale-105"
       >
         Skip Intro
       </button>
