@@ -32,8 +32,9 @@ This project uses next/font to automatically optimize and load Inter, a custom G
 <img src="./public/web-screenshot.png" alt="web ss">
 
 ### Mobile View
-<img src="./public/mobile-ss.png" alt="mobile ss">
-
+<p align="center">
+  <img src="./public/mobile-ss.png" alt="Mobile View Screenshot" width="25%">
+</p>
 
 ## Learn More
 To learn more about Next.js, take a look at the following resources:
