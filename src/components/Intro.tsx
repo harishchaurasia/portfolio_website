@@ -1,5 +1,5 @@
 // src/components/Intro.tsx
-import React, { useLayoutEffect, useRef } from "react";
+import React, { useLayoutEffect, useRef, useState, useEffect } from "react";
 import { gsap } from "gsap";
 
 interface IntroProps {
@@ -9,6 +9,23 @@ interface IntroProps {
 const Intro: React.FC<IntroProps> = ({ onComplete }) => {
   const introRef = useRef<HTMLDivElement>(null);
   const timelineRef = useRef<gsap.core.Timeline | null>(null); // Store the timeline
+  const [viewportHeight, setViewportHeight] = useState(0);
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      setViewportHeight(window.innerHeight);
+
+      const handleResize = () => {
+        setViewportHeight(window.innerHeight);
+      };
+
+      window.addEventListener("resize", handleResize);
+
+      return () => {
+        window.removeEventListener("resize", handleResize);
+      };
+    }
+  }, []);
 
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
@@ -75,7 +92,8 @@ const Intro: React.FC<IntroProps> = ({ onComplete }) => {
   return (
     <div
       ref={introRef}
-      className="intro-container flex items-center justify-center h-screen text-center relative"
+      className="intro-container flex items-center justify-center text-center relative"
+      style={{ height: `${viewportHeight}px` }}
     >
       <div className="intro-text font-acorn text-white text-7xl md:text-8xl lg:text-9xl font-bold text-gradient">
         <h1 className="hidden-text">Eat.</h1>
