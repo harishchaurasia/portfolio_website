@@ -45,7 +45,7 @@ const Nav: React.FC = () => {
       {isMobile && (
         <button
           onClick={toggleNavbar}
-          className="fixed top-3 left-3 flex items-center justify-center text-xl p-2 text-gray-400 z-30"
+          className="fixed top-3 left-3 flex items-center justify-center  text-xl p-2 text-gray-400 z-30"
           style={{ border: "none", background: "transparent" }}
         >
           {isNavbarVisible ? <FaTimes /> : <FaBars />}

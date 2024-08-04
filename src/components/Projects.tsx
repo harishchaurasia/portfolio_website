@@ -9,15 +9,15 @@ const Projects: React.FC = () => {
       </h1>
       <ProjectCard 
         title="Interactive 3D Portfolio"
-        description="Created an interactive 3D portfolio using Three.js and @react-three/fiber, showcasing various projects with immersive 3D visualizations and animations."
-        skills={['Three.js','Blender', '@react-three/fiber', 'React', 'TailwindCSS', 'Vercel']}
+        description="Created an interactive 3D portfolio using Three.js and @react-three/fiber, used api routes, and responsiveness showcasing various projects with immersive 3D visualizations and animations."
+        skills={['React', 'Vanta.js','Three.js','Blender', '@react-three/fiber', 'TailwindCSS', 'Vercel']}
         mainSkill="react"
         skillIcons={['threejs','blender', 'nextjs', 'tailwind', 'vercel']}
         githubRepo="https://github.com/harishchaurasia/portfolio_website"
       />
       <ProjectCard 
         title="VNC Public School Website"
-        description="Developed a responsive and user-friendly website for VNC Public School using Next.js. Implemented a modern and clean design with TailwindCSS, ensuring a seamless user experience across devices."
+        description="Designed the app in figma, developed a responsive and user-friendly website for VNC Public School using Next.js. Implemented a modern and clean design with TailwindCSS, ensuring a seamless user experience across devices."
         skills={['Nextjs', 'React', 'TailwindCSS', 'Vercel']}
         mainSkill="react"
         skillIcons={['nextjs', 'figma', 'tailwind', 'vercel']}
@@ -41,7 +41,7 @@ const Projects: React.FC = () => {
       />
       <ProjectCard 
         title="Dodge Apocalypto"
-        description="Collaborated with the team to design game levels and implement functionalities using C# Scripts. Developed a 3D Open-World Game with Unity and NavMesh, winning the best game award in a class of 50 teams."
+        description="Collaborated with my team to design game levels and implement functionalities using C# Scripts. Developed a 3D Open-World Game with Unity and NavMesh, winning the best game award in a class of 50 teams."
         skills={['C#', 'Unity', 'NavMesh']}
         mainSkill="Unity"
         skillIcons={['blender','cs', 'unity']}
