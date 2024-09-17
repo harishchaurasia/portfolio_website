@@ -8,11 +8,19 @@ const Projects: React.FC = () => {
         .Projects
       </h1>
       <ProjectCard 
+        title="LocalVendor"
+        description="Developed a mobile platform for instant local deliveries, connecting users with nearby vendors for fast, 15-30 minute delivery of fresh items like fruits and groceries. The app ensures a smooth and timely experience by facilitating real-time vendor communication and order tracking."
+        skills={['React Native', 'JavaScript', 'TailwindCSS', 'Firebase', 'Figma']}
+        mainSkill="react"
+        skillIcons={[ 'javascript', 'tailwind', 'firebase','figma']}
+        githubRepo="https://github.com/harishchaurasia/LocalVendor"
+      />
+      <ProjectCard 
         title="Interactive 3D Portfolio"
         description="Created an interactive 3D portfolio using Three.js and @react-three/fiber, used api routes, and responsiveness showcasing various projects with immersive 3D visualizations and animations."
         skills={['React', 'Vanta.js','Three.js','Blender', '@react-three/fiber', 'TailwindCSS', 'Vercel']}
         mainSkill="react"
-        skillIcons={['threejs','blender', 'nextjs', 'tailwind', 'vercel']}
+        skillIcons={['threejs','javascript','blender', 'nextjs', 'tailwind', 'vercel']}
         githubRepo="https://github.com/harishchaurasia/portfolio_website"
       />
       <ProjectCard 
@@ -20,7 +28,7 @@ const Projects: React.FC = () => {
         description="Designed the app in figma, developed a responsive and user-friendly website for VNC Public School using Next.js. Implemented a modern and clean design with TailwindCSS, ensuring a seamless user experience across devices."
         skills={['Nextjs', 'React', 'TailwindCSS', 'Vercel']}
         mainSkill="react"
-        skillIcons={['nextjs', 'figma', 'tailwind', 'vercel']}
+        skillIcons={['nextjs','javascript', 'figma', 'tailwind', 'vercel']}
         githubRepo="https://github.com/harishchaurasia/vncpublicschool"
       />
       <ProjectCard 
