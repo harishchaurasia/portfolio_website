@@ -27,24 +27,35 @@ const ContactMe: React.FC = () => {
             <p className="text-[#999999] mb-8 text-xl md:text-2xl lg:text-3xl font-bold font-acorn">
               EAT. SLEEP. BUILD. REPEAT.
             </p>
-            <div className="flex flex-col mb-4 md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-4">
-              <a
-                href="https://linkedin.com/in/harishchaurasia"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-gray-200 hover:bg-gray-800 text-black hover:text-green-500 font-acorn py-3 px-8 rounded-full transition duration-300 text-sm md:text-lg lg:text-xl"
-              >
-                LinkedIn
-              </a>
-              <a
-                href="/Resume2024.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-gray-200 hover:bg-gray-800 text-black hover:text-green-500 font-acorn py-3 px-8 rounded-full transition duration-300 text-sm md:text-lg lg:text-xl"
-              >
-                Resume
-              </a>
-            </div>
+            <div className="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-4">
+            <a
+              href="https://github.com/harishchaurasia"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-gray-200 hover:bg-gray-800 text-black hover:text-green-500 font-acorn py-3 px-8 rounded-full transition duration-10 text-sm md:text-lg lg:text-xl"
+            >
+              GitHub
+            </a>
+            <a
+              href="https://linkedin.com/in/harishchaurasia"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-gray-200 hover:bg-gray-800 text-black hover:text-green-500 font-acorn py-3 px-8 rounded-full transition duration-10 text-sm md:text-lg lg:text-xl"
+            >
+              LinkedIn
+            </a>
+          </div>
+          <div className="mt-6">
+            <a
+              href="/Resume2024.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-green-500 hover:bg-gray-800 text-black hover:text-green-500 font-acorn py-3 px-8 rounded-full transition duration-10 text-sm md:text-lg lg:text-xl"
+            >
+              Resume
+            </a>
+          </div>
+
           </div>
         </div>
         <div className="border border-gray-800 rounded-3xl flex-shrink-0 mt-10 md:mt-0 md:ml-10 shadow-ts">
