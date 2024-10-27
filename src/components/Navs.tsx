@@ -56,7 +56,7 @@ const Nav: React.FC = () => {
         className={`text-gray-300 fixed top-0 ${
           isMobile
             ? "left-0 w-full py-2 px-4 bg-black-800 bg-opacity-50 backdrop-blur-lg"
-            : "left-1/2 transform -translate-x-1/2 mt-4 p-2 border border-gray-900 rounded-full bg-black-800 bg-opacity-50 backdrop-blur-lg bg-[#1a1a1a]"
+            : "left-1/2 transform -translate-x-1/2 mt-4 p-2 border border-gray-900 rounded-3xl bg-black-800 bg-opacity-50 backdrop-blur-lg bg-[#1a1a1a]"
         } z-20`}
       >
         {isMobile && (

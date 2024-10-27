@@ -47,7 +47,7 @@ const ContactMe: React.FC = () => {
           </div>
           <div className="mt-6">
             <a
-              href="/Resume2024.pdf"
+              href="/Resume2025.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-green-500 hover:bg-gray-800 text-black hover:text-green-500 font-acorn py-3 px-8 rounded-full transition duration-10 text-sm md:text-lg lg:text-xl"
