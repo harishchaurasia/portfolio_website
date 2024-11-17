@@ -55,6 +55,15 @@ const Projects: React.FC = () => {
         skillIcons={['blender','cs', 'unity']}
         githubRepo="https://drive.google.com/file/d/1OYAcn2PssKbmePcfPlq988iof-a6uRmU/view?usp=sharing"
       />
+      <ProjectCard 
+        title="Real-Time Speech to Image Generation" 
+        description="Developed a real-time speech-to-image generation application during ASU HACKML 2022. Leveraged Assembly AI's audio transcription API alongside a simplified machine learning model inspired by OpenAI's DALL·E paper. Implemented robust integration of real-time transcription with generative capabilities using Node.js and Python." 
+        skills={['Python', 'AssemblyAI', 'Machine Learning', 'Node.js']} 
+        mainSkill="Python" 
+        skillIcons={['python', 'nodejs']} 
+        githubRepo="https://github.com/harishchaurasia/MLHackathon2022" 
+      />
+
     </div>
   );
 };
