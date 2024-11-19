@@ -1,4 +1,3 @@
-// src/app/page.tsx
 "use client";
 
 import React, { useState, useEffect } from "react";
@@ -7,6 +6,7 @@ import Hom from "../components/Home";
 import Navs from "../components/Navs";
 import Scene from "../components/Index";
 import About from "../components/About";
+import Skills from "../components/SkillCard"
 import Prjs from "../components/Projects";
 import Contact from "../components/ContactMe";
 import Footer from '../components/Footer';
@@ -45,6 +45,10 @@ export default function Home() {
       <section id="about" className="content mx-4 md:mx-16 lg:mx-44 my-10 md:my-20 space-y-10">
         {!showIntro && showSections && <About />}
       </section>
+
+      {/* <section id="skills" className="content mx-4 md:mx-16 lg:mx-44 my-10 md:my-20 space-y-10">
+      {!showIntro && showSections && <Skills />}
+      </section> */}
 
       <section id="projects" className="content mx-4 md:mx-16 lg:mx-44 my-10 md:my-20 space-y-10">
         {!showIntro && showSections && <Prjs />}
