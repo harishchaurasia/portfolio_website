@@ -8,6 +8,14 @@ const Projects: React.FC = () => {
         .Projects
       </h1>
       <ProjectCard 
+        title="Inclusive Workforce Matching Platform" 
+        description="Designed and developed a web platform, Match-ABLE, connecting individuals with disabilities to companies embracing inclusivity and lloking to fulfill their CSR Quota. Implemented user authentication, real-time accessibility scoring using Python scripts, and an intuitive UI with React and TailwindCSS. Enhanced job search efficiency by integrating AI-based resume matching and dynamic accessibility filters, fostering diversity in the workforce." 
+        skills={['React', 'Node.js', 'Python', 'TailwindCSS', 'MongoDB', 'AI/ML']} 
+        mainSkill="React" 
+        skillIcons={['react', 'nodejs', 'python', 'tailwindcss']} 
+        githubRepo="https://github.com/harishchaurasia/match-able" 
+      />
+      <ProjectCard 
         title="LocalVendor"
         description="Developed a mobile platform for instant local deliveries, connecting users with nearby vendors for fast, 15-30 minute delivery of fresh items like fruits and groceries. The app ensures a smooth and timely experience by facilitating real-time vendor communication and order tracking."
         skills={['React Native', 'JavaScript', 'TailwindCSS', 'Firebase', 'Figma']}
@@ -63,6 +71,7 @@ const Projects: React.FC = () => {
         skillIcons={['python', 'nodejs']} 
         githubRepo="https://github.com/harishchaurasia/MLHackathon2022" 
       />
+
 
     </div>
   );
