@@ -114,7 +114,7 @@ const ContactMe: React.FC = () => {
             />
           </a>
           <a
-            href="https://twitter.com/harishchaurasia"
+            href="https://x.com/harischaurasia"
             target="_blank"
             rel="noopener noreferrer"
           >
