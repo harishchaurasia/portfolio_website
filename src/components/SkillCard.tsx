@@ -1,5 +1,24 @@
 import React from "react";
 
+// const SkillCard: React.FC<{ title: string; skills: string[] }> = ({
+//   title,
+//   skills,
+// }) => {
+//   return (
+//     <div className="bg-opacity-50 backdrop-blur-lg rounded-3xl p-8 space-y-6 border border-gray-900">
+//       <h2 className="text-2xl font-bold text-[#cfb73b] text-center">{title}</h2>
+//       <ul className="list-disc list-inside text-white text-left">
+//         {skills.map((skill, index) => (
+//           <li key={index} className="text-sm md:text-base lg:text-lg">
+//           {skill}
+//         </li>
+        
+//         ))}
+//       </ul>
+//     </div>
+//   );
+// };
+
 const SkillCard: React.FC<{ title: string; skills: string[] }> = ({
   title,
   skills,
@@ -7,17 +26,20 @@ const SkillCard: React.FC<{ title: string; skills: string[] }> = ({
   return (
     <div className="bg-opacity-50 backdrop-blur-lg rounded-3xl p-8 space-y-6 border border-gray-900">
       <h2 className="text-2xl font-bold text-[#cfb73b] text-center">{title}</h2>
-      <ul className="list-disc list-inside text-white text-left">
+      <ul className="list-disc list-inside text-white text-left space-y-2">
         {skills.map((skill, index) => (
-          <li key={index} className="text-sm md:text-base lg:text-lg">
-          {skill}
-        </li>
-        
+          <li
+            key={index}
+            className="text-sm md:text-base lg:text-lg break-words leading-relaxed"
+          >
+            {skill}
+          </li>
         ))}
       </ul>
     </div>
   );
 };
+
 
 const Skills: React.FC = () => {
   const programmingLanguages = [
