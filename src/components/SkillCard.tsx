@@ -81,8 +81,8 @@ const Skills: React.FC = () => {
       <h1 className="mt-16 mb-10 text-[#30c555] text-5xl md:text-6xl font-acorn font-bold text-left mb-16"> ./skills </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
         <SkillCard title="Programming Languages" skills={programmingLanguages} />
-        <SkillCard title="Technical Concepts" skills={technicalConcepts} />
         <SkillCard title="Tools & Frameworks" skills={toolsAndAPIs} />
+        <SkillCard title="Technical Concepts" skills={technicalConcepts} />
       </div>
     </div>
   );
