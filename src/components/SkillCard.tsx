@@ -55,9 +55,11 @@ const Skills: React.FC = () => {
 
   const technicalConcepts = [
     "Software Engineering",
+    "UI/UX Design",
     "Website Design/Development",
     "Data Structures/Algorithms",
     "Object-Oriented Programming",
+    "Software Development Life Cycle",
     "Game Design/Development",
     "Game Engine Programming",
     "Artificial Intelligence",
