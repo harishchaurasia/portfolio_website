@@ -43,13 +43,13 @@ const SkillCard: React.FC<{ title: string; skills: string[] }> = ({
 
 const Skills: React.FC = () => {
   const programmingLanguages = [
+    "Java",
+    "Python",
     "C++",
     "HLSL",
     "C#",
-    "Python",
-    "Java",
-    "JavaScript",
     "SQL",
+    "JavaScript",
     "Bash",
   ];
 
@@ -57,6 +57,7 @@ const Skills: React.FC = () => {
     
     "UI/UX Design",
     "Machine Learning",
+    "Data Visualisation",
     "Software Engineering",
     "Artificial Intelligence",
     "Website Design/Development",
@@ -66,13 +67,13 @@ const Skills: React.FC = () => {
     "Game Engine Programming",
     "Human Computer Interaction",
     "Software Development Life Cycle"
-    
   ];
 
   const toolsAndAPIs = [
-    "Git/Github",
     "ReactJS",
     "NextJS",
+    "GraphQL",
+    "Git/Github",
     "TailwindCSS",
     "Unity Engine",
     "Unreal Engine",
