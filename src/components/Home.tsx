@@ -17,7 +17,7 @@ const Grids: React.FC = () => {
           <img
             src="/harish03.png"
             alt="Harish"
-            className="w-full h-full md:w-72 md:h-72 rounded-3xl object-cover"
+            className="w-[90%] h-[90%] md:w-72 md:h-72 rounded-3xl object-contain"
           />
         </div>
         {/* Content Box */}
