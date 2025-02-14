@@ -14,22 +14,20 @@ const About: React.FC = () => {
         <div className="backdrop-blur-lg rounded-3xl flex-shrink-0 flex justify-center items-center overflow-hidden w-64 h-64 md:w-80 md:h-80">
           <ImageWithRoundedCorners
             src="/harish_headshot_black.png"
+            // src="/harish03.png"
             alt="Harish Chaurasia"
-            className="object-cover w-full h-full"
+            className="object-cover w-48 h-48 md:w-60 md:h-60"
           />
         </div>
 
         <div className="flex-1 xl:ml-6 p-4 md:p-8 text-white text-center xl:text-left border border-gray-900 bg-black-800 bg-opacity-50 backdrop-blur-lg rounded-3xl mt-5 xl:mt-0 mx-4 md:mx-8 xl:mx-0 flex items-center">
           <p className="text-sm font-sf_pro md:text-base lg:text-lg leading-relaxed">
-            Hi there 👋, I'm Harish, a Tech and Music Geek. I love building
-            things and creating innovative solutions. Looking for an easy and
-            cost-efficient solution to your challenges? I can help. I specialize
-            in creating game-based solutions that are engaging, fun, and highly
-            immersive. My goal is to solve complex challenges with innovative
-            strategies, turning your business challenges into opportunities for
-            growth and efficiency. Let’s collaborate to turn your challenges
-            into effective, gamified strategies that drive success and
-            innovation.
+          I am a passionate tech enthusiast and creative problem-solver with expertise in full-stack 
+          and frontend development, AI/ML, AR/VR, and game design. With a strong foundation in UI/UX, 
+          human-computer interaction, and gamification, I enjoy building innovative and immersive 
+          solutions that make technology more engaging and impactful. My goal is to combine technical 
+          excellence with creativity to turn complex challenges into meaningful opportunities for 
+          growth and innovation.
           </p>
         </div>
       </div>
