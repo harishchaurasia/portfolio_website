@@ -46,10 +46,6 @@ export default function Home() {
         {!showIntro && showSections && <About />}
       </section>
 
-      {/* <section id="skills" className="content mx-4 md:mx-16 lg:mx-44 my-10 md:my-20 space-y-10">
-      {!showIntro && showSections && <Skills />}
-      </section> */}
-
       <section id="projects" className="content mx-4 md:mx-16 lg:mx-44 my-10 md:my-20 space-y-10">
         {!showIntro && showSections && <Prjs />}
       </section>
