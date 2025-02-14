@@ -13,7 +13,7 @@ const Grids: React.FC = () => {
     <div className="grid-background flex flex-col items-center justify-center h-full md:h-screen text-center bg-transparent p-4">
       <div className="flex flex-col md:flex-row gap-6">
         {/* Image Box */}
-        <div className="border border-gray-900 rounded-3xl shadow-bs bg-black-800 bg-opacity-50 backdrop-blur-lg p-4 flex items-center justify-center">
+        <div className="border border-gray-900 rounded-3xl shadow-bs bg-black-800 bg-opacity-50 backdrop-blur-lg p-4 flex items-center justify-center aspect-square">
           <img
             src="/harish03.png"
             alt="Harish"
