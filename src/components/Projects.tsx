@@ -3,13 +3,14 @@ import ProjectCard from './ProjectsCard';
 
 const Projects: React.FC = () => {
   return (
-    <div className="mx-4 md:mx-16 lg:mx-44 my-10 md:my-20 space-y-10">
-      <h1 className="text-[#30c555] text-6xl font-acorn font-bold text-center md:text-left mx-0 md:mx-0 mt-56 mb-16">
+    <div className="mx-4 md:mx-16 lg:mx-44 my-10 md:my-20">
+      <h1 className="text-[#30c555] text-6xl font-acorn font-bold text-center md:text-left mt-56 mb-16">
         .Projects
       </h1>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
       <ProjectCard 
-        title="Inclusive Workforce Matching Platform" 
-        description="Designed and developed a web platform, Match-ABLE, connecting individuals with disabilities to companies embracing inclusivity and lloking to fulfill their CSR Quota. Implemented user authentication, real-time accessibility scoring using Python scripts, and an intuitive UI with React and TailwindCSS. Enhanced job search efficiency by integrating AI-based resume matching and dynamic accessibility filters, fostering diversity in the workforce." 
+        title="Workforce Matching Platform" 
+        description="Designed and developed a web platform, connecting individuals with disabilities to companies embracing inclusivity and looking to fulfill their CSR Quotas. Implemented real-time accessibility scoring using AI matching, and an intuitive UI with React and TailwindCSS. Enhanced job search efficiency by integrating AI-based resume matching and dynamic accessibility filters." 
         skills={['React', 'Node.js', 'Python', 'TailwindCSS', 'MongoDB', 'AI/ML']} 
         mainSkill="React" 
         skillIcons={['react', 'nodejs', 'python', 'tailwindcss']} 
@@ -64,7 +65,7 @@ const Projects: React.FC = () => {
         githubRepo="https://drive.google.com/file/d/1OYAcn2PssKbmePcfPlq988iof-a6uRmU/view?usp=sharing"
       />
       <ProjectCard 
-        title="Real-Time Speech to Image Generation" 
+        title="Real-Time Speech to Image Gen" 
         description="Developed a real-time speech-to-image generation application during ASU HACKML 2022. Leveraged Assembly AI's audio transcription API alongside a simplified machine learning model inspired by OpenAI's DALL·E paper. Implemented robust integration of real-time transcription with generative capabilities using Node.js and Python." 
         skills={['Python', 'AssemblyAI', 'Machine Learning', 'Node.js']} 
         mainSkill="Python" 
@@ -72,7 +73,7 @@ const Projects: React.FC = () => {
         githubRepo="https://github.com/harishchaurasia/MLHackathon2022" 
       />
 
-
+    </div>
     </div>
   );
 };
