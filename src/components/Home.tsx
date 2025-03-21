@@ -14,7 +14,7 @@ const Grids: React.FC = () => {
       <div className="flex flex-col md:flex-row gap-6 items-center justify-center">
         <div className="border border-gray-900 rounded-3xl shadow-bs bg-black-800 bg-opacity-50 backdrop-blur-lg p-4 flex items-center justify-center aspect-square">
           <img
-            src="/harish03.png"
+            src="/harish_headshot_black.png"
             alt="Harish"
             className="w-full h-full md:w-72 md:h-72 rounded-3xl object-contain"
           />
@@ -22,7 +22,7 @@ const Grids: React.FC = () => {
         {/* Content Box */}
         <div className="border border-gray-900 rounded-3xl shadow-bs bg-black-800 bg-opacity-50 backdrop-blur-lg p-4 flex flex-col items-center justify-center">
           <h1 className="font-acorn font-medium mt-0 mx-4 text-gray-200 text-center text-6xl md:text-7xl lg:text-8xl text-gradient mb-4">
-            Hi. I&apos;m Harish.
+            Hi. I'm Harish.
           </h1>
           <h2 className="font-acorn font-medium mx-4 text-white text-3xl md:text-4xl lg:text-5xl text-gradient mb-6">
             A Creative Developer.
