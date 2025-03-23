@@ -10,7 +10,7 @@ const Projects: React.FC = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
         <ProjectCard
           title="SolEstate"
-          description="SolEstate is a Decentralized Money Lending Platform based on Solana. It connects borrowers from developing regions with global lenders, enabling hassle-free funding. Integrated smart contract-powered lending and repayment mechanisms, ensuring secure, transparent, and trustless transactions using Python and Node.js. Developed an intuitive and accessible UI using React, Next.js, and TailwindCSS, streamlining the lending process, now facilitating 20+ loan transactions across 10+ countries."
+          description="SolEstate is a Decentralized Money Lending Platform based on Solana. It connects borrowers from developing regions with global lenders, enabling hassle-free funding. Integrated smart contract-powered lending and repayment mechanisms, ensuring secure, transparent, and trustless transactions using Python and Node.js. Developed an intuitive and accessible UI using React, Next.js, and TailwindCSS, streamlining the lending process, facilitating ideas & startups."
           skills={[
             "React",
             "Next.js",
