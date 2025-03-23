@@ -27,7 +27,7 @@ const About: React.FC = () => {
             UI/UX to craft intelligent, user-centric solutions. With a strong
             focus on human-computer interaction, I’m actively researching
             haptics to enhance digital experiences through touch and feedback.
-            From building scalable web platforms to designing intuitive
+            From building scalable tools & applications to designing intuitive
             interfaces and pushing the boundaries of gamification and AI-driven
             applications, I thrive on turning complex ideas into seamless,
             impactful, and just plain fun software.
