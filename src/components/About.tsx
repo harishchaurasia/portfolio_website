@@ -22,14 +22,15 @@ const About: React.FC = () => {
 
         <div className="flex-1 xl:ml-6 p-4 md:p-8 text-white text-center xl:text-left border border-gray-900 bg-black-800 bg-opacity-50 backdrop-blur-lg rounded-3xl mt-5 xl:mt-0 mx-4 md:mx-8 xl:mx-0 flex items-center">
           <p className="text-sm font-sf_pro md:text-base lg:text-lg leading-relaxed">
-            I am a passionate tech enthusiast and creative problem-solver with
-            expertise in full-stack and frontend development, AI/ML, AR/VR, and
-            game design. With a strong foundation in UI/UX, human-computer
-            interaction, and gamification, I enjoy building innovative and
-            immersive solutions that make technology more engaging and
-            impactful. My goal is to combine technical excellence with
-            creativity to turn complex challenges into meaningful opportunities
-            for growth and innovation.
+            I'm a passionate software engineer, applications developer, and
+            creative problem-solver, blending full-stack development, AI/ML, and
+            UI/UX to craft intelligent, user-centric solutions. With a strong
+            focus on human-computer interaction, I’m actively researching
+            haptics to enhance digital experiences through touch and feedback.
+            From building scalable web platforms to designing intuitive
+            interfaces and pushing the boundaries of gamification and AI-driven
+            applications, I thrive on turning complex ideas into seamless,
+            impactful, and just plain fun software.
           </p>
         </div>
       </div>
