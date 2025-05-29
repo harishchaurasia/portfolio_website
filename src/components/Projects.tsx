@@ -9,6 +9,29 @@ const Projects: React.FC = () => {
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
         <ProjectCard
+  title="Lyrical.AI"
+  description="Lyrical.AI is an AI-powered songwriting assistant that generates lyrics from text and audio prompts. It analyzes mood and style to suggest chord progressions and musical keys, helping musicians turn ideas into structured songs. Built using GPT-2, Whisper, and FastAPI, with local inference on an RTX 5080 GPU. Designed a responsive and intuitive frontend using React and TailwindCSS to support seamless creative interaction."
+  skills={[
+    "React",
+    "FastAPI",
+    "Python",
+    "Whisper",
+    "GPT-2",
+    "TailwindCSS",
+    "Hugging Face",
+  ]}
+  mainSkill="python"
+  skillIcons={[
+    "react",
+    "python",
+    "fastapi",
+    "huggingface",
+    "tailwindcss",
+  ]}
+  githubRepo="https://github.com/harishchaurasia/LyricalAI"
+/>
+
+        <ProjectCard
           title="SolEstate"
           description="SolEstate is a Decentralized Money Lending Platform based on Solana. It connects borrowers from developing regions with global lenders, enabling hassle-free funding. Integrated smart contract-powered lending and repayment mechanisms, ensuring secure, transparent, and trustless transactions using Python and Node.js. Developed an intuitive and accessible UI using React, Next.js, and TailwindCSS, streamlining the lending process, facilitating ideas & startups."
           skills={[
