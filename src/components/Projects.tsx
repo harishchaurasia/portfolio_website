@@ -9,27 +9,21 @@ const Projects: React.FC = () => {
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
         <ProjectCard
-  title="Lyrical.AI"
-  description="Lyrical.AI is an AI-powered songwriting assistant that generates lyrics from text and audio prompts. It analyzes mood and style to suggest chord progressions and musical keys, helping musicians turn ideas into structured songs. Built using GPT-2, Whisper, and FastAPI, with local inference on an RTX 5080 GPU. Designed a responsive and intuitive frontend using React and TailwindCSS to support seamless creative interaction."
-  skills={[
-    "React",
-    "FastAPI",
-    "Python",
-    "Whisper",
-    "GPT-2",
-    "TailwindCSS",
-    "Hugging Face",
-  ]}
-  mainSkill="python"
-  skillIcons={[
-    "react",
-    "python",
-    "fastapi",
-    "huggingface",
-    "tailwindcss",
-  ]}
-  githubRepo="https://github.com/harishchaurasia/LyricalAI"
-/>
+          title="Lyrical AI"
+          description="Lyrical.AI is an AI-powered songwriting assistant that generates lyrics from text and audio prompts. It analyzes mood and style to suggest chord progressions and musical keys, helping musicians turn ideas into structured songs. Built using OpenAI's GPT, Whisper, and FastAPI, with local inference on an RTX 5080 GPU. Designed with a responsive and intuitive frontend using React and TailwindCSS to support seamless creative interaction."
+          skills={[
+            "React",
+            "FastAPI",
+            "Python",
+            "Whisper",
+            "GPT-2",
+            "TailwindCSS",
+            "Hugging Face",
+          ]}
+          mainSkill="python"
+          skillIcons={["react", "python", "fastapi", "tailwindcss"]}
+          githubRepo="https://github.com/harishchaurasia/LyricalAI"
+        />
 
         <ProjectCard
           title="SolEstate"
