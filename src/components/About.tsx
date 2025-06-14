@@ -10,22 +10,21 @@ const About: React.FC = () => {
       <h1 className="text-[#30c555] text-5xl md:text-6xl font-acorn font-bold text-center md:text-left mb-10 md:mb-16">
         .About Me
       </h1>
-      <div className="flex flex-col xl:flex-row p-4 md:p-8 bg-transparent mb-10 md:mb-16 items-center xl:items-center">
-        <div className="backdrop-blur-lg rounded-3xl flex-shrink-0 flex justify-center items-center overflow-hidden w-64 h-64 md:w-80 md:h-80">
+      <div className="flex flex-col xl:flex-row p-0 md:p-0 bg-transparent mb-10 md:mb-16 items-stretch xl:items-stretch">
+        <div className="backdrop-blur-lg rounded-3xl border border-gray-700 flex-shrink-0 flex justify-center items-center overflow-hidden w-48 h-48 md:w-60 md:h-60">
           <ImageWithRoundedCorners
-            // src="/harish_headshot_black.png"
             src="/harish03.png"
             alt="Harish Chaurasia"
-            className="object-cover w-48 h-48 md:w-60 md:h-60"
+            className="object-contain w-40 h-40 md:w-52 md:h-52"
           />
         </div>
 
-        <div className="flex-1 xl:ml-6 p-4 md:p-8 text-white text-center xl:text-left border border-gray-900 bg-black-800 bg-opacity-50 backdrop-blur-lg rounded-3xl mt-5 xl:mt-0 mx-4 md:mx-8 xl:mx-0 flex items-center">
+        <div className="flex-1 xl:ml-6 p-4 md:p-8 text-white text-center xl:text-left border border-gray-900 bg-black-800 bg-opacity-50 backdrop-blur-lg rounded-3xl mt-5 xl:mt-0 mx-4 md:mx-8 xl:mx-0 flex items-center h-48 md:h-60">
           <p className="text-sm font-sf_pro md:text-base lg:text-lg leading-relaxed">
             I'm a passionate software engineer, applications developer, and
             creative problem-solver, blending full-stack development, AI/ML, and
             UI/UX to craft intelligent, user-centric solutions. With a strong
-            focus on human-computer interaction, I’m actively researching
+            focus on human-computer interaction, I'm actively researching
             haptics to enhance digital experiences through touch and feedback.
             From building scalable tools & applications to designing intuitive
             interfaces and pushing the boundaries of gamification and AI-driven
