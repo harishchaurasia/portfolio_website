@@ -12,11 +12,11 @@ const Grids: React.FC = () => {
   return (
     <div className="grid-background flex flex-col items-center justify-center h-full md:h-screen text-center bg-transparent p-4">
       <div className="flex flex-col md:flex-row gap-6 items-center justify-center">
-        <div className="border border-gray-900 rounded-3xl shadow-bs bg-black-800 bg-opacity-50 backdrop-blur-lg p-4 flex items-center justify-center aspect-square">
+        <div className="border border-gray-700 rounded-3xl shadow-bs bg-black-800 bg-opacity-50 backdrop-blur-lg p-0 flex items-center justify-center">
           <img
             src="/harish_headshot_black.png"
             alt="Harish"
-            className="w-full h-full md:w-72 md:h-72 rounded-3xl object-contain"
+            className="w-full h-full md:w-64 md:h-64 rounded-3xl object-cover"
           />
         </div>
         {/* Content Box */}
