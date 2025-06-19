@@ -11,11 +11,11 @@ const About: React.FC = () => {
         .About Me
       </h1>
       <div className="flex flex-col xl:flex-row p-0 md:p-0 bg-transparent mb-10 md:mb-16 items-stretch xl:items-stretch">
-        <div className="backdrop-blur-lg rounded-3xl border border-gray-700 flex-shrink-0 flex justify-center items-center overflow-hidden w-full max-w-xs h-auto md:w-60 md:h-60 mx-auto">
+        <div className=" rounded-3xl  flex-shrink-0 flex justify-center items-center overflow-hidden w-full max-w-xs h-auto md:w-60 md:h-60 mx-auto">
           <ImageWithRoundedCorners
             src="/harish03.png"
             alt="Harish Chaurasia"
-            className="object-contain w-full h-auto md:w-52 md:h-52"
+            className="object-cover w-full h-auto md:w-52 md:h-52"
           />
         </div>
 
