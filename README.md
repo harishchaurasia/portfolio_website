@@ -43,3 +43,5 @@ Next.js Documentation - learn about Next.js features and API.
 Learn Next.js - an interactive Next.js tutorial.
 You can check out the Next.js GitHub repository - your feedback and contributions are welcome!
 
+
+#Also this si a Thanks to VantaJS components and also ReactBits (https://reactbits.dev/)

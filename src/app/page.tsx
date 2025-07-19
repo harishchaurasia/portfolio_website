@@ -11,6 +11,9 @@ import Prjs from "../components/Projects";
 import Contact from "../components/ContactMe";
 import Footer from '../components/Footer';
 import VantaComponent from '../components/VantaComponent';
+import SplashCursor from '../components/SplashCursor'
+
+
 
 export default function Home() {
   const [showIntro, setShowIntro] = useState(true);
@@ -35,6 +38,7 @@ export default function Home() {
   return (
     <div className="relative mt-2 py-4">
       <VantaComponent />
+      <SplashCursor />
       {showIntro && <Intro onComplete={() => setShowIntro(false)} />}
       {!showIntro && showNav && <Navs />}
       
