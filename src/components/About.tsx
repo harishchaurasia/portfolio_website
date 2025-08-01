@@ -46,7 +46,7 @@ const About: React.FC = () => {
           </h1>
           <EducationCard
             degreeType="Major"
-            degreeName="MS in Computer Science & Artificial Intelligence & Machine Learning"
+            degreeName="MS in Computer Science, AI/ML & XR/VR"
             schoolName="Ira A. Fulton Schools of Engineering"
             collegeName="School of Computing and Augmented Intelligence"
             universityName="Arizona State University"
