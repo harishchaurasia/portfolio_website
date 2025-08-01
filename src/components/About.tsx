@@ -46,12 +46,33 @@ const About: React.FC = () => {
           </h1>
           <EducationCard
             degreeType="Major"
-            degreeName="B.Sc in Computer Science"
+            degreeName="MS in Computer Science & Artificial Intelligence & Machine Learning"
+            schoolName="Ira A. Fulton Schools of Engineering"
+            collegeName="School of Computing and Augmented Intelligence"
+            universityName="Arizona State University"
+            degreeDateRange="2024 - 2026"
+            description="Pursuing MS in Computer Science with a focus on AI/ML and 
+            immersive technologies such as XR, VR, and Game Systems. Working at the 
+            intersection of HCI and intelligent systems to design engaging, interactive 
+            experiences. Building scalable, cloud-powered applications for real-world web 
+            and mobile platforms."
+            logo="/asu_logo.png"
+            className="bg-gray-800 bg-opacity-50 backdrop-blur-lg rounded-3xl"
+          />
+          <EducationCard
+            degreeType="Major"
+            degreeName="BS in Computer Science"
             schoolName="Ira A. Fulton Schools of Engineering"
             collegeName="School of Computing and Augmented Intelligence"
             universityName="Arizona State University"
             degreeDateRange="2022 - 2025"
-            description="With my major in Computer-Science, I am concentrating on Web and Software development, building a strong foundation in Data Structures and Algorithms. Currently learning iOS Development, React Native, and AI."
+            description="In my undergraduate studies, I built a strong 
+            foundation in algorithms, data structures, and software engineering, 
+            while also exploring specialized areas like Human-Computer Interaction (HCI), 
+            haptics, and immersive technologies. I focused on hands-on web and mobile 
+            development using tools like React, Node.js, and cloud services. 
+            This blend of technical and design-focused learning helped me understand 
+            how to build user-centered, innovative applications."
             logo="/asu_logo.png"
             className="bg-gray-800 bg-opacity-50 backdrop-blur-lg rounded-3xl"
           />
