@@ -25,7 +25,7 @@ const Grids: React.FC = () => {
             Hi. I'm Harish.
           </h1>
           <h2 className="font-acorn font-medium mx-4 text-white text-3xl md:text-4xl lg:text-5xl text-gradient mb-6">
-            A Creative Developer.
+            Full Stack and AI/ML Engineer.
           </h2>
           <div className="flex justify-center space-x-4 mx-4">
             <a
