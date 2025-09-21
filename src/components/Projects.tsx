@@ -3,11 +3,11 @@ import ProjectCard from "./ProjectsCard";
 
 const Projects: React.FC = () => {
   return (
-    <div className="mx-4 md:mx-16 lg:mx-44 my-10 md:my-20">
-      <h1 className="text-[#30c555] text-6xl font-acorn font-bold text-center md:text-left mt-56 mb-16">
+    <div className="mx-0 md:mx-0 lg:mx-0 my-10 md:my-20">
+      <h1 className="text-[#30c555] text-6xl font-acorn font-bold text-center md:text-left mt-20 md:mt-28 mb-10 md:mb-16">
         .Projects
       </h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+      <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-10">
         <ProjectCard
           title="Lyrical AI"
           description="Lyrical.AI is an AI-powered songwriting assistant that generates lyrics from text and audio prompts. It analyzes mood and style to suggest chord progressions and musical keys, helping musicians turn ideas into structured songs. Built using OpenAI's GPT, Whisper, and FastAPI, with local inference on an RTX 5080 GPU. Designed with a responsive and intuitive frontend using React and TailwindCSS to support seamless creative interaction."

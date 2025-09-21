@@ -11,7 +11,7 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 const ContactMe: React.FC = () => {
   return (
-    <div className="py-4 mx-0 md:mx-8 lg:mx-44 my-56 md:my-20 space-y-10">
+    <div className="py-4 mx-0 md:mx-0 lg:mx-0 my-56 md:my-20 space-y-10">
       <h1 className="text-[#30c555] text-5xl md:text-6xl lg:text-7xl font-bold text-center md:text-left mb-16 font-acorn">
         .Contact Me
       </h1>
