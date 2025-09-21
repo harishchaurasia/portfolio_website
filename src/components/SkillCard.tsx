@@ -62,7 +62,7 @@ const Skills: React.FC = () => {
 
   return (
     <div className="space-y-16">
-      <h1 className="mt-16 mb-10 text-[#30c555] text-5xl md:text-6xl font-acorn font-bold text-left mb-16">
+      <h1 className="mt-16 text-[#30c555] text-5xl md:text-6xl font-acorn font-bold text-left mb-16">
         {" "}
         ./skills{" "}
       </h1>
