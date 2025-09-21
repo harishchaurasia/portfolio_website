@@ -6,7 +6,7 @@ import Skills from "../components/SkillCard";
 
 const About: React.FC = () => {
   return (
-    <div className="mx-4 md:mx-16 lg:mx-44 my-32 md:my-20 space-y-10">
+    <div className="mx-0 md:mx-0 lg:mx-0 my-32 md:my-20 space-y-10">
       <h1 className="text-[#30c555] text-5xl md:text-6xl font-acorn font-bold text-center md:text-left mb-10 md:mb-16">
         .About Me
       </h1>
@@ -39,7 +39,7 @@ const About: React.FC = () => {
         <Skills />
       </div>
 
-      <div className="md:grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 gap-4">
         <div className="mt-24 md:mt-36 space-y-8">
           <h1 className="text-4xl font-acorn font-bold text-[#cfb73b] my-4 text-center md:text-left">
             ./education

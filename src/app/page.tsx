@@ -42,19 +42,19 @@ export default function Home() {
       {showIntro && <Intro onComplete={() => setShowIntro(false)} />}
       {!showIntro && showNav && <Navs />}
       
-      <section id="home" className="content mt-0 md:mt-20 mx-4 md:mx-16 lg:mx-44 my-10 md:my-20 space-y-10 p-8">
+      <section id="home" className="content mt-28 md:mt-20 px-4 md:px-8 my-10 md:my-20 space-y-10 max-w-6xl mx-auto">
         {!showIntro && showGrid && <Hom/>}
       </section>
 
-      <section id="about" className="content mx-4 md:mx-16 lg:mx-44 my-10 md:my-20 space-y-10">
+      <section id="about" className="content px-4 md:px-8 my-10 md:my-20 space-y-10 max-w-6xl mx-auto">
         {!showIntro && showSections && <About />}
       </section>
 
-      <section id="projects" className="content mx-4 md:mx-16 lg:mx-44 my-10 md:my-20 space-y-10">
+      <section id="projects" className="content px-4 md:px-8 my-10 md:my-20 space-y-10 max-w-6xl mx-auto">
         {!showIntro && showSections && <Prjs />}
       </section>
 
-      <section id="contact" className="content mx-4 md:mx-16 lg:mx-44 mt-16 md:my-32 space-y-10">
+      <section id="contact" className="content px-4 md:px-8 mt-16 md:my-32 space-y-10 max-w-6xl mx-auto">
         {!showIntro && showSections && <Contact />}
       </section>
       
