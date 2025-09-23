@@ -28,16 +28,19 @@ const Skills: React.FC = () => {
     "HLSL",
     "C#",
     "SQL",
-    "JavaScript",
     "Bash",
+    "JavaScript",
+    "TypeScript",
   ];
 
   const technicalConcepts = [
     "UI/UX Design",
+    "Cloud Computing",
     "Machine Learning",
     "Data Visualisation",
     "Software Engineering",
     "Artificial Intelligence",
+    "Natural Language Processing",
     "Website Design/Development",
     "Data Structures/Algorithms",
     "Object-Oriented Programming",
@@ -53,10 +56,11 @@ const Skills: React.FC = () => {
     "GraphQL",
     "Git/Github",
     "TailwindCSS",
-    "Unity Engine",
+    "Unity",
     "Unreal Engine",
     "Visual Studio",
     "Visual Studio Code",
+    "Amazon Web Services",
     "Microsoft XNA Framework",
   ];
 
