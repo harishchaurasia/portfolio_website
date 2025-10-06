@@ -22,27 +22,35 @@ const SkillCard: React.FC<{ title: string; skills: string[] }> = ({
 
 const Skills: React.FC = () => {
   const programmingLanguages = [
-    "Java",
     "Python",
+    "Java",
     "C++",
-    "HLSL",
     "C#",
+    "HTML5",
+    "CSS/SASS",
     "SQL",
+    "PostgreSQL",
+    "MongoDB",
+    "MySQL",
+    "DynamoDB",
     "Bash",
     "JavaScript",
     "TypeScript",
   ];
 
   const technicalConcepts = [
+    "DevOps",
     "UI/UX Design",
+    "Agile & Scrum",
     "Cloud Computing",
     "Machine Learning",
     "Data Visualisation",
     "Software Engineering",
+    "Full-Stack Development",
     "Artificial Intelligence",
     "Natural Language Processing",
     "Website Design/Development",
-    "Data Structures/Algorithms",
+    "Data Structures and Algorithms",
     "Object-Oriented Programming",
     "Game Design/Development",
     "Game Engine Programming",
@@ -51,17 +59,22 @@ const Skills: React.FC = () => {
   ];
 
   const toolsAndAPIs = [
-    "ReactJS",
-    "NextJS",
-    "GraphQL",
-    "Git/Github",
-    "TailwindCSS",
+    "React.js",
+    "Next.js",
+    "Angular",
+    "Node.js",
+    "Django",
+    "FastAPI",
     "Unity",
     "Unreal Engine",
+    "AWS",
+    "Firebase",
+    "Docker",
+    "Kubernetes",
+    "CI/CD",
+    "Git/GitHub",
+    "Linux/UNIX Shell",
     "Visual Studio",
-    "Visual Studio Code",
-    "Amazon Web Services",
-    "Microsoft XNA Framework",
   ];
 
   return (

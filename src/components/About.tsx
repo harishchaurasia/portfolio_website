@@ -6,12 +6,13 @@ import Skills from "../components/SkillCard";
 
 const About: React.FC = () => {
   return (
-    <div className="mx-0 md:mx-0 lg:mx-0 my-32 md:my-20 space-y-10">
+    <div className="mx-0 my-32 md:my-20 space-y-10">
       <h1 className="text-[#30c555] text-5xl md:text-6xl font-acorn font-bold text-center md:text-left mb-10 md:mb-16">
         .About Me
       </h1>
-      <div className="flex flex-col xl:flex-row p-0 md:p-0 bg-transparent mb-10 md:mb-16 items-stretch xl:items-stretch">
-        <div className=" rounded-3xl  flex-shrink-0 flex justify-center items-center overflow-hidden w-full max-w-xs h-auto md:w-60 md:h-60 mx-auto">
+
+      <div className="flex flex-col xl:flex-row p-0 mb-10 md:mb-16 items-stretch">
+        <div className="rounded-3xl flex-shrink-0 flex justify-center items-center overflow-hidden w-full max-w-xs h-auto md:w-60 md:h-60 mx-auto">
           <ImageWithRoundedCorners
             src="/harish03.png"
             alt="Harish Chaurasia"
@@ -19,43 +20,38 @@ const About: React.FC = () => {
           />
         </div>
 
-        <div className="flex-1 xl:ml-6 p-4 md:p-8 text-white text-center xl:text-left border border-gray-900 bg-black-800 bg-opacity-50 backdrop-blur-lg rounded-3xl mt-5 xl:mt-0 mx-4 md:mx-8 xl:mx-0 flex items-center h-48 md:h-60">
-          <p className=" font-sf_pro text-sm md:text-base lg:text-md leading-relaxed">
-            I'm a passionate software engineer, applications developer, and
-            creative problem-solver, blending full-stack development, AI/ML, and
-            UI/UX to craft intelligent, user-centric solutions. With a strong
-            focus on human-computer interaction, I'm actively researching
-            haptics to enhance digital experiences through touch and feedback.
-            From building scalable tools & applications to designing intuitive
-            interfaces and pushing the boundaries of gamification and AI-driven
-            applications, I thrive on turning complex ideas into seamless,
-            impactful, and just plain fun software.
+        <div className="flex-1 xl:ml-6 p-4 md:p-8 text-white text-center xl:text-left border border-gray-900 bg-black bg-opacity-50 backdrop-blur-lg rounded-3xl mt-5 xl:mt-0 mx-4 md:mx-8 xl:mx-0 flex items-center h-auto md:h-60">
+          <p className="font-sf_pro text-sm md:text-base lg:text-md leading-relaxed">
+            I'm a full-stack and AI/ML engineer with 3+ years of experience in
+            building intelligent, user-centric software. I specialize in
+            developing scalable web platforms, fine-tuning NLP models, and
+            designing responsive frontends with a strong focus on HCI and
+            gamification. My work spans AI systems, immersive technologies, and
+            cloud-based applications — combining creativity, data, and
+            engineering to build impactful, intuitive experiences.
           </p>
         </div>
       </div>
 
       {/* Skills Section */}
-      <div className="mt-10 mx-0 md:mx-0 lg:mx-0">
+      <div className="mt-10">
         <Skills />
       </div>
 
       <div className="grid grid-cols-1 gap-4">
+        {/* Education */}
         <div className="mt-24 md:mt-36 space-y-8">
           <h1 className="text-4xl font-acorn font-bold text-[#cfb73b] my-4 text-center md:text-left">
             ./education
           </h1>
           <EducationCard
             degreeType="Major"
-            degreeName="MS in Computer Science, AI/ML & XR/VR"
+            degreeName="MS in Computer Science (AI/ML)"
             schoolName="Ira A. Fulton Schools of Engineering"
             collegeName="School of Computing and Augmented Intelligence"
             universityName="Arizona State University"
             degreeDateRange="2024 - 2026"
-            description="Pursuing MS in Computer Science with a focus on AI/ML and 
-            immersive technologies such as XR, VR, and Game Systems. Working at the 
-            intersection of HCI and intelligent systems to design engaging, interactive 
-            experiences. Building scalable, cloud-powered applications for real-world web 
-            and mobile platforms."
+            description="Pursuing MS in Computer Science with a focus on AI/ML, NLP, and immersive systems. Exploring intersections between HCI and AI to create intelligent, interactive digital experiences."
             logo="/asu_logo.png"
             className="bg-gray-800 bg-opacity-50 backdrop-blur-lg rounded-3xl"
           />
@@ -66,13 +62,7 @@ const About: React.FC = () => {
             collegeName="School of Computing and Augmented Intelligence"
             universityName="Arizona State University"
             degreeDateRange="2022 - 2025"
-            description="In my undergraduate studies, I built a strong 
-            foundation in algorithms, data structures, and software engineering, 
-            while also exploring specialized areas like Human-Computer Interaction (HCI), 
-            haptics, and immersive technologies. I focused on hands-on web and mobile 
-            development using tools like React, Node.js, and cloud services. 
-            This blend of technical and design-focused learning helped me understand 
-            how to build user-centered, innovative applications."
+            description="Built a foundation in software engineering, algorithms, and data structures while exploring HCI, immersive technologies, and AI-driven systems for web and mobile platforms."
             logo="/asu_logo.png"
             className="bg-gray-800 bg-opacity-50 backdrop-blur-lg rounded-3xl"
           />
@@ -83,7 +73,7 @@ const About: React.FC = () => {
             collegeName="School of Music, Dance and Theatre"
             universityName="Arizona State University"
             degreeDateRange="2023 - 2025"
-            description="Studying advanced music production and stage technology, with a focus on sound design. Over 4 years of experience in music production and 2 years in DJing."
+            description="Studying advanced music production and sound design, with hands-on experience in DJing and digital composition."
             logo="/herberger.png"
             className="bg-gray-800 bg-opacity-50 backdrop-blur-lg rounded-3xl"
           />
@@ -94,53 +84,54 @@ const About: React.FC = () => {
             collegeName="School of Computing and Augmented Intelligence"
             universityName="Arizona State University"
             degreeDateRange="2022 - 2025"
-            description="Learning game design and development, proficient in Unity and Unreal Engine, experienced in HLSL and MonoGame framework by Microsoft, currently learning 3D design and narrative."
+            description="Trained in Unity and Unreal Engine with experience in C#, HLSL, and interactive 3D design. Focused on game systems, narrative design, and simulation-based learning."
             logo="/ira.png"
             className="bg-gray-800 bg-opacity-50 backdrop-blur-lg rounded-3xl"
           />
         </div>
 
+        {/* Experience */}
         <div className="mt-24 space-y-8">
           <h1 className="text-4xl font-acorn font-bold text-[#cfb73b] my-4 text-center md:text-left">
             ./experiences
           </h1>
           <ExperienceCard
-            title="Software & Games Developer"
-            companyName="School of Manufacturing Systems and Networks"
+            title="Software Developer"
+            companyName="School of Manufacturing Systems and Networks, ASU"
             dateRange="Dec 2023 - Present"
-            description="Developed and optimized Blueprints & C++ code for game programming, focusing on performance and user experience. Innovated in sound design and created engaging game levels, contributing to immersive gaming experiences."
+            description="Optimized C++ code, digital twins, and interactive UIs to simulate industrial workflows. Built Unreal Engine simulations with real-time feedback and collaborated with Los Alamos National Lab to enhance operational accuracy."
             logo="/msn.png"
             className="bg-gray-800 bg-opacity-50 backdrop-blur-lg rounded-3xl"
           />
           <ExperienceCard
-            title="AR/VR Developer & Workforce Development Researcher"
-            companyName="ASU Laboratory for Energy And Power Solutions"
+            title="AR/VR Developer & Researcher"
+            companyName="ASU Laboratory for Energy and Power Solutions"
             dateRange="Jan 2023 - Oct 2023"
-            description="Developed AR/VR training modules for Microgrid and Electrical subsystems, assisted in content development and hardware integration, and analyzed data for sponsored projects to improve workforce training."
+            description="Developed AR/VR training modules for microgrid systems using Unity, ARKit, and Vuforia. Integrated hardware simulations and automated training workflows to improve efficiency."
             logo="/leaps.png"
             className="bg-gray-800 bg-opacity-50 backdrop-blur-lg rounded-3xl"
           />
           <ExperienceCard
-            title="Tech & Design Lead"
+            title="Software Lead"
             companyName="EPICS at ASU"
             dateRange="Aug 2022 - Dec 2022"
-            description="Led the Team Shonto Solar project using Project Management. Designed the electronic interface and backend, creating efficient products to maximize utility with minimal resource use."
+            description="Led a 6-member team to deliver community-based software solutions. Implemented agile workflows, reduced development cycles, and managed stakeholder communication."
             logo="/epics.png"
             className="bg-gray-800 bg-opacity-50 backdrop-blur-lg rounded-3xl"
           />
           <ExperienceCard
-            title="Core Officer"
-            companyName="Google Developer Student Club at Arizona State University"
-            dateRange="Oct 2022 - Present"
-            description="Planned & Facilitated events and outreach activities, engaged students in tech initiatives, and promoted the Google Developer Student Club with a mission to teach basic tech skills."
+            title="Technical Officer & Treasurer"
+            companyName="Google Developer Student Club, ASU"
+            dateRange="Jan 2022 - Present"
+            description="Organized 15+ workshops on full-stack, AI/ML, and cloud computing. Led hackathons and initiatives impacting 500+ students and boosting participation by 40%."
             logo="/asu_dsc.png"
             className="bg-gray-800 bg-opacity-50 backdrop-blur-lg rounded-3xl"
           />
           <ExperienceCard
             title="President"
-            companyName="Devil's DJing Club at Arizona State University"
+            companyName="Devil's DJing Club, ASU"
             dateRange="Apr 2023 - Present"
-            description="Organized and managed music workshops & events, collaborated with DJs and musicians, managed social media, and trained members to enhance their technical skills and creativity in music."
+            description="Managed music production workshops, collaborations, and events. Mentored members in performance and production while fostering a creative and technical learning environment."
             logo="/djing.png"
             className="bg-gray-800 bg-opacity-50 backdrop-blur-lg rounded-3xl"
           />
