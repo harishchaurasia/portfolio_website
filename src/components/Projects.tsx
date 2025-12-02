@@ -22,7 +22,7 @@ const Projects: React.FC = () => {
             "TailwindCSS",
             "shadcn/ui",
           ]}
-          mainSkill="python"
+          mainSkill="pytorch"
           skillIcons={["python", "fastapi", "nextjs", "pytorch"]}
           githubRepo="https://github.com/harishchaurasia/KnowledgeBrain"
         />
