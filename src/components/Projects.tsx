@@ -9,6 +9,25 @@ const Projects: React.FC = () => {
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-10">
         <ProjectCard
+          title="Knowledge Brain (Multimodal RAG Assistant) [In Progress]"
+          description="Knowledge Brain, also known as Personal Professor, is a multimodal Retrieval-Augmented Generation (RAG) system that lets users upload PDFs, documents, and audio to create a personalized AI tutor. It extracts and chunks text, generates embeddings using PyTorch, stores vectors in FAISS, and retrieves grounded context to answer questions via Llama 3. The system supports voice queries using Whisper, real-time chat, and a modern UI built with Next.js, TailwindCSS, and shadcn/ui. Fully local, privacy-friendly, and optimized for fast inference."
+          skills={[
+            "FastAPI",
+            "Python",
+            "Next.js",
+            "FAISS",
+            "PyTorch",
+            "Whisper",
+            "Llama 3",
+            "TailwindCSS",
+            "shadcn/ui",
+          ]}
+          mainSkill="python"
+          skillIcons={["python", "fastapi", "nextjs", "pytorch"]}
+          githubRepo="https://github.com/harishchaurasia/KnowledgeBrain"
+        />
+
+        <ProjectCard
           title="Lyrical AI"
           description="Lyrical.AI is an AI-powered songwriting assistant that generates lyrics from text and audio prompts. It analyzes mood and style to suggest chord progressions and musical keys, helping musicians turn ideas into structured songs. Built using OpenAI's GPT, Whisper, and FastAPI, with local inference on an RTX 5080 GPU. Designed with a responsive and intuitive frontend using React and TailwindCSS to support seamless creative interaction."
           skills={[
