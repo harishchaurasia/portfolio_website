@@ -16,7 +16,7 @@ const ContactMe: React.FC = () => {
         .Contact Me
       </h1>
       <div className="flex flex-col px-2 md:flex-row items-center justify-center">
-        <div className="p-4 border border-gray-900 bg-black-800 bg-opacity-50 backdrop-blur-lg rounded-3xl">
+        <div className="p-4 border border-gray-900 bg-black-800 bg-opacity-50 backdrop-blur-lg rounded-3xl w-full md:w-[560px] lg:w-[640px]">
           <div className="flex-1 text-center">
             <p className="text-white mt-4 mb-4 text-4xl md:text-5xl lg:text-6xl font-bold font-sf_pro">
               I'm Harish.
@@ -28,34 +28,33 @@ const ContactMe: React.FC = () => {
               EAT. SLEEP. BUILD. REPEAT.
             </p>
             <div className="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-4">
-            <a
-              href="https://github.com/harishchaurasia"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-gray-200 hover:bg-gray-800 text-black hover:text-green-500 font-acorn py-3 px-8 rounded-full transition duration-10 text-sm md:text-lg lg:text-xl"
-            >
-              GitHub
-            </a>
-            <a
-              href="https://linkedin.com/in/harishchaurasia"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-gray-200 hover:bg-gray-800 text-black hover:text-green-500 font-acorn py-3 px-8 rounded-full transition duration-10 text-sm md:text-lg lg:text-xl"
-            >
-              LinkedIn
-            </a>
-          </div>
-          <div className="mt-6">
-            <a
-              href="/Resume2025.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-green-500 hover:bg-gray-800 text-black hover:text-green-500 font-acorn py-3 px-8 rounded-full transition duration-10 text-sm md:text-lg lg:text-xl"
-            >
-              Resume
-            </a>
-          </div>
-
+              <a
+                href="https://github.com/harishchaurasia"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-gray-200 hover:bg-gray-800 text-black hover:text-green-500 font-acorn py-3 px-8 rounded-full transition duration-10 text-sm md:text-lg lg:text-xl"
+              >
+                GitHub
+              </a>
+              <a
+                href="https://linkedin.com/in/harishchaurasia"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-gray-200 hover:bg-gray-800 text-black hover:text-green-500 font-acorn py-3 px-8 rounded-full transition duration-10 text-sm md:text-lg lg:text-xl"
+              >
+                LinkedIn
+              </a>
+            </div>
+            <div className="mt-6">
+              <a
+                href="/Resume2025.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-green-500 hover:bg-gray-800 text-black hover:text-green-500 font-acorn py-3 px-8 rounded-full transition duration-10 text-sm md:text-lg lg:text-xl"
+              >
+                Resume
+              </a>
+            </div>
           </div>
         </div>
         <div className="border border-gray-800 rounded-3xl flex-shrink-0 mt-10 md:mt-0 md:ml-10 shadow-ts">
