@@ -22,13 +22,13 @@ const About: React.FC = () => {
 
         <div className="flex-1 xl:ml-6 p-4 md:p-8 text-white text-center xl:text-left border border-gray-900 bg-black bg-opacity-50 backdrop-blur-lg rounded-3xl mt-5 xl:mt-0 mx-4 md:mx-8 xl:mx-0 flex items-center h-auto md:h-60">
           <p className="font-sf_pro text-sm md:text-base lg:text-md leading-relaxed">
-            I'm an AI/ML and Full Stack engineer with 3+ years of experience in
-            building intelligent, user-centric software. I specialize in
-            developing scalable web platforms, fine-tuning NLP models, and
-            designing responsive frontends with a strong focus on HCI and
-            gamification. My work spans AI systems, immersive technologies, and
-            cloud-based applications — combining leadership, creativity, data,
-            and engineering to build scalable and impactful products.
+            I’m an AI/ML + Full-Stack engineer with 3+ years building and
+            shipping ML-driven products. I specialize in LLM/NLP
+            systems—training, fine-tuning, and evaluation/benchmarking—alongside
+            scalable web platforms and production ML pipelines. My work spans
+            reliability-focused AI systems, cloud deployment, and user-centric
+            interfaces grounded in HCI, combining research depth with strong
+            engineering to deliver robust, high-impact software.
           </p>
         </div>
       </div>
