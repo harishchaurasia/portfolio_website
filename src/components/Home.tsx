@@ -29,7 +29,7 @@ const Grids: React.FC = () => {
           </h2>
           <div className="flex justify-center space-x-4 mx-4">
             <a
-              href="/Resume2025.pdf"
+              href="/Harish's Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-gray-200 hover:bg-gray-800 text-black hover:text-green-500 font-acorn py-3 px-8 rounded-full transition duration-10 text-sm md:text-lg lg:text-xl"
