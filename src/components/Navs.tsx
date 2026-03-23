@@ -53,11 +53,11 @@ const Nav: React.FC = () => {
       )}
 
       <nav
-        className={`text-gray-300 fixed top-0 ${
+        className={`text-[#30c555] fixed top-2 ${
           isMobile
             ? "left-0 w-full py-2 px-4 bg-black-800 bg-opacity-50 backdrop-blur-lg"
-            : "left-1/2 transform -translate-x-1/2 mt-4 p-2 border border-gray-900 rounded-3xl bg-black-800 bg-opacity-50 backdrop-blur-lg bg-[#1a1a1a]"
-        } z-20`}
+            : "left-1/2 transform -translate-x-1/2 border border-gray-900 bg-black-800 bg-opacity-50 backdrop-blur-lg rounded-3xl p-4 max-w-fit"
+        } z-50`}
       >
         {isMobile && (
           <div className="flex justify-center">
@@ -82,7 +82,7 @@ const Nav: React.FC = () => {
             className={`font-acorn font-bold text-xl py-1 px-4 rounded-full ${
               activeSection === "home"
                 ? "bg-[#333333] bg-opacity-70"
-                : "bg-opacity-0"
+                : "bg-opacity-0 text-[#30c555]"
             } hover:bg-opacity-70`}
           >
             <Link
@@ -101,7 +101,7 @@ const Nav: React.FC = () => {
             className={`font-acorn font-bold text-xl py-1 px-4 rounded-full ${
               activeSection === "about"
                 ? "bg-[#333333] bg-opacity-70"
-                : "bg-opacity-0"
+                : "bg-opacity-0 text-[#30c555]"
             } hover:bg-opacity-70`}
           >
             <Link
@@ -120,7 +120,7 @@ const Nav: React.FC = () => {
             className={`font-acorn font-bold text-xl py-1 px-4 rounded-full ${
               activeSection === "projects"
                 ? "bg-[#333333] bg-opacity-70"
-                : "bg-opacity-0"
+                : "bg-opacity-0 text-[#30c555]"
             } hover:bg-opacity-70`}
           >
             <Link
@@ -139,7 +139,7 @@ const Nav: React.FC = () => {
             className={`font-acorn font-bold text-xl py-1 px-4 rounded-full ${
               activeSection === "contact"
                 ? "bg-[#333333] bg-opacity-70"
-                : "bg-opacity-0"
+                : "bg-opacity-0 text-[#30c555]"
             } hover:bg-opacity-70`}
           >
             <Link
