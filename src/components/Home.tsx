@@ -10,8 +10,8 @@ const Grids: React.FC = () => {
   const isNotMobile = useMediaQuery({ minWidth: 768 });
 
   return (
-    <div className="relative w-full min-h-[85vh] md:min-h-[calc(100vh-6rem)] flex items-start justify-center pt-16 md:pt-20 lg:pt-24">
-      {/* 3D prism - fixed full viewport, no clipping */}
+    <div className="relative w-full min-h-[85vh] md:min-h-[calc(100vh-6rem)] flex items-start justify-center pt-16 md:pt-20 lg:pt-24 overflow-hidden">
+      {/* 3D prism - scoped to hero only */}
       {isNotMobile && (
         <div className="fixed inset-0 w-screen h-screen pointer-events-none z-0 translate-y-[12%] md:translate-y-[14%]">
           <div className="absolute inset-0 w-full h-full">

@@ -31,6 +31,15 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       : "";
 
   const showDetails = !isMobile || isExpanded;
+  const bracketTokens = title.match(/(\([^)]*\)|\[[^\]]*\])/g) ?? [];
+  const leadLine = bracketTokens
+    .map((token) => token.slice(1, -1).trim())
+    .filter(Boolean)
+    .join(" · ");
+  const displayTitle = title
+    .replace(/\s*(\([^)]*\)|\[[^\]]*\])/g, "")
+    .replace(/\s{2,}/g, " ")
+    .trim();
 
   const handleCardClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
     if (!isMobile) return;
@@ -78,13 +87,16 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       )}
       <div className="flex-1">
         <div className="flex justify-between items-center">
-          <h2 className="text-xl md:text-2xl font-bold">{title}</h2>
+          <h2 className="pr-10 text-xl md:text-2xl font-bold">{displayTitle}</h2>
           <img
             src="./ex.png"
             alt="External link icon"
             className="absolute top-4 right-4 w-6 h-6 ml-2"
           />
         </div>
+        {leadLine && (
+          <p className="mt-1 text-sm text-[#30c555] font-medium">{leadLine}</p>
+        )}
         {isMobile && !isExpanded && (
           <p className="mt-2 text-sm text-gray-400">
             Tap to expand, tap again to open GitHub.
