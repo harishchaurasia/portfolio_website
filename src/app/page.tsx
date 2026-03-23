@@ -44,21 +44,21 @@ export default function Home() {
 
       <section
         id="about"
-        className="relative z-20 content px-4 md:px-8 my-10 md:my-20 space-y-10 max-w-6xl mx-auto"
+        className="relative z-20 content px-4 md:px-8 my-6 md:my-20 space-y-8 md:space-y-10 max-w-6xl mx-auto"
       >
         {!showIntro && showSections && <About />}
       </section>
 
       <section
         id="projects"
-        className="relative z-20 content px-4 md:px-8 my-10 md:my-20 space-y-10 max-w-6xl mx-auto"
+        className="relative z-20 content px-4 md:px-8 my-6 md:my-20 space-y-8 md:space-y-10 max-w-6xl mx-auto"
       >
         {!showIntro && showSections && <Prjs />}
       </section>
 
       <section
         id="contact"
-        className="relative z-20 content px-4 md:px-8 mt-16 md:my-32 space-y-10 max-w-6xl mx-auto"
+        className="relative z-20 content px-4 md:px-8 mt-8 md:my-32 space-y-8 md:space-y-10 max-w-6xl mx-auto"
       >
         {!showIntro && showSections && <Contact />}
       </section>
