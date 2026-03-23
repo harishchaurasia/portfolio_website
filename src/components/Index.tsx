@@ -10,7 +10,7 @@ export default function Index() {
   return (
     <>
       <Canvas
-        style={{ background: 'transparent' }}
+        style={{ background: 'transparent', width: '100%', height: '100%' }}
         gl={{ alpha: true, antialias: true }}
         camera={{ position: [0, 0, 100], fov: 75 }}
       >

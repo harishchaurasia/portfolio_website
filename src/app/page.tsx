@@ -1,18 +1,16 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import dynamic from "next/dynamic";
 import Intro from "../components/Intro";
-import Hom from "../components/Home";
-import Navs from "../components/Navs";
-import Scene from "../components/Index";
-import About from "../components/About";
-import Skills from "../components/SkillCard"
-import Prjs from "../components/Projects";
-import Contact from "../components/ContactMe";
-import Footer from '../components/Footer';
 import VantaComponent from '../components/VantaComponent';
-import SplashCursor from '../components/SplashCursor'
 
+const Hom = dynamic(() => import("../components/Home"));
+const Navs = dynamic(() => import("../components/Navs"));
+const About = dynamic(() => import("../components/About"));
+const Prjs = dynamic(() => import("../components/Projects"));
+const Contact = dynamic(() => import("../components/ContactMe"));
+const Footer = dynamic(() => import("../components/Footer"));
 
 
 export default function Home() {
@@ -38,11 +36,10 @@ export default function Home() {
   return (
     <div className="relative mt-2 py-4">
       <VantaComponent />
-      <SplashCursor />
       {showIntro && <Intro onComplete={() => setShowIntro(false)} />}
       {!showIntro && showNav && <Navs />}
       
-      <section id="home" className="content mt-28 md:mt-20 px-4 md:px-8 my-10 md:my-20 space-y-10 max-w-6xl mx-auto">
+      <section id="home" className="content mt-28 md:mt-20 w-full mb-0">
         {!showIntro && showGrid && <Hom/>}
       </section>
 

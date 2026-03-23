@@ -10,44 +10,81 @@ const Grids: React.FC = () => {
   const isNotMobile = useMediaQuery({ minWidth: 768 });
 
   return (
-    <div className="grid-background flex flex-col items-center justify-center h-full md:h-screen text-center bg-transparent p-4">
-      <div className="flex flex-col md:flex-row gap-6 items-center justify-center">
-        <div className="border border-gray-800 rounded-3xl shadow-bs bg-black-800 bg-opacity-50 backdrop-blur-lg p-0 flex items-center justify-center">
-          <img
-            src="/harish_headshot_black.png"
-            alt="Harish"
-            className="w-full h-full md:w-64 md:h-64 rounded-3xl object-cover"
-          />
+    <div className="relative w-full min-h-[85vh] md:min-h-[calc(100vh-6rem)] flex items-start justify-center pt-16 md:pt-20 lg:pt-24">
+      {/* 3D prism - fixed full viewport, no clipping */}
+      {isNotMobile && (
+        <div className="fixed inset-0 w-screen h-screen pointer-events-none z-0 translate-y-[12%] md:translate-y-[14%]">
+          <div className="absolute inset-0 w-full h-full">
+            <Scene />
+          </div>
         </div>
-        {/* Content Box */}
-        <div className="border border-gray-900 rounded-3xl shadow-bs bg-black-800 bg-opacity-50 backdrop-blur-lg p-4 flex flex-col items-center justify-center">
-          <h1 className="font-acorn font-medium mt-0 mx-4 text-gray-200 text-center text-6xl md:text-7xl lg:text-8xl text-gradient mb-4">
-            Hi. I'm Harish.
-          </h1>
-          <h2 className="font-acorn font-medium mx-4 text-white text-3xl md:text-4xl lg:text-5xl text-gradient mb-6">
-            AI/ML and Full Stack Engineer.
-          </h2>
-          <div className="flex justify-center space-x-4 mx-4">
-            <a
-              href="/Harish's Resume.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-gray-200 hover:bg-gray-800 text-black hover:text-green-500 font-acorn py-3 px-8 rounded-full transition duration-10 text-sm md:text-lg lg:text-xl"
-            >
-              Resume
-            </a>
-            <a
-              href="https://www.linkedin.com/in/harishchaurasia"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-green-500 hover:bg-gray-800 text-black hover:text-green-500 font-acorn py-3 px-8 rounded-full transition duration-10 text-sm md:text-lg lg:text-xl"
-            >
-              LinkedIn
-            </a>
+      )}
+
+      {/* Full-bleed gradient overlay */}
+      <div className="absolute inset-0 bg-gradient-to-br from-transparent via-black/30 to-black/50 pointer-events-none z-[1]" />
+
+      {/* Content - on top */}
+      <div className="relative z-10 w-full max-w-[1800px] mx-auto px-6 sm:px-8 md:px-12 lg:px-16 xl:px-20 pb-10 md:pb-16 -translate-y-2 md:-translate-y-3">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 xl:gap-12 items-start lg:items-center">
+          {/* Left: Profile image */}
+          <div className="lg:col-span-5 flex justify-center lg:justify-end order-2 lg:order-1">
+            <div className="relative">
+              <div className="absolute -inset-1 bg-gradient-to-r from-[#30c555]/30 to-transparent rounded-2xl blur-lg" />
+              <div className="relative w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-72 lg:h-72 rounded-2xl overflow-hidden border-2 border-gray-600/80 shadow-2xl rotate-[-1.5deg] hover:rotate-0 transition-transform duration-300">
+                <img
+                  src="/harish02.png"
+                  alt="Harish Chaurasia"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute bottom-0 right-0 w-20 h-20 bg-gradient-to-tl from-[#30c555]/25 to-transparent" />
+              </div>
+            </div>
+          </div>
+
+          {/* Right: Typography + CTA */}
+          <div className="lg:col-span-7 flex flex-col justify-center items-center lg:items-start text-center lg:text-left order-1 lg:order-2">
+            <p className="text-[#30c555] font-acorn text-xs sm:text-sm md:text-base uppercase tracking-[0.25em] mb-3 md:mb-4">
+              AI/ML & Software Engineer
+            </p>
+            <h1 className="font-acorn font-bold text-gray-100 leading-[1.05] tracking-tight mb-3 md:mb-4 text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl">
+              Hi. I&apos;m <span className="text-[#30c555]">Harish</span>.
+            </h1>
+            <p className="text-gray-400 font-acorn mb-6 md:mb-8 text-base sm:text-lg md:text-xl max-w-xl leading-relaxed">
+              Building AI Agents · Agentic Systems · MCPs · Agent Evaluation
+            </p>
+            <div className="flex flex-wrap gap-3 justify-center lg:justify-start">
+              <a
+                href="/Harish's Resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hero-btn hero-btn-outline"
+              >
+                Resume
+              </a>
+              <a
+                href="https://www.linkedin.com/in/harishchaurasia"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hero-btn hero-btn-outline"
+              >
+                LinkedIn
+              </a>
+              <a
+                href="https://github.com/harishchaurasia"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hero-btn hero-btn-outline"
+              >
+                GitHub
+              </a>
+            </div>
           </div>
         </div>
       </div>
-      {isNotMobile && <Scene />}
+
+      <div className="absolute bottom-6 left-6 md:left-12 text-gray-500/50 text-xs font-mono hidden lg:block z-10">
+        {"< build · ship · iterate />"}
+      </div>
     </div>
   );
 };

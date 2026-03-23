@@ -9,6 +9,30 @@ const Projects: React.FC = () => {
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-10">
         <ProjectCard
+          title="Adaptive Navigation OpenEnv (LLM Environment & RL Benchmark)"
+          description="Adaptive Navigation OpenEnv is a partially observable exploration environment for training and evaluating LLM agents on long-horizon planning tasks. The agent operates with limited local perception and must explore, collect a key, unlock a checkpoint, and reach a goal under energy constraints. The system includes an interactive simulation, OpenEnv deployment on Hugging Face Spaces, and a minimal Hugging Face TRL training pipeline enabling language models to learn action policies from environment feedback."
+          skills={[
+            "Python",
+            "OpenEnv",
+            "Hugging Face TRL",
+            "Reinforcement Learning",
+            "Docker",
+            "Streamlit",
+            "NumPy",
+          ]}
+          mainSkill="pytorch"
+          skillIcons={["python", "pytorch", "docker"]}
+          githubRepo="https://github.com/harishchaurasia/Meta_OpenEnv_PyTorch_Hack"
+        />
+        <ProjectCard
+          title="Privacy-Aware AI Agent Benchmarking"
+          description="Evaluated LLM-powered web agents using BrowserGym & AgentLab to identify security and privacy vulnerabilities—prompt injection, unsafe tool use, and hidden data requests. Designed attack scenarios and evaluation pipelines for secure, privacy-aware agent behavior."
+          skills={["Python", "BrowserGym", "AgentLab", "LLM", "Prompt Injection", "Security"]}
+          mainSkill="python"
+          skillIcons={["python"]}
+          githubRepo="https://github.com/harishchaurasia"
+        />
+        <ProjectCard
           title="Knowledge Brain (Multimodal RAG Assistant) [In Progress]"
           description="Knowledge Brain, also known as Personal Professor, is a multimodal Retrieval-Augmented Generation (RAG) system that lets users upload PDFs, documents, and audio to create a personalized AI tutor. It extracts and chunks text, generates embeddings using PyTorch, stores vectors in FAISS, and retrieves grounded context to answer questions via Llama 3. The system supports voice queries using Whisper, real-time chat, and a modern UI built with Next.js, TailwindCSS, and shadcn/ui. Fully local, privacy-friendly, and optimized for fast inference."
           skills={[
@@ -29,7 +53,7 @@ const Projects: React.FC = () => {
 
         <ProjectCard
           title="Lyrical AI"
-          description="Lyrical.AI is an AI-powered songwriting assistant that generates lyrics from text and audio prompts. It analyzes mood and style to suggest chord progressions and musical keys, helping musicians turn ideas into structured songs. Built using OpenAI's GPT, Whisper, and FastAPI, with local inference on an RTX 5080 GPU. Designed with a responsive and intuitive frontend using React and TailwindCSS to support seamless creative interaction."
+          description="Full-stack GenAI system integrating GPT-2, Whisper, and FastAPI. Created training pipelines and a recommendation subsystem using a 350k+ song corpus. Multimodal AI assistant that generates lyrics from text and audio prompts, with a responsive frontend using React and TailwindCSS."
           skills={[
             "React",
             "FastAPI",
@@ -44,6 +68,22 @@ const Projects: React.FC = () => {
           githubRepo="https://github.com/harishchaurasia/LyricalAI"
         />
 
+        <ProjectCard
+          title="MatchABLE – AI Workforce Matching Platform"
+          description="NLP-driven resume parser using Scikit-learn and Transformers for semantic search and candidate matching. Built a React/Next.js + Node.js system deployed on AWS, integrating ML inference APIs with CI/CD and monitoring. Connects individuals with disabilities to inclusive companies."
+          skills={[
+            "Scikit-Learn",
+            "AWS",
+            "Hugging Face Transformers",
+            "React",
+            "Next.js",
+            "Node.js",
+            "CI/CD",
+          ]}
+          mainSkill="nextjs"
+          skillIcons={["react", "nextjs", "nodejs", "aws"]}
+          githubRepo="https://github.com/harishchaurasia/match-able"
+        />
         <ProjectCard
           title="SolEstate"
           description="SolEstate is a Decentralized Money Lending Platform based on Solana. It connects borrowers from developing regions with global lenders, enabling hassle-free funding. Integrated smart contract-powered lending and repayment mechanisms, ensuring secure, transparent, and trustless transactions using Python and Node.js. Developed an intuitive and accessible UI using React, Next.js, and TailwindCSS, streamlining the lending process, facilitating ideas & startups."
@@ -66,21 +106,6 @@ const Projects: React.FC = () => {
             "solana",
           ]}
           githubRepo="https://github.com/harishchaurasia/HackNYU25"
-        />
-        <ProjectCard
-          title="Workforce Matching Platform"
-          description="Designed and developed a web platform, connecting individuals with disabilities to companies embracing inclusivity and looking to fulfill their CSR Quotas. Implemented real-time accessibility scoring using AI matching, and an intuitive UI with React and TailwindCSS. Enhanced job search efficiency by integrating AI-based resume matching and dynamic accessibility filters."
-          skills={[
-            "React",
-            "Node.js",
-            "Python",
-            "TailwindCSS",
-            "MongoDB",
-            "AI/ML",
-          ]}
-          mainSkill="React"
-          skillIcons={["react", "nodejs", "python", "tailwindcss"]}
-          githubRepo="https://github.com/harishchaurasia/match-able"
         />
         <ProjectCard
           title="LocalVendor"

@@ -21,8 +21,8 @@ const ContactMe: React.FC = () => {
             <p className="text-white mt-4 mb-4 text-4xl md:text-5xl lg:text-6xl font-bold font-sf_pro">
               I'm Harish.
             </p>
-            <p className="my-4 text-[#999999] mt-8 mb-4 text-xl md:text-2xl lg:text-3xl font-medium font-acorn">
-              "I love building shit"
+            <p className="my-4 text-[#999999] mt-8 mb-4 text-xl md:text-2xl lg:text-3xl font-bold font-acorn">
+              &quot;I LOVE BUILDING SHIT&quot;
             </p>
             <p className="text-[#999999] mb-8 text-xl md:text-2xl lg:text-3xl font-bold font-acorn">
               EAT. SLEEP. BUILD. REPEAT.
@@ -47,7 +47,7 @@ const ContactMe: React.FC = () => {
             </div>
             <div className="mt-6">
               <a
-                href="/Resume2025.pdf"
+                href="/Harish's Resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-green-500 hover:bg-gray-800 text-black hover:text-green-500 font-acorn py-3 px-8 rounded-full transition duration-10 text-sm md:text-lg lg:text-xl"
