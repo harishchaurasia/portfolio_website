@@ -11,24 +11,19 @@ const About: React.FC = () => {
         .About Me
       </h1>
 
-      <div className="flex flex-col xl:flex-row p-0 mb-10 md:mb-16 items-stretch">
-        <div className="rounded-3xl flex-shrink-0 flex justify-center items-center overflow-hidden w-full max-w-xs h-auto md:w-60 md:h-60 mx-auto">
+      <div className="flex flex-col xl:flex-row p-0 mb-10 md:mb-16 items-start gap-6">
+        <div className="rounded-3xl flex-shrink-0 flex justify-center overflow-hidden mx-auto xl:mx-0">
           <ImageWithRoundedCorners
             src="/harish03.png"
             alt="Harish Chaurasia"
-            className="object-cover w-full h-auto md:w-52 md:h-52"
+            width="176px"
+            height="176px"
           />
         </div>
 
-        <div className="flex-1 xl:ml-6 p-4 md:p-8 text-white text-center xl:text-left border border-gray-900 bg-black bg-opacity-50 backdrop-blur-lg rounded-3xl mt-5 xl:mt-0 mx-4 md:mx-8 xl:mx-0 flex items-center h-auto md:h-60">
-          <p className="font-sf_pro text-sm md:text-base lg:text-md leading-relaxed">
-            I’m an AI/ML + Full-Stack engineer with 3+ years building and
-            shipping ML-driven products. I specialize in LLM/NLP
-            systems—training, fine-tuning, and evaluation/benchmarking—alongside
-            scalable web platforms and production ML pipelines. My work spans
-            reliability-focused AI systems, cloud deployment, and user-centric
-            interfaces grounded in HCI, combining research depth with strong
-            engineering to deliver robust, high-impact software.
+        <div className="flex-1 xl:ml-6 p-4 md:p-6 text-white text-center xl:text-left border border-gray-900 bg-black bg-opacity-50 backdrop-blur-lg rounded-3xl mt-5 xl:mt-0 mx-4 md:mx-8 xl:mx-0 flex items-center min-h-0">
+          <p className="font-sf_pro text-sm md:text-base leading-relaxed">
+            AI/ML engineer specializing in agentic AI, RL environments, and applied LLM systems. I build AI agents, MCPs, and tool-calling workflows with a focus on safety, robustness, and real-world deployment. Shipped digital-twin simulations with Los Alamos National Lab, deployed LLM agents on Hugging Face, and led full-stack AI products from research to production.
           </p>
         </div>
       </div>
@@ -99,7 +94,7 @@ const About: React.FC = () => {
             title="Software Developer"
             companyName="School of Manufacturing Systems and Networks, ASU"
             dateRange="Dec 2023 - Present"
-            description="Optimized C++ code, digital twins, and interactive UIs to simulate industrial workflows. Built Unreal Engine simulations with real-time feedback and collaborated with Los Alamos National Lab to enhance operational accuracy."
+            description="Optimized C++ digital-twin simulation pipelines, improving runtime performance by 15% in real-time training environments. Built interactive simulation systems with real-time feedback loops for complex physical workflows in VR-based training setups. Delivered high-fidelity simulation modules with Los Alamos National Lab, improving training accuracy by 30% in immersive environments."
             logo="/msn.png"
             className="bg-gray-800 bg-opacity-50 backdrop-blur-lg rounded-3xl"
           />
@@ -107,7 +102,7 @@ const About: React.FC = () => {
             title="AR/VR Developer & Researcher"
             companyName="ASU Laboratory for Energy and Power Solutions"
             dateRange="Jan 2023 - Oct 2023"
-            description="Developed AR/VR training modules for microgrid systems using Unity, ARKit, and Vuforia. Integrated hardware simulations and automated training workflows to improve efficiency."
+            description="Developed AR/VR microgrid training systems enabling interactive visualization of power networks across 10+ institutions. Built real-time simulation and interaction workflows for immersive learning environments, improving system engagement."
             logo="/leaps.png"
             className="bg-gray-800 bg-opacity-50 backdrop-blur-lg rounded-3xl"
           />
@@ -123,16 +118,8 @@ const About: React.FC = () => {
             title="Technical Officer & Treasurer"
             companyName="Google Developer Student Club, ASU"
             dateRange="Jan 2022 - Present"
-            description="Organized 15+ workshops on full-stack, AI/ML, and cloud computing. Led hackathons and initiatives impacting 500+ students and boosting participation by 40%."
+            description="Mentored 750+ students via workshops on AI/ML, cloud, MLOps, and full-stack; organized hackathons and technical bootcamps."
             logo="/asu_dsc.png"
-            className="bg-gray-800 bg-opacity-50 backdrop-blur-lg rounded-3xl"
-          />
-          <ExperienceCard
-            title="President"
-            companyName="Devil's DJing Club, ASU"
-            dateRange="Apr 2023 - Present"
-            description="Managed music production workshops, collaborations, and events. Mentored members in performance and production while fostering a creative and technical learning environment."
-            logo="/djing.png"
             className="bg-gray-800 bg-opacity-50 backdrop-blur-lg rounded-3xl"
           />
         </div>

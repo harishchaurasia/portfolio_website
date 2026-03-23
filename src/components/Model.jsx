@@ -25,8 +25,9 @@ export default function Model() {
     backside: { value: false },
   });
 
+  const s = Math.min(viewport.width, viewport.height) / 2.5;
   return (
-    <group scale={viewport.width / 2.50}>
+    <group position={[0, -0.40 * s, 0]} scale={s}>
       <Text font={'/fonts/recharge_bd.otf'} position={[0, 0, 0]} fontSize={0.18} color="white" anchorX="center" anchorY="middle">
         Hello World.
       </Text>
