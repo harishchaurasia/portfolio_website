@@ -1,29 +1,24 @@
 import React from "react";
-import ImageWithRoundedCorners from "./RoundImages";
 import EducationCard from "./EducationCard";
 import ExperienceCard from "./ExperienceCard";
 import Skills from "../components/SkillCard";
 
 const About: React.FC = () => {
   return (
-    <div className="mx-0 my-32 md:my-20 space-y-10">
+    <div className="mx-0 my-16 md:my-20 space-y-8 md:space-y-10">
       <h1 className="text-[#30c555] text-5xl md:text-6xl font-acorn font-bold text-center md:text-left mb-10 md:mb-16">
         .About Me
       </h1>
 
-      <div className="flex flex-col xl:flex-row p-0 mb-10 md:mb-16 items-start gap-6">
-        <div className="rounded-3xl flex-shrink-0 flex justify-center overflow-hidden mx-auto xl:mx-0">
-          <ImageWithRoundedCorners
-            src="/harish03.png"
-            alt="Harish Chaurasia"
-            width="176px"
-            height="176px"
-          />
-        </div>
-
-        <div className="flex-1 xl:ml-6 p-4 md:p-6 text-white text-center xl:text-left border border-gray-900 bg-black bg-opacity-50 backdrop-blur-lg rounded-3xl mt-5 xl:mt-0 mx-4 md:mx-8 xl:mx-0 flex items-center min-h-0">
-          <p className="font-sf_pro text-sm md:text-base leading-relaxed">
-            AI/ML engineer specializing in agentic AI, RL environments, and applied LLM systems. I build AI agents, MCPs, and tool-calling workflows with a focus on safety, robustness, and real-world deployment. Shipped digital-twin simulations with Los Alamos National Lab, deployed LLM agents on Hugging Face, and led full-stack AI products from research to production.
+      <div className="p-0 mb-8 md:mb-16 flex justify-center">
+        <div className="w-full p-5 md:p-6 text-white text-center border border-gray-900 bg-black bg-opacity-50 backdrop-blur-lg rounded-3xl mx-auto flex items-center justify-center min-h-0">
+          <p className="font-sf_pro text-sm md:text-base text-center max-w-3xl mx-auto">
+            AI/ML engineer specializing in agentic AI, RL environments, and
+            applied LLM systems. I build AI agents, MCPs, and tool-calling
+            workflows with a focus on safety, robustness, and real-world
+            deployment. Shipped digital-twin simulations with Los Alamos
+            National Lab, deployed LLM agents on Hugging Face, and led
+            full-stack AI products from research to production.
           </p>
         </div>
       </div>
@@ -35,7 +30,7 @@ const About: React.FC = () => {
 
       <div className="grid grid-cols-1 gap-4">
         {/* Education */}
-        <div className="mt-24 md:mt-36 space-y-8">
+        <div className="mt-16 md:mt-36 space-y-8">
           <h1 className="text-4xl font-acorn font-bold text-[#cfb73b] my-4 text-center md:text-left">
             ./education
           </h1>
@@ -86,7 +81,7 @@ const About: React.FC = () => {
         </div>
 
         {/* Experience */}
-        <div className="mt-24 space-y-8">
+        <div className="mt-16 md:mt-24 space-y-8">
           <h1 className="text-4xl font-acorn font-bold text-[#cfb73b] my-4 text-center md:text-left">
             ./experiences
           </h1>

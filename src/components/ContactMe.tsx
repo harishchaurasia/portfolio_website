@@ -59,7 +59,7 @@ const ContactMe: React.FC = () => {
         </div>
         <div className="border border-gray-800 rounded-3xl flex-shrink-0 mt-10 md:mt-0 md:ml-10 shadow-ts">
           <ImageWithRoundedCorners
-            src="/harish02.png"
+            src="/harish03.png"
             alt="Your Name"
             width="350px"
             height="350px"
