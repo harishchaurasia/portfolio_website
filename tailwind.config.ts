@@ -22,9 +22,9 @@ const config: Config = {
         'xs': '0 4px 130px rgba(150, 163, 181, .26)',
       },
       fontFamily: {
-        sf_pro:['SF-Pro-Display-Regular','sans-serif'],
-        bruce: ['BruceForeverRegular', 'serif'],
-        acorn:['Acorn', 'serif'],
+        sf_pro: ['var(--font-sf-pro)', 'sans-serif'],
+        bruce: ['var(--font-bruce)', 'serif'],
+        acorn: ['var(--font-acorn)', 'serif'],
       },
       backdropBlur: {
         'none': '0',
