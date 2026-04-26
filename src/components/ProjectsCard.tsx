@@ -8,6 +8,7 @@ interface ProjectCardProps {
   mainSkill: string;
   skillIcons: string[];
   githubRepo: string;
+  logo?: string;
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({
@@ -17,6 +18,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   mainSkill = "",
   skillIcons = [],
   githubRepo,
+  logo,
 }) => {
   const isMobile = useMediaQuery({ maxWidth: 767 });
   const [isExpanded, setIsExpanded] = useState(false);
@@ -78,11 +80,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       onClick={handleCardClick}
       className="relative border border-gray-800 rounded-3xl shadow-bs p-4 flex flex-col md:flex-row items-start bg-black-800 bg-opacity-50 backdrop-blur-lg hover:shadow-xs text-white mb-4 no-underline"
     >
-      {mainSkill && (
+      {(logo || mainSkill) && (
         <img
-          src={mainSkillIconUrl}
+          src={logo || mainSkillIconUrl}
           alt={`${mainSkill} logo`}
-          className="w-16 h-16 mb-4 mr-4"
+          className="w-16 h-16 mb-4 mr-4 rounded-lg object-cover"
         />
       )}
       <div className="flex-1">
