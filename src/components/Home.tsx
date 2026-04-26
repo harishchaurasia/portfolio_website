@@ -1,13 +1,20 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import dynamic from "next/dynamic";
-import { useMediaQuery } from "react-responsive";
+import Image from "next/image";
 
 const Scene = dynamic(() => import("../components/Index"), {
   ssr: false,
 });
 
 const Grids: React.FC = () => {
-  const isNotMobile = useMediaQuery({ minWidth: 768 });
+  const [isNotMobile, setIsNotMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => setIsNotMobile(window.innerWidth >= 768);
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
 
   return (
     <div className="relative w-full min-h-[85vh] md:min-h-[calc(100vh-6rem)] flex items-start justify-center pt-16 md:pt-20 lg:pt-24 overflow-hidden">
@@ -31,10 +38,13 @@ const Grids: React.FC = () => {
             <div className="relative">
               <div className="absolute -inset-1 bg-gradient-to-r from-[#30c555]/30 to-transparent rounded-2xl blur-lg" />
               <div className="relative w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-72 lg:h-72 rounded-2xl overflow-hidden border-2 border-gray-600/80 shadow-2xl rotate-[-1.5deg] hover:rotate-0 transition-transform duration-300">
-                <img
+                <Image
                   src="/harish02.png"
                   alt="Harish Chaurasia"
-                  className="w-full h-full object-cover"
+                  fill
+                  className="object-cover"
+                  priority
+                  sizes="(max-width: 640px) 192px, (max-width: 768px) 224px, (max-width: 1024px) 256px, 288px"
                 />
                 <div className="absolute bottom-0 right-0 w-20 h-20 bg-gradient-to-tl from-[#30c555]/25 to-transparent" />
               </div>

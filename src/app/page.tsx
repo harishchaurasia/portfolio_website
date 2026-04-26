@@ -14,56 +14,77 @@ const Footer = dynamic(() => import("../components/Footer"));
 
 export default function Home() {
   const [showIntro, setShowIntro] = useState(true);
-  const [showNav, setShowNav] = useState(false);
-  const [showGrid, setShowGrid] = useState(false);
-  const [showScene, setShowScene] = useState(false);
-  const [showSections, setShowSections] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    if (!showIntro) {
-      const timer = setTimeout(() => {
-        setShowNav(true);
-        setShowGrid(true);
-        setShowScene(true);
-        setShowSections(true);
-      }, 200);
+    // Preload critical resources behind splash screen
+    const preloadResources = async () => {
+      try {
+        // Preload critical images
+        const imagesToPreload = [
+          "/harish02.png",
+          "/asu_logo.png",
+          "/herberger.png",
+          "/ira.png",
+        ];
 
-      return () => clearTimeout(timer);
-    }
-  }, [showIntro]);
+        await Promise.all(
+          imagesToPreload.map(
+            (src) =>
+              new Promise((resolve, reject) => {
+                const img = new Image();
+                img.src = src;
+                img.onload = resolve;
+                img.onerror = reject;
+              })
+          )
+        );
+
+        setIsLoading(false);
+      } catch (error) {
+        console.error("Error preloading resources:", error);
+        setIsLoading(false);
+      }
+    };
+
+    preloadResources();
+  }, []);
 
   return (
     <div className="relative mt-2 py-4">
       <VantaComponent />
       {showIntro && <Intro onComplete={() => setShowIntro(false)} />}
-      {!showIntro && showNav && <Navs />}
+      {!showIntro && !isLoading && (
+        <>
+          <Navs />
+          <section id="home" className="content mt-28 md:mt-20 w-full mb-0">
+            <Hom />
+          </section>
 
-      <section id="home" className="content mt-28 md:mt-20 w-full mb-0">
-        {!showIntro && showGrid && <Hom />}
-      </section>
+          <section
+            id="about"
+            className="relative z-20 content px-4 md:px-8 my-6 md:my-20 space-y-8 md:space-y-10 max-w-6xl mx-auto"
+          >
+            <About />
+          </section>
 
-      <section
-        id="about"
-        className="relative z-20 content px-4 md:px-8 my-6 md:my-20 space-y-8 md:space-y-10 max-w-6xl mx-auto"
-      >
-        {!showIntro && showSections && <About />}
-      </section>
+          <section
+            id="projects"
+            className="relative z-20 content px-4 md:px-8 my-6 md:my-20 space-y-8 md:space-y-10 max-w-6xl mx-auto"
+          >
+            <Prjs />
+          </section>
 
-      <section
-        id="projects"
-        className="relative z-20 content px-4 md:px-8 my-6 md:my-20 space-y-8 md:space-y-10 max-w-6xl mx-auto"
-      >
-        {!showIntro && showSections && <Prjs />}
-      </section>
+          <section
+            id="contact"
+            className="relative z-20 content px-4 md:px-8 mt-8 md:my-32 space-y-8 md:space-y-10 max-w-6xl mx-auto"
+          >
+            <Contact />
+          </section>
 
-      <section
-        id="contact"
-        className="relative z-20 content px-4 md:px-8 mt-8 md:my-32 space-y-8 md:space-y-10 max-w-6xl mx-auto"
-      >
-        {!showIntro && showSections && <Contact />}
-      </section>
-
-      {!showIntro && showSections && <Footer />}
+          <Footer />
+        </>
+      )}
     </div>
   );
 }

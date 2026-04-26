@@ -4,36 +4,6 @@
 
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
 
-
-
-/* Importing fonts */
-@font-face {
-  font-family: 'SF-Pro-Display-Regular';
-  src: url('/fonts/SF-Pro-Display-Regular.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-
-@font-face {
-  font-family: 'BruceForeverRegular';
-  src: url('/fonts/BruceForeverRegular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-
-
-@font-face {
-  font-family: 'Acorn';
-  src: url('/fonts/Acorn.otf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-
-/* globals.css */
-
 body, html, #__next {
   font-family: 'Inter', sans-serif;
   margin: 0;
