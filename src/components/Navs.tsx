@@ -154,6 +154,16 @@ const Nav: React.FC = () => {
               Contact
             </Link>
           </li>
+          <li className="font-acorn font-bold text-base py-1 px-3 rounded-full bg-opacity-0 text-[#30c555]">
+            <a
+              href="https://arkaforge.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="cursor-pointer"
+            >
+              <span className="border border-gray-700 rounded-full px-3 py-1">Arkaforge</span> ↗
+            </a>
+          </li>
         </ul>
       </nav>
     </>

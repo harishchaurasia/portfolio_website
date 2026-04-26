@@ -8,6 +8,15 @@ const Footer: React.FC = () => {
         <p>harishchaurasia143@gmail.com</p>
         <span className="hidden md:inline">|</span>
         <p>© 2026 Harish Chaurasia. All Rights Reserved.</p>
+        <span className="hidden md:inline">|</span>
+        <a 
+          href="https://arkaforge.com" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="text-[#30c555] hover:text-[#28a347] transition-colors"
+        >
+          Also building: Arkaforge ↗
+        </a>
       </div>
     </div>
   );

@@ -9,6 +9,24 @@ const Projects: React.FC = () => {
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-10">
         <ProjectCard
+          title="ArkaForge - Game Technology Company (Game Based Learning, Digital Twins, Simulation)"
+          description="Building a game technology studio focused on simulation-based training, digital twins, and interactive systems for high-stakes industries. Delivering game-based learning and workforce training solutions across manufacturing, energy, defense, and research sectors. Developed simulation systems for Los Alamos National Laboratory in partnership with ASU."
+          skills={[
+            "Unreal Engine",
+            "Unity",
+            "C++",
+            "C#",
+            "VR/AR",
+            "Digital Twins",
+            "Simulation",
+            "Game-Based Learning",
+          ]}
+          mainSkill="unreal"
+          skillIcons={["unreal", "unity", "cpp", "cs", "blender"]}
+          githubRepo="https://arkaforge.com"
+          logo="/arkaforge_logo_square.png"
+        />
+        <ProjectCard
           title="Adaptive Navigation OpenEnv (LLM Environment & RL Benchmark)"
           description="Adaptive Navigation OpenEnv is a partially observable exploration environment for training and evaluating LLM agents on long-horizon planning tasks. The agent operates with limited local perception and must explore, collect a key, unlock a checkpoint, and reach a goal under energy constraints. The system includes an interactive simulation, OpenEnv deployment on Hugging Face Spaces, and a minimal Hugging Face TRL training pipeline enabling language models to learn action policies from environment feedback."
           skills={[
