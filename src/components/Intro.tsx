@@ -103,7 +103,8 @@ const Intro: React.FC<IntroProps> = ({ onComplete }) => {
       </div>
       <button
         onClick={skipIntro}
-        className="absolute bottom-4 right-4 md:bottom-10 md:right-10 p-2 md:p-4 border border-gray-800 bg-black-800 bg-opacity-50 backdrop-blur-lg rounded-2xl text-white transition transform hover:scale-105"
+        aria-label="Skip intro animation"
+        className="absolute bottom-4 right-4 md:bottom-10 md:right-10 p-3 md:p-4 min-w-[44px] min-h-[44px] border border-gray-800 bg-black-800 bg-opacity-50 backdrop-blur-lg rounded-2xl text-white transition transform hover:scale-105 focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#30c555] focus-visible:outline-offset-2"
       >
         Skip Intro
       </button>

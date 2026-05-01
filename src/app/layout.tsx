@@ -7,19 +7,19 @@ import { Analytics } from "@vercel/analytics/react";
 const inter = Inter({ subsets: ["latin"] });
 
 const sfPro = localFont({
-  src: "../../public/fonts/SF-Pro-Display-Regular.otf",
+  src: "../../public/fonts/SF-Pro-Display-Regular.woff2",
   variable: "--font-sf-pro",
   display: "swap",
 });
 
 const acorn = localFont({
-  src: "../../public/fonts/Acorn.otf",
+  src: "../../public/fonts/Acorn.woff2",
   variable: "--font-acorn",
   display: "swap",
 });
 
 const bruce = localFont({
-  src: "../../public/fonts/BruceForeverRegular.ttf",
+  src: "../../public/fonts/BruceForeverRegular.woff2",
   variable: "--font-bruce",
   display: "swap",
 });

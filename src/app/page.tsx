@@ -3,8 +3,10 @@
 import React, { useState, useEffect } from "react";
 import dynamic from "next/dynamic";
 import Intro from "../components/Intro";
-import VantaComponent from "../components/VantaComponent";
 
+const VantaComponent = dynamic(() => import("../components/VantaComponent"), {
+  ssr: false,
+});
 const Hom = dynamic(() => import("../components/Home"));
 const Navs = dynamic(() => import("../components/Navs"));
 const About = dynamic(() => import("../components/About"));
@@ -14,47 +16,20 @@ const Footer = dynamic(() => import("../components/Footer"));
 
 export default function Home() {
   const [showIntro, setShowIntro] = useState(true);
-  const [isLoading, setIsLoading] = useState(true);
+  const [isDesktop, setIsDesktop] = useState(false);
 
   useEffect(() => {
-    // Preload critical resources behind splash screen
-    const preloadResources = async () => {
-      try {
-        // Preload critical images
-        const imagesToPreload = [
-          "/harish02.png",
-          "/asu_logo.png",
-          "/herberger.png",
-          "/ira.png",
-        ];
-
-        await Promise.all(
-          imagesToPreload.map(
-            (src) =>
-              new Promise((resolve, reject) => {
-                const img = new Image();
-                img.src = src;
-                img.onload = resolve;
-                img.onerror = reject;
-              })
-          )
-        );
-
-        setIsLoading(false);
-      } catch (error) {
-        console.error("Error preloading resources:", error);
-        setIsLoading(false);
-      }
-    };
-
-    preloadResources();
+    const check = () => setIsDesktop(window.innerWidth >= 768);
+    check();
+    window.addEventListener("resize", check);
+    return () => window.removeEventListener("resize", check);
   }, []);
 
   return (
     <div className="relative mt-2 py-4">
-      <VantaComponent />
+      {isDesktop && <VantaComponent />}
       {showIntro && <Intro onComplete={() => setShowIntro(false)} />}
-      {!showIntro && !isLoading && (
+      {!showIntro && (
         <>
           <Navs />
           <section id="home" className="content mt-28 md:mt-20 w-full mb-0">
@@ -77,7 +52,7 @@ export default function Home() {
 
           <section
             id="contact"
-            className="relative z-20 content px-4 md:px-8 mt-8 md:my-32 space-y-8 md:space-y-10 max-w-6xl mx-auto"
+            className="relative z-20 content px-4 md:px-8 my-6 md:my-20 space-y-8 md:space-y-10 max-w-6xl mx-auto"
           >
             <Contact />
           </section>

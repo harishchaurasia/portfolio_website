@@ -31,7 +31,7 @@ const About: React.FC = () => {
       <div className="grid grid-cols-1 gap-4">
         {/* Education */}
         <div className="mt-16 md:mt-36 space-y-8">
-          <h1 className="text-4xl font-acorn font-bold text-[#cfb73b] my-4 text-center md:text-left">
+          <h1 className="text-4xl font-acorn font-bold text-[#30c555] my-4 text-center md:text-left">
             ./education
           </h1>
           <EducationCard
@@ -42,7 +42,7 @@ const About: React.FC = () => {
             universityName="Arizona State University"
             degreeDateRange="2024 - 2026"
             description="Pursuing MS in Computer Science with a focus on AI/ML, NLP, and immersive systems. Exploring intersections between HCI and AI to create intelligent, interactive digital experiences."
-            logo="/asu_logo.png"
+            logo="/asu_logo.webp"
             className="bg-gray-800 bg-opacity-50 backdrop-blur-lg rounded-3xl"
           />
           <EducationCard
@@ -53,7 +53,7 @@ const About: React.FC = () => {
             universityName="Arizona State University"
             degreeDateRange="2022 - 2025"
             description="Built a foundation in software engineering, algorithms, and data structures while exploring HCI, immersive technologies, and AI-driven systems for web and mobile platforms."
-            logo="/asu_logo.png"
+            logo="/asu_logo.webp"
             className="bg-gray-800 bg-opacity-50 backdrop-blur-lg rounded-3xl"
           />
           <EducationCard
@@ -82,7 +82,7 @@ const About: React.FC = () => {
 
         {/* Experience */}
         <div className="mt-16 md:mt-24 space-y-8">
-          <h1 className="text-4xl font-acorn font-bold text-[#cfb73b] my-4 text-center md:text-left">
+          <h1 className="text-4xl font-acorn font-bold text-[#30c555] my-4 text-center md:text-left">
             ./experiences
           </h1>
           <ExperienceCard
