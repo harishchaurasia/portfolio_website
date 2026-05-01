@@ -11,7 +11,7 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 const ContactMe: React.FC = () => {
   return (
-    <div className="py-4 mx-0 md:mx-0 lg:mx-0 my-56 md:my-20 space-y-10">
+    <div className="py-4 mx-0 md:mx-0 lg:mx-0 my-16 md:my-20 space-y-10">
       <h1 className="text-[#30c555] text-5xl md:text-6xl lg:text-7xl font-bold text-center md:text-left mb-16 font-acorn">
         .Contact Me
       </h1>
@@ -47,7 +47,7 @@ const ContactMe: React.FC = () => {
             </div>
             <div className="mt-6">
               <a
-                href="/Harish's Resume.pdf"
+                href="/Harish-Chaurasia-Resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-[#30c555] hover:bg-gray-800 text-black hover:text-green-400 font-acorn py-3 px-8 rounded-full transition duration-10 text-sm md:text-lg lg:text-xl"
@@ -59,8 +59,8 @@ const ContactMe: React.FC = () => {
         </div>
         <div className="border border-gray-800 rounded-3xl flex-shrink-0 mt-10 md:mt-0 md:ml-10 shadow-ts">
           <ImageWithRoundedCorners
-            src="/harish03.png"
-            alt="Your Name"
+            src="/harish03.webp"
+            alt="Harish Chaurasia"
             width="350px"
             height="350px"
           />
@@ -72,6 +72,8 @@ const ContactMe: React.FC = () => {
             href="mailto:harishchaurasia143@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Email Harish"
+            className="inline-flex items-center justify-center min-w-[44px] min-h-[44px] rounded-lg focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#30c555] focus-visible:outline-offset-2"
           >
             <FontAwesomeIcon
               icon={faEnvelope}
@@ -83,6 +85,8 @@ const ContactMe: React.FC = () => {
             href="https://linkedin.com/in/harishchaurasia"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="LinkedIn profile"
+            className="inline-flex items-center justify-center min-w-[44px] min-h-[44px] rounded-lg focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#30c555] focus-visible:outline-offset-2"
           >
             <FontAwesomeIcon
               icon={faLinkedin}
@@ -94,6 +98,8 @@ const ContactMe: React.FC = () => {
             href="https://github.com/harishchaurasia"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="GitHub profile"
+            className="inline-flex items-center justify-center min-w-[44px] min-h-[44px] rounded-lg focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#30c555] focus-visible:outline-offset-2"
           >
             <FontAwesomeIcon
               icon={faGithub}
@@ -105,6 +111,8 @@ const ContactMe: React.FC = () => {
             href="https://instagram.com/mtrx_music"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Instagram profile"
+            className="inline-flex items-center justify-center min-w-[44px] min-h-[44px] rounded-lg focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#30c555] focus-visible:outline-offset-2"
           >
             <FontAwesomeIcon
               icon={faInstagram}
@@ -116,6 +124,8 @@ const ContactMe: React.FC = () => {
             href="https://x.com/harischaurasia"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="X (Twitter) profile"
+            className="inline-flex items-center justify-center min-w-[44px] min-h-[44px] rounded-lg focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#30c555] focus-visible:outline-offset-2"
           >
             <FontAwesomeIcon
               icon={faXTwitter}

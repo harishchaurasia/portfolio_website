@@ -6,11 +6,11 @@ const SkillCard: React.FC<{ title: string; skills: string[]; className?: string 
 }) => {
   return (
     <div className={`bg-opacity-50 backdrop-blur-lg rounded-3xl p-8 space-y-6 border border-gray-900 ${className}`}>
-      <h2 className="text-2xl font-bold text-[#cfb73b] text-center">{title}</h2>
+      <h2 className="text-2xl font-bold text-[#30c555] text-center">{title}</h2>
       <ul className="list-disc list-inside text-white text-left space-y-2">
-        {skills.map((skill, index) => (
+        {skills.map((skill) => (
           <li
-            key={index}
+            key={skill}
             className="text-sm md:text-base lg:text-base break-words leading-relaxed"
           >
             {skill}
@@ -45,7 +45,6 @@ const Skills: React.FC = () => {
     "Reinforcement Learning",
     "NLP",
     "Robotics",
-    "Robotics Learning",
   ];
 
   const cloudDevOps = [
@@ -70,27 +69,15 @@ const Skills: React.FC = () => {
   ];
 
   const coursework = [
-    "Agentic AI",
-    "Robotics Learning",
     "AI/ML",
-    "DevOps",
-    "UI/UX Design",
-    "Agile & Scrum",
-    "Cloud Computing",
-    "Machine Learning",
-    "Data Visualisation",
+    "Natural Language Processing",
+    "Reinforcement Learning",
     "Software Engineering",
     "Full-Stack Development",
-    "Artificial Intelligence",
-    "Natural Language Processing",
-    "Website Design/Development",
-    "Data Structures and Algorithms",
-    "Object-Oriented Programming",
-    "Game Design/Development",
-    "Game Development",
-    "Game Engine Programming",
+    "Cloud Computing",
     "Human Computer Interaction",
-    "Software Development Life Cycle",
+    "Game Engine Programming",
+    "Object-Oriented Programming",
     "DBMS",
   ];
 
