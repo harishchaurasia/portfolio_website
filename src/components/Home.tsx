@@ -65,7 +65,7 @@ const Grids: React.FC = () => {
             </p>
             <div className="flex flex-wrap gap-3 justify-center lg:justify-start">
               <a
-                href="/Harish-Chaurasia-Resume.pdf"
+                href="/Harish's%20Resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hero-btn hero-btn-outline"
