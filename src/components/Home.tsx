@@ -27,6 +27,30 @@ const Grids: React.FC = () => {
         </div>
       )}
 
+      {/* OPTION A - Soft radial vignette (active) */}
+      <div
+        className="absolute inset-0 pointer-events-none z-[1]"
+        style={{
+          background:
+            "radial-gradient(ellipse 90% 80% at 50% 42%, rgba(0,0,0,0.72) 0%, rgba(0,0,0,0.30) 55%, transparent 100%)",
+        }}
+      />
+
+      {/* OPTION B - Full-bleed horizontal band (swap with C to try)
+      <div
+        className="fixed inset-0 pointer-events-none z-[1]"
+        style={{
+          background:
+            "linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.35) 15%, rgba(0,0,0,0.35) 65%, transparent 100%)",
+        }}
+      /> */}
+
+      {/* OPTION C - Bottom fade only (swap with A to try)
+      <div
+        className="absolute bottom-0 left-0 right-0 h-48 pointer-events-none z-[1]"
+        style={{ background: "linear-gradient(to top, rgb(3,5,12) 0%, transparent 100%)" }}
+      /> */}
+
       {/* Content - on top */}
       <div className="relative z-10 w-full max-w-[1800px] mx-auto px-6 sm:px-8 md:px-12 lg:px-16 xl:px-20 pb-10 md:pb-16 -translate-y-2 md:-translate-y-3">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 xl:gap-12 items-start lg:items-center">
