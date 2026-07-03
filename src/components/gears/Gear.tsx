@@ -63,14 +63,6 @@ const Gear: React.FC<GearProps> = ({
   const ref = useRef<SVGSVGElement>(null);
 
   useEffect(() => {
-    const reduce = window.matchMedia?.(
-      "(prefers-reduced-motion: reduce)"
-    ).matches;
-    if (reduce) {
-      if (ref.current) ref.current.style.transform = `rotate(${phase}deg)`;
-      return;
-    }
-
     let raf = 0;
     let last = performance.now();
     let idleAngle = 0;

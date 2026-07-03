@@ -38,15 +38,12 @@ const SplashScreen: React.FC = () => {
   const [wordIndex, setWordIndex] = useState(0);
 
   useEffect(() => {
-    // Skip if already seen this session or the user prefers reduced motion.
+    // Skip only if already seen this session.
     const seen =
       typeof window !== "undefined" &&
       window.sessionStorage.getItem(SESSION_KEY) === "1";
-    const reduced =
-      typeof window !== "undefined" &&
-      window.matchMedia?.("(prefers-reduced-motion: reduce)").matches;
 
-    if (seen || reduced) {
+    if (seen) {
       setMounted(false);
       return;
     }

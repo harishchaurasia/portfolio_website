@@ -138,12 +138,6 @@ body {
   }
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .mtrx-vinyl,
-  .mtrx-eq span {
-    animation: none !important;
-  }
-}
 
 .eng-vignette {
   position: absolute;
