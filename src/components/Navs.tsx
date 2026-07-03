@@ -14,7 +14,7 @@ const NAV_ITEMS = [
 
 const NAVBAR_HEIGHT = 105;
 const MOBILE_OFFSET = -NAVBAR_HEIGHT - 10;
-const SCROLL_DURATION = 250;
+const SCROLL_DURATION = 100;
 
 const Nav: React.FC = () => {
   const [active, setActive] = useState("home");

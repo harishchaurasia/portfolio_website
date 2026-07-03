@@ -1,39 +1,39 @@
 import React from "react";
 import Image from "next/image";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faInstagram,
-  faLinkedin,
-  faGithub,
-  faXTwitter,
-} from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope, faFilePdf } from "@fortawesome/free-solid-svg-icons";
+  FaEnvelope,
+  FaLinkedin,
+  FaGithub,
+  FaInstagram,
+  FaFilePdf,
+} from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 const socials = [
   {
     href: "mailto:harishchaurasia143@gmail.com",
     label: "Email Harish",
-    icon: faEnvelope,
+    Icon: FaEnvelope,
   },
   {
     href: "https://linkedin.com/in/harishchaurasia",
     label: "LinkedIn profile",
-    icon: faLinkedin,
+    Icon: FaLinkedin,
   },
   {
     href: "https://github.com/harishchaurasia",
     label: "GitHub profile",
-    icon: faGithub,
+    Icon: FaGithub,
   },
   {
     href: "https://instagram.com/mtrx_music",
     label: "Instagram profile",
-    icon: faInstagram,
+    Icon: FaInstagram,
   },
   {
     href: "https://x.com/harischaurasia",
     label: "X (Twitter) profile",
-    icon: faXTwitter,
+    Icon: FaXTwitter,
   },
 ];
 
@@ -65,7 +65,7 @@ const ContactMe: React.FC = () => {
           {/* Primary actions */}
           <div className="mt-6 flex flex-wrap gap-3">
             <a href="mailto:harishchaurasia143@gmail.com" className="btn btn-primary">
-              <FontAwesomeIcon icon={faEnvelope} className="btn-icon" />
+              <FaEnvelope className="btn-icon" />
               <span>Email me</span>
             </a>
             <a
@@ -74,7 +74,7 @@ const ContactMe: React.FC = () => {
               rel="noopener noreferrer"
               className="btn btn-outline"
             >
-              <FontAwesomeIcon icon={faFilePdf} className="btn-icon" />
+              <FaFilePdf className="btn-icon" />
               <span>Resume</span>
             </a>
           </div>
@@ -90,7 +90,7 @@ const ContactMe: React.FC = () => {
                 aria-label={s.label}
                 className="inline-flex min-h-[44px] min-w-[44px] items-center justify-center rounded-xl border border-white/10 text-gray-300 transition-colors hover:border-[#30c555] hover:text-[#30c555] focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#30c555] focus-visible:outline-offset-2"
               >
-                <FontAwesomeIcon icon={s.icon} className="h-5 w-5" />
+                <s.Icon className="h-5 w-5" />
               </a>
             ))}
           </div>
