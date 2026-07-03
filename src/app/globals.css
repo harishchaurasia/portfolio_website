@@ -32,6 +32,26 @@ body {
     #05070c;
 }
 
+/* Static blueprint grid (fixed to the viewport - does not scroll with content) */
+.eng-grid {
+  position: absolute;
+  inset: 0;
+  background-repeat: repeat;
+  background-position: center center;
+}
+.eng-grid--fine {
+  background-image:
+    linear-gradient(rgba(48, 197, 85, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(48, 197, 85, 0.06) 1px, transparent 1px);
+  background-size: 46px 46px;
+}
+.eng-grid--coarse {
+  background-image:
+    linear-gradient(rgba(48, 197, 85, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(48, 197, 85, 0.1) 1px, transparent 1px);
+  background-size: 230px 230px;
+}
+
 .eng-glow {
   position: absolute;
   border-radius: 9999px;

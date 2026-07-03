@@ -1,15 +1,16 @@
 import React from "react";
 
 /**
- * Clean dark background: two soft green/teal glows plus a vignette for depth.
- * No grid or schematic lines - the only "line" on the page is the faded rule
- * the divider gears rest on.
+ * Dark background: two soft green/teal glows, a static blueprint grid (fixed to
+ * the viewport, so it never scrolls with the content), and a vignette for depth.
  */
 const Background: React.FC = () => {
   return (
     <div className="eng-bg" aria-hidden="true">
       <div className="eng-glow eng-glow--1" />
       <div className="eng-glow eng-glow--2" />
+      <div className="eng-grid eng-grid--fine" />
+      <div className="eng-grid eng-grid--coarse" />
       <div className="eng-vignette" />
     </div>
   );
