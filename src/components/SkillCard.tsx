@@ -5,13 +5,17 @@ const SkillCard: React.FC<{ title: string; skills: string[]; className?: string 
   className = "",
 }) => {
   return (
-    <div className={`bg-opacity-50 backdrop-blur-lg rounded-3xl p-8 space-y-6 border border-gray-900 ${className}`}>
-      <h2 className="text-2xl font-bold text-[#30c555] text-center">{title}</h2>
-      <ul className="list-disc list-inside text-white text-left space-y-2">
+    <div
+      className={`rounded-3xl border border-white/10 bg-white/[0.03] backdrop-blur-lg p-6 md:p-7 transition-colors hover:border-[#30c555]/30 ${className}`}
+    >
+      <h2 className="text-lg md:text-xl font-bold text-[#30c555] mb-5 font-acorn">
+        {title}
+      </h2>
+      <ul className="flex flex-wrap gap-2">
         {skills.map((skill) => (
           <li
             key={skill}
-            className="text-sm md:text-base lg:text-base break-words leading-relaxed"
+            className="rounded-full border border-white/10 bg-white/[0.05] px-3 py-1 text-sm text-gray-200 transition-colors hover:border-[#30c555]/50 hover:text-white"
           >
             {skill}
           </li>
@@ -28,33 +32,43 @@ const Skills: React.FC = () => {
     "Java",
     "C#",
     "JavaScript/TypeScript",
+    "Swift",
     "SQL",
+    "PostgreSQL",
   ];
 
   const aiMl = [
+    "LLM Agents & Agentic AI",
+    "Multi-Agent Systems",
+    "LangChain / LangGraph",
+    "RAG Pipelines",
+    "Vector Databases (FAISS)",
+    "Model Context Protocol (MCP)",
+    "Tool / Function Calling",
+    "LLM Evaluation & Benchmarking",
+    "Prompt Engineering",
+    "LLM Fine-tuning",
+    "vLLM / Ollama (serving)",
+    "AI Safety & Guardrails",
+    "Reinforcement Learning",
+    "NLP",
     "PyTorch",
     "TensorFlow",
     "Hugging Face",
     "Scikit-learn",
-    "RAG Pipelines",
-    "MCP",
-    "AI Agents",
-    "Agentic AI",
-    "LLM Fine-tuning",
-    "AI Safety",
-    "Reinforcement Learning",
-    "NLP",
-    "Robotics",
   ];
 
   const cloudDevOps = [
-    "Azure",
     "AWS",
+    "Azure",
     "Docker",
     "Kubernetes",
-    "Kafka",
+    "REST APIs & Integrations",
+    "Data Pipelines",
     "CI/CD",
-    "Git",
+    "Kafka",
+    "Git / GitLab",
+    "Datadog",
     "Linux/UNIX",
   ];
 
@@ -64,6 +78,7 @@ const Skills: React.FC = () => {
     "React",
     "Next.js",
     "Django",
+    ".NET Core",
     "Unity",
     "Unreal Engine",
   ];
@@ -84,10 +99,9 @@ const Skills: React.FC = () => {
   const languagesAndFrameworks = [...languages, ...frameworks];
 
   return (
-    <div className="space-y-16">
-      <h1 className="mt-16 text-[#30c555] text-5xl md:text-6xl font-acorn font-bold text-left mb-16">
-        {" "}
-        ./skills{" "}
+    <div className="space-y-8">
+      <h1 className="text-[#30c555] text-3xl md:text-4xl font-acorn font-bold text-center md:text-left">
+        ./skills
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <SkillCard title="Languages & Frameworks" skills={languagesAndFrameworks} />

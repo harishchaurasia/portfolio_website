@@ -1,6 +1,9 @@
-import React, { useEffect, useMemo, useRef, useState } from "react";
+"use client";
+
+import React, { useMemo, useState } from "react";
 import Image from "next/image";
-import { useMediaQuery } from "react-responsive";
+import { FaGithub } from "react-icons/fa";
+import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 
 interface ProjectCardProps {
   title: string;
@@ -8,7 +11,9 @@ interface ProjectCardProps {
   skills: string[];
   mainSkill: string;
   skillIcons: string[];
-  githubRepo: string;
+  githubRepo?: string;
+  liveDemo?: string;
+  status?: string;
   logo?: string;
 }
 
@@ -17,29 +22,20 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   description,
   skills = [],
   mainSkill = "",
-  skillIcons = [],
   githubRepo,
+  liveDemo,
+  status,
   logo,
 }) => {
-  const isMobile = useMediaQuery({ maxWidth: 767 });
-  const [isExpanded, setIsExpanded] = useState(false);
-  const cardRef = useRef<HTMLAnchorElement>(null);
+  const [expanded, setExpanded] = useState(false);
 
-  const mainSkillIconUrl = useMemo(
+  const avatar = useMemo(
     () =>
-      mainSkill
+      logo ||
+      (mainSkill
         ? `https://skillicons.dev/icons?i=${mainSkill.toLowerCase()}`
-        : "",
-    [mainSkill]
-  );
-
-  const skillIconsKey = skillIcons.join(",");
-  const skillsIconUrl = useMemo(
-    () =>
-      skillIcons.length > 0
-        ? `https://skillicons.dev/icons?i=${skillIconsKey}&perline=13`
-        : "",
-    [skillIcons.length, skillIconsKey]
+        : ""),
+    [logo, mainSkill]
   );
 
   const { displayTitle, leadLine } = useMemo(() => {
@@ -56,106 +52,98 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
     };
   }, [title]);
 
-  const showDetails = !isMobile || isExpanded;
-  const stripWidth = Math.max(48, skillIcons.length * 48);
-
-  const handleCardClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
-    if (!isMobile) return;
-    if (!isExpanded) {
-      e.preventDefault();
-      setIsExpanded(true);
-    }
-  };
-
-  useEffect(() => {
-    if (!isMobile || !isExpanded) return;
-
-    const handleOutsideTap = (event: MouseEvent | TouchEvent) => {
-      const target = event.target as Node | null;
-      if (!cardRef.current || !target) return;
-      if (!cardRef.current.contains(target)) {
-        setIsExpanded(false);
-      }
-    };
-
-    window.addEventListener("click", handleOutsideTap);
-    window.addEventListener("touchstart", handleOutsideTap);
-
-    return () => {
-      window.removeEventListener("click", handleOutsideTap);
-      window.removeEventListener("touchstart", handleOutsideTap);
-    };
-  }, [isExpanded, isMobile]);
+  const isLong = description.length > 200;
 
   return (
-    <a
-      ref={cardRef}
-      href={githubRepo}
-      target="_blank"
-      rel="noopener noreferrer"
-      onClick={handleCardClick}
-      className="relative border border-gray-800 rounded-3xl shadow-bs p-4 flex flex-col md:flex-row items-start bg-black-800 bg-opacity-50 backdrop-blur-lg hover:shadow-xs text-white mb-4 no-underline"
-    >
-      {(logo || mainSkill) && (
-        <Image
-          src={logo || mainSkillIconUrl}
-          alt={`${mainSkill || "project"} logo`}
-          width={64}
-          height={64}
-          className="w-16 h-16 mb-4 mr-4 rounded-lg object-cover"
-          unoptimized={!logo}
-        />
-      )}
-      <div className="flex-1">
-        <div className="flex justify-between items-center">
-          <h2 className="pr-10 text-xl md:text-2xl font-bold">{displayTitle}</h2>
+    <div className="group flex h-full flex-col rounded-3xl border border-white/10 bg-white/[0.03] p-5 shadow-bs backdrop-blur-lg transition-all duration-200 hover:-translate-y-0.5 hover:border-[#30c555]/40 hover:bg-white/[0.05] md:p-6">
+      {/* Header */}
+      <div className="flex items-start gap-4">
+        {avatar && (
           <Image
-            src="/ex.png"
-            alt="External link icon"
-            width={24}
-            height={24}
-            className="absolute top-4 right-4 w-6 h-6 ml-2"
+            src={avatar}
+            alt={`${mainSkill || "project"} icon`}
+            width={56}
+            height={56}
+            unoptimized={!logo}
+            className="h-14 w-14 flex-shrink-0 rounded-2xl border border-white/10 bg-white/5 object-cover"
           />
-        </div>
-        {leadLine && (
-          <p className="mt-1 text-sm text-[#30c555] font-medium">{leadLine}</p>
         )}
-        {isMobile && !isExpanded && (
-          <p className="mt-2 text-sm text-gray-400">
-            Tap to expand, tap again to open GitHub.
-          </p>
-        )}
-        {showDetails && (
-          <>
-            <p className="mt-2">{description}</p>
-            {skills.length > 0 && (
-              <div className="mt-2 text-slate-400">
-                <p>
-                  <strong>Skills Used:</strong> {skills.join(", ")}
-                </p>
-              </div>
+        <div className="min-w-0 flex-1">
+          <div className="flex items-start justify-between gap-3">
+            <h2 className="font-sf_pro text-lg font-bold text-white md:text-xl">
+              {displayTitle}
+            </h2>
+            {status && (
+              <span className="flex-shrink-0 whitespace-nowrap rounded-full border border-amber-400/40 bg-amber-400/10 px-2.5 py-0.5 text-[0.7rem] font-medium text-amber-300">
+                {status}
+              </span>
             )}
-            {skillsIconUrl && (
-              <div className="mt-2">
-                <Image
-                  src={skillsIconUrl}
-                  alt="Skill icons"
-                  width={stripWidth}
-                  height={48}
-                  unoptimized
-                  loading="lazy"
-                />
-              </div>
-            )}
-          </>
-        )}
-        {isMobile && isExpanded && (
-          <div className="mt-3 text-xs text-[#30c555]">
-            Next tap opens repository
           </div>
+          {leadLine && (
+            <p className="mt-1 font-acorn text-sm font-medium text-[#30c555]">
+              {leadLine}
+            </p>
+          )}
+        </div>
+      </div>
+
+      {/* Description */}
+      <p
+        className={`mt-4 font-sf_pro text-sm leading-relaxed text-gray-300 ${
+          expanded ? "" : "line-clamp-4"
+        }`}
+      >
+        {description}
+      </p>
+      {isLong && (
+        <button
+          onClick={() => setExpanded((v) => !v)}
+          className="mt-1 self-start font-acorn text-xs font-semibold text-[#30c555] transition-colors hover:text-[#28a347]"
+        >
+          {expanded ? "Show less" : "Read more"}
+        </button>
+      )}
+
+      {/* Tech chips */}
+      {skills.length > 0 && (
+        <div className="mt-4 flex flex-wrap gap-1.5">
+          {skills.map((s) => (
+            <span
+              key={s}
+              className="rounded-full border border-white/10 bg-white/[0.04] px-2.5 py-0.5 text-xs text-gray-300"
+            >
+              {s}
+            </span>
+          ))}
+        </div>
+      )}
+
+      {/* Actions */}
+      <div className="mt-auto flex flex-wrap items-center gap-2 pt-5">
+        {githubRepo && (
+          <a
+            href={githubRepo}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn btn-outline btn-sm"
+          >
+            <FaGithub className="btn-icon" />
+            <span>Code</span>
+          </a>
+        )}
+        {liveDemo && (
+          <a
+            href={liveDemo}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn btn-primary btn-sm"
+          >
+            <FaArrowUpRightFromSquare className="btn-icon" />
+            <span>Live Demo</span>
+          </a>
         )}
       </div>
-    </a>
+    </div>
   );
 };
 

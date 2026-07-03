@@ -1,55 +1,15 @@
-import React, { useState, useEffect } from "react";
-import dynamic from "next/dynamic";
+import React from "react";
 import Image from "next/image";
+import { FaGithub, FaLinkedin, FaFilePdf } from "react-icons/fa";
+import HeroScene from "./HeroScene";
 
-const Scene = dynamic(() => import("../components/Index"), {
-  ssr: false,
-});
-
+// Server-rendered hero. Only the 3D prism (HeroScene) is a client island, so
+// the headline, tagline, and CTAs are in the initial HTML for SEO + fast LCP.
 const Grids: React.FC = () => {
-  const [isNotMobile, setIsNotMobile] = useState(false);
-
-  useEffect(() => {
-    const checkMobile = () => setIsNotMobile(window.innerWidth >= 768);
-    checkMobile();
-    window.addEventListener("resize", checkMobile);
-    return () => window.removeEventListener("resize", checkMobile);
-  }, []);
-
   return (
     <div className="relative w-full min-h-[85vh] md:min-h-[calc(100vh-6rem)] flex items-start justify-center pt-16 md:pt-20 lg:pt-24 overflow-hidden">
-      {/* 3D prism - scoped to hero only */}
-      {isNotMobile && (
-        <div className="fixed inset-0 w-screen h-screen pointer-events-none z-0 translate-y-[12%] md:translate-y-[14%]">
-          <div className="absolute inset-0 w-full h-full">
-            <Scene />
-          </div>
-        </div>
-      )}
-
-      {/* OPTION A - Soft radial vignette (active) */}
-      <div
-        className="absolute inset-0 pointer-events-none z-[1]"
-        style={{
-          background:
-            "radial-gradient(ellipse 90% 80% at 50% 42%, rgba(0,0,0,0.72) 0%, rgba(0,0,0,0.30) 55%, transparent 100%)",
-        }}
-      />
-
-      {/* OPTION B - Full-bleed horizontal band (swap with C to try)
-      <div
-        className="fixed inset-0 pointer-events-none z-[1]"
-        style={{
-          background:
-            "linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.35) 15%, rgba(0,0,0,0.35) 65%, transparent 100%)",
-        }}
-      /> */}
-
-      {/* OPTION C - Bottom fade only (swap with A to try)
-      <div
-        className="absolute bottom-0 left-0 right-0 h-48 pointer-events-none z-[1]"
-        style={{ background: "linear-gradient(to top, rgb(3,5,12) 0%, transparent 100%)" }}
-      /> */}
+      {/* 3D prism - scoped to hero only, desktop-only client island */}
+      <HeroScene />
 
       {/* Content - on top */}
       <div className="relative z-10 w-full max-w-[1800px] mx-auto px-6 sm:px-8 md:px-12 lg:px-16 xl:px-20 pb-10 md:pb-16 -translate-y-2 md:-translate-y-3">
@@ -75,49 +35,53 @@ const Grids: React.FC = () => {
           {/* Right: Typography + CTA */}
           <div className="lg:col-span-7 flex flex-col justify-center items-center lg:items-start text-center lg:text-left order-1 lg:order-2">
             <p className="text-[#30c555] font-acorn text-xs sm:text-sm md:text-base uppercase tracking-[0.25em] mb-1 md:mb-2">
-              AI Engineer · Full-Stack SWE
+              AI Engineer · Software Engineer · Forward-Deployed
             </p>
-            <p className="text-gray-500 font-acorn text-[0.7rem] sm:text-xs md:text-sm uppercase tracking-[0.2em] mb-3 md:mb-4">
-              MS CS (AI/ML) · ASU &apos;26
+            <p className="text-gray-400 font-acorn text-[0.7rem] sm:text-xs md:text-sm uppercase tracking-[0.2em] mb-3 md:mb-4">
+              MS CS (AI/ML) · Open to Roles
             </p>
             <h1 className="font-acorn font-bold text-gray-100 leading-[1.05] tracking-tight mb-3 md:mb-4 text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl">
               Hi. I&apos;m <span className="text-[#30c555]">Harish</span>.
             </h1>
-            <p className="text-gray-400 font-acorn mb-6 md:mb-8 text-base sm:text-lg md:text-xl max-w-xl leading-relaxed">
-              I build AI agents, AI-powered full-stack apps, and developer
-              tools.
+            <p className="text-gray-300 font-acorn mb-6 md:mb-8 text-base sm:text-lg md:text-xl max-w-xl leading-relaxed">
+              I build AI agents, LLM systems, and full-stack tools, and ship
+              them from research to production.
             </p>
+
             <div className="flex flex-wrap gap-3 justify-center lg:justify-start">
               <a
-                href="/Harish's%20Resume.pdf"
+                href="/resume"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hero-btn hero-btn-outline"
+                className="btn btn-primary"
               >
-                Resume
+                <FaFilePdf className="btn-icon" />
+                <span>Resume</span>
               </a>
               <a
                 href="https://www.linkedin.com/in/harishchaurasia"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hero-btn hero-btn-outline"
+                className="btn btn-outline"
               >
-                LinkedIn
+                <FaLinkedin className="btn-icon" />
+                <span>LinkedIn</span>
               </a>
               <a
                 href="https://github.com/harishchaurasia"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hero-btn hero-btn-outline"
+                className="btn btn-outline"
               >
-                GitHub
+                <FaGithub className="btn-icon" />
+                <span>GitHub</span>
               </a>
             </div>
           </div>
         </div>
       </div>
 
-      <div className="absolute bottom-6 left-6 md:left-12 text-gray-500/50 text-xs font-mono hidden lg:block z-10">
+      <div className="absolute bottom-6 left-6 md:left-12 text-gray-400/70 text-xs font-mono hidden lg:block z-10">
         {"< build · ship · iterate />"}
       </div>
     </div>

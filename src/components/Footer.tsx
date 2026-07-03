@@ -1,5 +1,6 @@
 // src/components/Footer.tsx
 import React from "react";
+import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 
 const Footer: React.FC = () => {
   return (
@@ -9,13 +10,14 @@ const Footer: React.FC = () => {
         <span className="hidden md:inline">|</span>
         <p>© 2026 Harish Chaurasia. All Rights Reserved.</p>
         <span className="hidden md:inline">|</span>
-        <a 
-          href="https://arkaforge.com" 
-          target="_blank" 
+        <a
+          href="https://arkaforge.com"
+          target="_blank"
           rel="noopener noreferrer"
-          className="text-[#30c555] hover:text-[#28a347] transition-colors"
+          className="inline-flex items-center gap-1.5 text-[#30c555] transition-colors hover:text-[#28a347]"
         >
-          Also building: Arkaforge ↗
+          Also building: ArkaForge
+          <FaArrowUpRightFromSquare className="text-[0.7em] opacity-80" />
         </a>
       </div>
     </div>

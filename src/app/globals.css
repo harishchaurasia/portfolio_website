@@ -22,61 +22,221 @@ body {
   background-color: transparent;
 }
 
-/* Ensure the Vanta background is positioned correctly */
-.vanta-bg {
+/* Engineering / blueprint background */
+.eng-bg {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1; /* Ensure it is behind other content */
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+  background:
+    radial-gradient(1200px 700px at 78% 12%, rgba(48, 197, 85, 0.06), transparent 60%),
+    #05070c;
 }
+
+.eng-glow {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(90px);
+  opacity: 0.5;
+}
+.eng-glow--1 {
+  width: 44vw;
+  height: 44vw;
+  top: -10vw;
+  right: -6vw;
+  background: rgba(48, 197, 85, 0.16);
+}
+.eng-glow--2 {
+  width: 38vw;
+  height: 38vw;
+  bottom: -12vw;
+  left: -8vw;
+  background: rgba(37, 99, 120, 0.18);
+}
+
+/* MTRX music card */
+.mtrx-vinyl {
+  background:
+    radial-gradient(circle at center, #0a0a0a 0 20%, transparent 20%),
+    repeating-radial-gradient(circle at center, #0b0b0b 0 2px, #191919 2px 4px);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.06),
+    0 8px 24px rgba(0, 0, 0, 0.5);
+  animation: mtrx-spin 6s linear infinite;
+}
+.mtrx-label {
+  position: absolute;
+  inset: 33%;
+  overflow: hidden;
+  border-radius: 9999px;
+  border: 2px solid #30c555;
+  background: #05070c;
+}
+.mtrx-vinyl-wrap:hover .mtrx-vinyl {
+  animation-duration: 2.5s;
+}
+@keyframes mtrx-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.mtrx-eq {
+  display: inline-flex;
+  align-items: flex-end;
+  gap: 3px;
+  height: 20px;
+}
+.mtrx-eq span {
+  width: 3px;
+  height: 100%;
+  transform-origin: bottom;
+  border-radius: 2px;
+  background: #30c555;
+  animation: mtrx-eq 0.9s ease-in-out infinite;
+}
+.mtrx-eq span:nth-child(1) {
+  animation-delay: 0s;
+}
+.mtrx-eq span:nth-child(2) {
+  animation-delay: 0.25s;
+}
+.mtrx-eq span:nth-child(3) {
+  animation-delay: 0.45s;
+}
+.mtrx-eq span:nth-child(4) {
+  animation-delay: 0.1s;
+}
+.mtrx-eq span:nth-child(5) {
+  animation-delay: 0.35s;
+}
+@keyframes mtrx-eq {
+  0%,
+  100% {
+    transform: scaleY(0.35);
+  }
+  50% {
+    transform: scaleY(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mtrx-vinyl,
+  .mtrx-eq span {
+    animation: none !important;
+  }
+}
+
+.eng-vignette {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    ellipse at 50% 34%,
+    transparent 0%,
+    rgba(5, 7, 12, 0.55) 62%,
+    #05070c 100%
+  );
+}
+
 
 
 section {
   scroll-margin-top: 80px;
 }
 
-/* Hero CTA — alternating: grey + green text ↔ flip on hover */
-.hero-btn {
-  @apply inline-flex items-center justify-center min-w-[7.5rem] rounded-full border-2 px-6 py-2.5 sm:py-3 font-acorn font-semibold text-sm sm:text-base transition-all duration-300 ease-out;
-}
-/* Dark grey button, green text → hover: green fill, black text */
-.hero-btn-outline {
-  @apply border-zinc-600 bg-zinc-800/90 text-[#30c555] shadow-sm hover:border-[#30c555] hover:bg-[#30c555] hover:text-zinc-950 hover:shadow-md;
-}
-
-
-
-/* Intro container styling */
-
-.intro-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  width: 100vw;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.8);
-  z-index: 9999;
-  opacity: 1;
-  transition: opacity 1s ease-out;
-}
-
-/* Intro text styling */
-.intro-text {
+/* ------------------------------------------------------------------ */
+/* Button system: icon + label, green sweep-fill on hover, arrow nudge */
+/* ------------------------------------------------------------------ */
+.btn {
   position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 9999px;
+  border: 1.5px solid transparent;
+  padding: 0.65rem 1.4rem;
+  font-family: var(--font-acorn), serif;
+  font-weight: 600;
+  font-size: 0.9rem;
+  line-height: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  isolation: isolate;
+  cursor: pointer;
+  transition: color 0.3s ease, border-color 0.3s ease, transform 0.15s ease,
+    box-shadow 0.3s ease;
+}
+.btn > * {
+  position: relative;
+  z-index: 1;
+}
+.btn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: #30c555;
+  transform: translateX(-102%);
+  transition: transform 0.4s cubic-bezier(0.45, 0.05, 0.15, 1);
+}
+.btn:hover::before {
+  transform: translateX(0);
+}
+.btn:active {
+  transform: translateY(1px) scale(0.99);
+}
+.btn:focus-visible {
+  outline: 2px solid #30c555;
+  outline-offset: 2px;
+}
+.btn-icon {
+  font-size: 1.05em;
+  transition: transform 0.3s ease;
+}
+.btn:hover .btn-icon {
+  transform: scale(1.08);
+}
+.btn-arrow {
+  transition: transform 0.3s ease;
+}
+.btn:hover .btn-arrow {
+  transform: translateX(4px);
+}
+.btn-arrow-left {
+  transition: transform 0.3s ease;
+}
+.btn:hover .btn-arrow-left {
+  transform: translateX(-4px);
 }
 
-/* Hidden text for animation */
-.hidden-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  opacity: 0;
-  transition: opacity 1s ease-out;
+/* Outline: subtle dark surface -> green sweep, dark text on hover */
+.btn-outline {
+  border-color: rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.04);
+  color: #eaeaf0;
 }
+.btn-outline:hover {
+  color: #08130b;
+  border-color: #30c555;
+}
+
+/* Primary: always green filled, brightens + glows on hover */
+.btn-primary {
+  border-color: #30c555;
+  color: #08130b;
+}
+.btn-primary::before {
+  transform: translateX(0);
+}
+.btn-primary:hover::before {
+  background: #3ad566;
+}
+.btn-primary:hover {
+  box-shadow: 0 6px 22px rgba(48, 197, 85, 0.28);
+}
+
+.btn-sm {
+  padding: 0.45rem 1rem;
+  font-size: 0.8rem;
+}
+
 

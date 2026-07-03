@@ -4,7 +4,7 @@ import ProjectCard from "./ProjectsCard";
 const Projects: React.FC = () => {
   return (
     <div className="mx-0 md:mx-0 lg:mx-0 my-10 md:my-20">
-      <h1 className="text-[#30c555] text-6xl font-acorn font-bold text-center md:text-left mt-20 md:mt-28 mb-10 md:mb-16">
+      <h1 className="text-[#30c555] text-5xl md:text-6xl font-acorn font-bold text-center md:text-left mt-4 md:mt-6 mb-10 md:mb-16">
         .Projects
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-10">
@@ -42,8 +42,7 @@ const Projects: React.FC = () => {
           githubRepo="https://github.com/harishchaurasia/Meta_OpenEnv_PyTorch_Hack"
         />
         <ProjectCard
-          title="Codebase-MCP (Agentic MCP Server for Codebase Understanding) [In Progress]"
-          description="An agent-capable Model Context Protocol server that lets AI tools deeply understand a software repository. Scans a codebase, parses source files via AST, builds a dependency graph, and exposes everything through an agentic tool system with persistent JSON memory, heuristic pattern detection, TF-IDF keyword search, and a minimal rule-based agent loop that plans, selects tools, and evaluates progress. Ships with Claude Desktop and Cursor integration configs."
+          title="Codebase-MCP (Agentic MCP Server for Codebase Understanding)"          description="An agent-capable Model Context Protocol server that lets AI tools deeply understand a software repository. Scans a codebase, parses source files via AST, builds a dependency graph, and exposes everything through an agentic tool system with persistent JSON memory, heuristic pattern detection, TF-IDF keyword search, and a minimal rule-based agent loop that plans, selects tools, and evaluates progress. Ships with Claude Desktop and Cursor integration configs."
           skills={[
             "Python",
             "MCP",
@@ -60,8 +59,7 @@ const Projects: React.FC = () => {
           githubRepo="https://github.com/harishchaurasia/codebase-mcp"
         />
         <ProjectCard
-          title="Blast Radius (VSCode Extension for Code Impact Visualization) [In Progress]"
-          description="A VSCode extension that visualises the blast radius of any code change in TypeScript projects. Uses the TypeScript Compiler API to walk the AST, extract function definitions and call sites, and build an in-memory call graph with forward and reverse adjacency lists. Maps Jest test files to source functions with transitive coverage expansion, and renders an interactive Cytoscape.js dependency graph inside a VSCode webview. Click any function to see downstream calls (red), upstream callers (purple), and linked tests (green) computed on demand via BFS traversal. The Impact Summary surfaces affected function counts, recommended tests, and at-risk feature modules. All analysis runs locally - no code leaves the machine."
+          title="Blast Radius (VSCode Extension for Code Impact Visualization)"          description="A VSCode extension that visualises the blast radius of any code change in TypeScript projects. Uses the TypeScript Compiler API to walk the AST, extract function definitions and call sites, and build an in-memory call graph with forward and reverse adjacency lists. Maps Jest test files to source functions with transitive coverage expansion, and renders an interactive Cytoscape.js dependency graph inside a VSCode webview. Click any function to see downstream calls (red), upstream callers (purple), and linked tests (green) computed on demand via BFS traversal. The Impact Summary surfaces affected function counts, recommended tests, and at-risk feature modules. All analysis runs locally - no code leaves the machine."
           skills={[
             "TypeScript",
             "VSCode Extension API",
@@ -94,8 +92,7 @@ const Projects: React.FC = () => {
           githubRepo="https://github.com/harishchaurasia/multi-agent-autoresearch"
         />
         <ProjectCard
-          title="Knowledge Brain (Multimodal RAG Assistant) [In Progress]"
-          description="Knowledge Brain, also known as Personal Professor, is a multimodal Retrieval-Augmented Generation (RAG) system that lets users upload PDFs, documents, and audio to create a personalized AI tutor. It extracts and chunks text, generates embeddings using PyTorch, stores vectors in FAISS, and retrieves grounded context to answer questions via Llama 3. The system supports voice queries using Whisper, real-time chat, and a modern UI built with Next.js, TailwindCSS, and shadcn/ui. Fully local, privacy-friendly, and optimized for fast inference."
+          title="Knowledge Brain (Multimodal RAG Assistant)"          description="Knowledge Brain, also known as Personal Professor, is a multimodal Retrieval-Augmented Generation (RAG) system that lets users upload PDFs, documents, and audio to create a personalized AI tutor. It extracts and chunks text, generates embeddings using PyTorch, stores vectors in FAISS, and retrieves grounded context to answer questions via Llama 3. The system supports voice queries using Whisper, real-time chat, and a modern UI built with Next.js, TailwindCSS, and shadcn/ui. Fully local, privacy-friendly, and optimized for fast inference."
           skills={[
             "FastAPI",
             "Python",
@@ -202,7 +199,7 @@ const Projects: React.FC = () => {
           skills={["C#", "Unity", "NavMesh"]}
           mainSkill="Unity"
           skillIcons={["blender", "cs", "unity"]}
-          githubRepo="https://drive.google.com/file/d/1OYAcn2PssKbmePcfPlq988iof-a6uRmU/view?usp=sharing"
+          liveDemo="https://drive.google.com/file/d/1OYAcn2PssKbmePcfPlq988iof-a6uRmU/view?usp=sharing"
         />
         <ProjectCard
           title="VNC Public School Website (Private School Website)"
@@ -258,7 +255,7 @@ const Projects: React.FC = () => {
           ]}
           mainSkill="unreal"
           skillIcons={["unreal", "unity", "cpp", "cs", "blender"]}
-          githubRepo="https://arkaforge.com"
+          liveDemo="https://arkaforge.com"
           logo="/arkaforge_logo_square.png"
         />
       </div>
