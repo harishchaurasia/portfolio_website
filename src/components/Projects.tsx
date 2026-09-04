@@ -256,7 +256,7 @@ const Projects: React.FC = () => {
           mainSkill="unreal"
           skillIcons={["unreal", "unity", "cpp", "cs", "blender"]}
           liveDemo="https://arkaforge.com"
-          logo="/arkaforge_logo_square.png"
+          logo="/arkaforge_logo_square.webp"
         />
       </div>
     </div>

@@ -59,7 +59,7 @@ const MusicCard: React.FC = () => {
         {/* DJ photo */}
         <div className="relative hidden h-28 w-40 flex-shrink-0 overflow-hidden rounded-2xl border border-white/10 md:block">
           <Image
-            src="/DJ_IMG.jpeg"
+            src="/DJ_IMG.webp"
             alt="Harish DJing"
             fill
             className="object-cover"

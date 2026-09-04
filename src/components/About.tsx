@@ -43,21 +43,21 @@ const About: React.FC = () => {
               companyName="School of Manufacturing Systems & Networks, Ira A. Fulton Schools of Engineering"
               dateRange="Dec 2023 - May 2026"
               description="Collaborated with Los Alamos National Laboratory to deliver high-fidelity VR simulation modules, improving immersive training accuracy by 30% across real-world physical workflows. Designed interactive simulation systems with real-time feedback loops for complex physical task training in VR-based environments. Optimized C++ digital-twin simulation pipelines, reducing runtime latency by 15% in real-time training environments."
-              logo="/msn.png"
+              logo="/msn.webp"
             />
             <ExperienceCard
               title="Software Engineer"
               companyName="Laboratory for Energy and Power Solutions (LEAPS), ASU"
               dateRange="Jan 2023 - Oct 2023"
               description="Built AR/VR microgrid training systems enabling real-time interactive visualization of power networks, deployed across 10+ institutions."
-              logo="/leaps.png"
+              logo="/leaps.webp"
             />
             <ExperienceCard
               title="Software Lead"
               companyName="Shonto Solar Engineering Team, EPICS, ASU"
               dateRange="Aug 2022 - Dec 2022"
               description="Led a 6-member team building an IoT-based solar microgrid monitoring system for 500+ residents, integrating sensor data, cloud storage, and real-time alerting."
-              logo="/epics.png"
+              logo="/epics.webp"
             />
           </div>
         </div>
@@ -73,14 +73,14 @@ const About: React.FC = () => {
               companyName="Google Developer Student Club, ASU"
               dateRange="Jan 2022 - May 2026"
               description="Mentored 750+ students and led workshops on AI/ML, cloud, MLOps, and full-stack development; organized hackathons and technical bootcamps."
-              logo="/asu_dsc.png"
+              logo="/asu_dsc.webp"
             />
             <ExperienceCard
               title="Officer"
               companyName="PIERA (India Policy & Economy Research Club)"
               dateRange="Mar 2025 - Present"
               description="Led research seminars and mentored 50+ students in geopolitics and policy analysis on India's economic and technical development."
-              logo="/piera.jpeg"
+              logo="/piera.webp"
             />
           </div>
         </div>

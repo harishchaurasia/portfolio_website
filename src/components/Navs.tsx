@@ -86,6 +86,8 @@ const Nav: React.FC = () => {
           <img
             src="/mtrxk2.png"
             alt="Harish Chaurasia logo"
+            width={136}
+            height={200}
             className="mx-auto h-8 w-auto"
           />
           <button
