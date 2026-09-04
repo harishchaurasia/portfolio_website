@@ -11,7 +11,7 @@ import { FaXTwitter } from "react-icons/fa6";
 
 const socials = [
   {
-    href: "mailto:harishchaurasia143@gmail.com",
+    href: "mailto:mail.harishchaurasia@gmail.com",
     label: "Email Harish",
     Icon: FaEnvelope,
   },
@@ -64,7 +64,7 @@ const ContactMe: React.FC = () => {
 
           {/* Primary actions */}
           <div className="mt-6 flex flex-wrap gap-3">
-            <a href="mailto:harishchaurasia143@gmail.com" className="btn btn-primary">
+            <a href="mailto:mail.harishchaurasia@gmail.com" className="btn btn-primary">
               <FaEnvelope className="btn-icon" />
               <span>Email me</span>
             </a>

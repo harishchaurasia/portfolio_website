@@ -101,7 +101,7 @@ const personJsonLd = {
   url: siteUrl,
   image: `${siteUrl}/harish02.webp`,
   jobTitle: "AI Engineer",
-  email: "mailto:harishchaurasia143@gmail.com",
+  email: "mailto:mail.harishchaurasia@gmail.com",
   description:
     "AI Engineer and full-stack software engineer specializing in agentic AI, MCP servers, RL environments, and applied LLM systems.",
   alumniOf: {
