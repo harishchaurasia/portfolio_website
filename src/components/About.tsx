@@ -43,6 +43,7 @@ const About: React.FC = () => {
               companyName="Built By The Trades (BBTT), West Virginia"
               dateRange="Aug 2026 - Oct 2026"
               description="Owned ServiceDash, a four-sided real-time marketplace (homeowner, contractor, technician, admin) built as a Next.js 16 and Supabase Turborepo monorepo. Shipped its booking state machine, Stripe hold-and-capture payments with Connect payouts and a conservative reconciliation job, a race-safe dispatch engine, and a ~40-screen UI rebuild. Built Foreman, a Claude API help assistant grounded strictly in internal guides, plus ES256 cross-app SSO and seat-based Stripe subscription billing for the Toolbox platform."
+              logo="/bbtt.webp"
             />
             <ExperienceCard
               title="Software Developer"
