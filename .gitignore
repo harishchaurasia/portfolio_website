@@ -37,3 +37,6 @@ next-env.d.ts
 
 # local shell history - should never be tracked
 .zsh_history
+
+# local claude session pointer
+claude-session.txt

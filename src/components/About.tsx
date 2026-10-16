@@ -39,6 +39,12 @@ const About: React.FC = () => {
           </h1>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <ExperienceCard
+              title="AI Engineer (Jr. SWE)"
+              companyName="Built By The Trades (BBTT), Tempe, AZ"
+              dateRange="Aug 2026 - Oct 2026"
+              description="Owned ServiceDash, a four-sided real-time marketplace (homeowner, contractor, technician, admin) built as a Next.js 16 and Supabase Turborepo monorepo. Shipped its booking state machine, Stripe hold-and-capture payments with Connect payouts and a conservative reconciliation job, a race-safe dispatch engine, and a ~40-screen UI rebuild. Built Foreman, a Claude API help assistant grounded strictly in internal guides, plus ES256 cross-app SSO and seat-based Stripe subscription billing for the Toolbox platform."
+            />
+            <ExperienceCard
               title="Software Developer"
               companyName="School of Manufacturing Systems & Networks, Ira A. Fulton Schools of Engineering"
               dateRange="Dec 2023 - May 2026"
